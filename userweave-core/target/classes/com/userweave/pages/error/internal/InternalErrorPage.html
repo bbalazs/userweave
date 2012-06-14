@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+  <wicket:extend>	
+	<div class="internal_content">
+		<div class="simple_underlined_headline">
+		   <h2>
+		       <wicket:message key="ups">Ups. Hier ist ein Fehler aufgetreten.</wicket:message>
+		   </h2>
+		</div>
+		<span class="darkGrey">
+			<wicket:message key="sorry">Wir bitten dies zu entschuldigen.</wicket:message>
+			<br/><br/><br/>
+		    <span wicket:id="error">Es wurde automatisch eine Meldung an die Entwickler erzeugt und wir kümmern uns um die Behebung. Bis dahin bitten wir Unannehmlichkeiten zu entschuldigen.</span>
+			<br/>
+			<br/>
+			<a href="#" wicket:id="link"><wicket:message key="gothrough">Hier geht's weiter</wicket:message></a>
+	   </span>
+	</div>	
+  </wicket:extend>
+
+</body>
+</html>
+

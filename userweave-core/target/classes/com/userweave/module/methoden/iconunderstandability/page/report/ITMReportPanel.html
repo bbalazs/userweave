@@ -1,0 +1,34 @@
+<html xmlns:wicket>
+<wicket:panel>
+    <!--  ITMReportPanel >> -->
+    <div wicket:id="categories">
+
+	<table>
+		<tr>
+			<td colspan="3"><span wicket:id="category"/>
+				(<span wicket:id="sum"/> votes / <span wicket:id="missing"/> missing)
+				<hr/>
+			</td>			
+		</tr>
+		<tr wicket:id="objects"> 
+			
+			<td style="width:80px"><span wicket:id="object"/></td>
+			 
+			<td style="width:380px">
+				<div class="barbg">
+					<div wicket:id="bar"></div>
+				</div>				
+			</td>
+			<td>
+				<span wicket:id="count"/> vote(s) / <span wicket:id="percent"/>%
+			</td>
+		</tr>
+	</table>	
+  	<br/>
+  	
+  </div>
+  
+   <!-- << ITMReportPanel -->
+</wicket:panel>
+</html>
+  

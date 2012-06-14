@@ -1,0 +1,20 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<div class="studiesAccordion" style="width:643px">
+		
+		    <div style="margin-bottom: 0px; max-width: 100%;" class="simple_underlined_headline">
+		        <span>
+		            <b class="darkGrey"><wicket:message key="invoices"/></b>
+		        </span>
+		    </div>
+			<div class="lightGrey"><span wicket:id="noInvoices"/></div>
+			<div wicket:id="invoices">
+				<div class="listItem">
+					<span wicket:id="date.toDate">[date]</span> <a wicket:id="invoiceLink" href="#" class="linkColor"><span wicket:id="number">[number]</span>.pdf</a>
+				</div>
+			</div>
+		
+		</div>
+	</wicket:extend>
+</html>
+  

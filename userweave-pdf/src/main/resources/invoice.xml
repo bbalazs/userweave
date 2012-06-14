@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<invoice>
+  <receipient>
+    <company>FIRMA</company>
+    <surname>NACHNAME</surname>
+    <forename>VORNAME</forename>
+    <address>
+      <street>STRASSE</street>
+      <housenumber>HAUSNUMMER</housenumber>
+      <postcode>PLZ</postcode>
+      <city>STADT</city>
+      <country>LAND</country>
+    </address>
+  </receipient>
+  <details>
+    <number>UM2009010001</number>
+    <date>11. September 2009</date>
+    <currency>Euro</currency>
+    <gross>238,00</gross>
+    <net>200,00</net>
+    <tax>38,00</tax>
+    <taxrate>19,00</taxrate>
+  </details>
+</invoice>

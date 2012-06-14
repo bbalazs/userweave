@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[2.1.0.v200808011800]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[true]]></enableImports>
+	<configs>
+		<config>src/main/config/base/applicationContext.xml</config>
+		<config>src/main/config/base/common.xml</config>
+		<config>src/main/config/base/persistence.hibernate.xml</config>
+	</configs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

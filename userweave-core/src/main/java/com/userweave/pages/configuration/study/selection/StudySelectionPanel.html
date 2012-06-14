@@ -1,0 +1,83 @@
+<html xmlns:wicket>
+<wicket:panel>
+
+		<table class="contentTable" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<p wicket:id="InitHeader"></p>
+				</td>
+				<td>
+					<div class="whiteContainer">
+						<div wicket:id="studiesInInit"></div>
+					
+						<wicket:enclosure child="addStudy">
+
+							<div wicket:id="addStudy" class="addButton"></div>
+						
+							<div wicket:id="addStudyModalWindow"></div>
+
+						</wicket:enclosure>
+					</div>
+					
+				</td>
+				<td>
+					<p>
+						<wicket:message key="studiesInInit"></wicket:message>
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<p wicket:id="RunningHeader"></p>
+				</td>
+				<td>
+					<div class="whiteContainer">
+						<div wicket:id="studiesInRunning"></div>
+					</div>
+				</td>
+				<td>
+					<p>
+						<wicket:message key="studiesInRunning"></wicket:message>
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<p wicket:id="FinishedHeader"></p>
+				</td>
+				<td>
+					<div class="whiteContainer">
+						<div wicket:id="studiesInFinished"></div>
+					</div>
+				</td>
+				<td>
+					<p>
+						<wicket:message key="studiesInFinished"></wicket:message>
+					</p>
+				</td>
+			</tr>
+			
+			<wicket:enclosure child="DeletedHeader">
+			<tr>
+				<td>
+					<p wicket:id="DeletedHeader"></p>
+				</td>
+				<td>
+					<div class="whiteContainer">
+						<div wicket:id="deletedStudies"></div>
+					</div>
+				</td>
+				<td>
+					<p>
+						<wicket:message key="studiesInDeleted"></wicket:message>
+					</p>
+				</td>
+			</tr>
+			</wicket:enclosure>
+			
+		</table>
+</wicket:panel>
+</html>
+  

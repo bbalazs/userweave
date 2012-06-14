@@ -1,0 +1,72 @@
+div.navTab { border-right: 1px solid #D9D9D9;  }
+
+div.tab.last { border-right: 1px solid #D9D9D9; }
+
+div.tab-row { border: 1px solid #D9D9D9; }
+
+div.navTab.selected a { background-color: #ffffff; }
+
+div.questionTabs div.tab a,
+div.icontestTabs div.tab a { border-right: 1px solid #d9d9d9; }
+
+div.slideLeft { border-right:1px solid #d9d9d9; }
+div.slideRight { border-left:1px solid #d9d9d9; }
+
+div.tab.selected a { background-color: #fff; }
+
+a.configTab {
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+
+div.selectedProjectTabbedPanel div.tab.last { border-left: 1px solid #d9d9d9; }
+
+/**
+ * Content tables
+ *
+ * Adjusting, because :nth-child does not work here. 
+ * Solved by td:first-child + td
+ */
+table.contentTable > tbody > tr > td:first-child + td,
+table.statisticsTable > tbody > tr > td:first-child + td { width:500px; }
+
+table.contentTable > tbody > tr > td:first-child + td + td { padding-left: 6px; }
+
+table.userTable td:first-child + td { text-align: left; }
+
+table.userTable td.ie7-lastChild {  padding-right: 10px; }
+
+table.contentTable > tbody > tr > td:first-child + td + td p, 
+table.statisticsTable > tbody > tr > td:first-child + td + td p,
+td.iconRatingExplanation p { color: #909090; }
+
+table.statisticsContainer thead tr:first-child th{ border-bottom: 1px solid #d9d9d9; }
+
+/**
+ * Buttons
+ */
+a.addButton, span.addButton { border-top: 1px solid #D9D9D9; }
+
+span.buttonContainer a.baseButton,
+span.buttonContainer span.baseButton  { 
+	border-width: 1px 0px 1px 1px; 
+	border-style: solid;
+	border-color: #D9D9D9;
+}
+
+span.buttonContainer a.baseButtonLast,
+span.buttonContainer span.baseButtonLast  { border-right: 1px solid #d9d9d9; }
+
+span.fakeAdd { border-top: 1px solid #d9d9d9; }
+
+a.openIconOrderLink { border: 1px solid #d9d9d9; }
+
+select.baseButton,
+input.baseButton { 
+	border-left: 1px solid #d9d9d9;
+	border-top:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9; 
+}
+
+select.baseButtonLast,
+table.contentTable input.baseButton { border-right: 1px solid #d9d9d9; }

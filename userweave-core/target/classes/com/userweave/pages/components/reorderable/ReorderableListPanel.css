@@ -1,0 +1,43 @@
+a.moveup, a.movedown/*, a.delete*/ {
+	display:block;
+	width:23px;
+	height:19px;
+	margin-top:2px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+a.moveup {
+	background-image:url(up.png);
+}
+a.moveup:hover {
+	background-image:url(up_hover.png);
+}
+
+a.movedown {
+	background-image:url(down.png);
+}
+a.movedown:hover {
+	background-image:url(down_hover.png);
+}
+/*
+a.delete {
+	background-image:url(delete.png);
+}
+a.delete:hover {
+	background-image:url(delete_hover.png);
+}*/
+
+.indicator {
+	color:red;
+}
+
+td.addButtonRow a.select {
+	margin-top:5px;
+}
+
+span.clickable_span span {
+	display:block;
+	width:100%;
+	cursor:pointer;
+}

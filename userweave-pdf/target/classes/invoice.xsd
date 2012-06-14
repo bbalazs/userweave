@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="invoice">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="invoice">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="receipient">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="company" type="xs:string"/>
+              <xs:element minOccurs="0" name="surname" type="xs:string"/>
+              <xs:element minOccurs="0" name="forename" type="xs:string"/>
+              <xs:element maxOccurs="1" minOccurs="0" name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="street" type="xs:string"/>
+                    <xs:element minOccurs="0" name="housenumber" type="xs:string"/>
+                    <xs:element minOccurs="0" name="postcode" type="xs:string"/>
+                    <xs:element minOccurs="0" name="city" type="xs:string"/>
+                    <xs:element minOccurs="0" name="country" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="number" type="xs:string"/>
+              <xs:element minOccurs="0" name="date" type="xs:string"/>
+              <xs:element minOccurs="0" name="currency" type="xs:string"/>
+              <xs:element minOccurs="0" name="gross" type="xs:string"/>
+              <xs:element minOccurs="0" name="net" type="xs:string"/>
+              <xs:element minOccurs="0" name="tax" type="xs:string"/>
+              <xs:element minOccurs="0" name="taxrate" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

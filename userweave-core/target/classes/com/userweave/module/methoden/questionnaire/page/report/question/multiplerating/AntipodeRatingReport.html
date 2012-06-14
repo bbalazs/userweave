@@ -1,0 +1,41 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<table class="statisticsContainer">
+		<tr>
+			<th>
+				<span>
+					<wicket:message key="Event_Scale"/>
+				</span>
+			</th>
+			
+			<th style="text-align: right">
+				<span>
+					<wicket:message key="abs"/>
+				</span>
+			</th>
+			
+			<th style="text-align: right">
+				<span>
+					<wicket:message key="rel"/>
+				</span>
+			</th>
+		</tr>
+		
+		<tr wicket:id="ratings">
+			<td>
+		    	<span wicket:id="rating"></span>
+		    	<span wicket:id="antipode"></span>
+			</td>
+			<td style="text-align: right;">
+				<span wicket:id="absolute"></span>
+			</td>
+			<td style="text-align: right; width: 40px;">
+				<span>
+					<span wicket:id="relative"></span> %
+				</span>
+			</td>
+		</tr>			
+	</table>
+</wicket:panel>
+</html>
+  

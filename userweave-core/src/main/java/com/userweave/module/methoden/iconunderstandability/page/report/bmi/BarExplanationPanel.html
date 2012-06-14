@@ -1,0 +1,44 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<div class="scale_box_header_left">
+		<div class="scale_box_header_right">
+		    <div class="scale_box_header_center"></div>
+		</div>
+	</div>
+	<div class="scale_box" >
+		<table cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<div class="imagebox">
+						<div class="imagebox_header_left">
+							<div class="imagebox_header_right">
+								<div class="imagebox_header_center"></div>
+							</div>
+						</div>
+						<div class="imagebox_content">						
+							<wicket:child/>
+						</div>
+						<div class="imagebox_footer_left">
+							<div class="imagebox_footer_center">
+								<div class="grey_note"><span><div wicket:id="rating"/></span></div>
+							</div>
+						</div>
+					</div>
+				</td>
+				<td style="vertical-align:top;">
+					<span class="imagebox_desc">
+						<span class="imagebox_headline"><div wicket:id="title"/><span class="percent">(%)</span></span>
+						<p class="imagebox_expl" wicket:id="explanation"/>
+					</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="scale_box_footer_left">
+		<div class="scale_box_footer_right">
+		    <div class="scale_box_footer_center"></div>
+		</div>
+	</div>
+</wicket:panel>
+</html>
+  

@@ -1,0 +1,37 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+    <span wicket:id="emptyListMessage"></span>
+    	
+    <div wicket:id="configurations" class="selectableItem">
+    	<table style="width:100%">
+    		<tr>
+    			<td style="width:119px;">
+    				<span wicket:id="value" style="width:100px;"></span>
+    			</td>
+    			
+    			<td style="width:289px;">
+    				<span wicket:id="description" style="width:270px;"></span>
+    			</td>
+    			
+    			<td style="vertical-align: middle; text-align: right;">
+					<a href="#" wicket:id="moveup" class="moveup"></a>
+					
+					<a href="#" wicket:id="movedown" class="movedown"></a>
+				
+					<a href="#" wicket:id="delete" class="remove"></a>
+    			</td>
+    			
+    		</tr>
+    	</table>
+  
+    </div>
+
+	<div wicket:id="addButtonRow"></div>
+    	
+   	<div wicket:id="deleteItemModalWindow"></div>
+
+	<wicket:child />
+
+</wicket:panel>
+</html>

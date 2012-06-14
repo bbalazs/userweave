@@ -1,0 +1,87 @@
+<html xmlns:wicket>
+    <wicket:extend>
+    	<tr>
+    		<td>
+    			<p>
+            		<wicket:message key="number"/>
+        		</p>
+    		</td>
+    		
+    		<td>
+    			<table style="width: 100%;">
+    				<tr>
+    					<td>
+    						<span wicket:id="antipode1" style="width: auto;"></span>
+    					</td>
+    					
+    					<td style="text-align: center;">
+    						<select wicket:id="numberOfRatingSteps"
+    								size="1"
+    								class="baseButton baseButtonLast"
+    								style="width: 45px;"></select>
+    								
+    						<span>
+    							<wicket:message key="steps" />
+    						</span>
+    					</td>
+    					
+    					<td style="text-align: right;">
+    						<span wicket:id="antipode2" style="width: auto;"></span>
+    					</td>
+    				</tr>
+    			</table>
+    			
+    		</td>
+    		
+    		<td>
+    			<p>
+	            	<wicket:message key="number_legend"/>
+	        	</p>
+    		</td>
+    	</tr>
+        
+        <tr>
+			<td>
+				<p>
+					<wicket:message key="answers_label"/>
+				</p>
+			</td>
+			
+			<td>
+				<div wicket:id="valueListPanel" class="whiteContainer"></div>
+			</td>
+			
+			<td>
+				<p>
+                	<wicket:message key="answers_legend"/>
+            	</p>
+			</td>
+			
+		</tr>
+        
+        <tr>
+        	<td>
+        		<span>
+        			<wicket:message key="noreply"/>
+        		</span>
+        	</td>
+        	
+        	<td>
+        		<select wicket:id="showNoAnswerOption"
+        				class="baseButton baseButtonLast selectionChoice"></select>
+        		
+        		<!-- TODO: Remove in resurce file -->
+        		<!-- <span>
+        			<wicket:message key="noreply_checkbox_value"/>
+        		</span> -->
+        	</td>
+        	
+        	<td>
+        		<p>
+					<wicket:message key="noreply_legend"/>
+				</p>
+        	</td>
+        </tr>
+
+    </wicket:extend>
+</html>

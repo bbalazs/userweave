@@ -1,0 +1,217 @@
+div.navContent {
+	margin-left:3px;
+}
+
+/**
+ * @de: behebt Bug in der navContent
+ * 		Tabelle, welcher eine übergroße
+ *      Tabelle erzeugt (29 statt 26px)
+ * @type: workaround
+ * @author: opr
+ */
+div.navContent > div.symbol {
+	height:26px;
+	width:90px;
+}
+
+/*
+ * @de: behebt Layoutprobleme in
+ *      der Verwaltung der User
+ * @tpye: workaround
+ * @author:opr
+ */
+div.navLeft {
+    overflow: visible;
+	/*width:89px;*/
+	width:94px;
+}
+
+div.accountHeader div.navLeft {
+	width:auto;
+}
+
+div.navRight {
+	padding: 0 2px 0 2px; 
+	/*margin-left: 89px;*/
+	margin-left: 94px; 
+	vertical-align:top;
+}
+
+div.accountHeader div.navRight {
+	overflow:auto;
+	padding-left:5px;
+}
+div.set_module_margin div.border_content_gray div.navContent {
+	height:1%;
+	overflow:hidden;
+}
+
+div.set_module_margin div.border_content_gray div.navRight {
+    float:left;
+	margin-left:0px;
+}
+
+div.set_module_margin div.border_content_green div.navRight {
+    margin-left: 103px;
+}
+
+div.set_module_margin div.navLeft{
+    width:auto;
+}
+
+
+div.col_limiter {
+	width:5px;
+	height:26px;
+	float:left;
+}
+
+div.col1 {
+	height:20px;
+	padding:3px;
+	float:left;
+}
+
+div.col2 {
+    height:18px;
+	padding:5px 10px 3px 0px;
+	float:left;
+	vertical-align: middle;
+}
+
+
+
+/*
+ * @de: allegemeine Gestaltungen für die headline 
+ * @en: default stylings for headline
+ *
+ * @author: fpavkovic
+ */
+.navigationBorder_header_left,
+.navigationBorder_header_center,
+.navigationBorder_header_right,
+.navigationBorder_footer_left,
+.navigationBorder_footer_center,
+.navigationBorder_footer_right {
+	font-size:0px;
+}
+  
+.navigationBorder_header_right,
+.navigationBorder_footer_right {
+	margin-left:5px;
+}
+
+.navigationBorder_header_center, .navigationBorder_footer_center {
+	height:5px;
+	margin-right:5px;
+}
+
+.navigationBorder_content {
+	color:#5a6056;	
+	padding:0px 0px 0px 10px;
+	min-height:16px;
+}
+
+
+/*
+ * @de: Gestaltungen für die headline innerhalb einer detailsPanelTypeElement
+ *      CSS-Klasse
+ * @en: Stylings for headline inside of detailsPanelTypeElement CSS-class
+ *
+ * @author: fpavkovic
+ */
+ 
+/* define background color */
+div.detailsPanelTypeElement .navigationBorder_header_left,
+div.detailsPanelTypeElement .navigationBorder_header_center, 
+div.detailsPanelTypeElement .navigationBorder_footer_center,
+div.detailsPanelTypeElement .navigationBorder_content
+{
+	background-color:#f5f5f5;
+}
+
+div.detailsPanelTypeElement .navigationBorder_header_left {
+	background-image:url(gray_navBorder_headline_corner_topleft.jpg);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+
+div.detailsPanelTypeElement .navigationBorder_header_right {
+	background-image:url(gray_navBorder_headline_corner_topright.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+div.detailsPanelTypeElement .navigationBorder_footer_left {
+	background-image:url(gray_navBorder_headline_corner_bottomleft.jpg);
+	background-position:left center;
+	background-repeat:no-repeat;}
+
+div.detailsPanelTypeElement .navigationBorder_footer_right {
+	background-image:url(gray_navBorder_headline_corner_bottomright.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+div.detailsPanelTypeElement .navigationBorder_content {
+	border: 0px solid red;
+	color:#5a6056;
+	
+	padding:0px 3px 0px 10px;
+	
+	min-height:16px;
+	
+	width:830px;
+}
+
+/*
+ * @de: behebt Layoutprobleme in
+ *      der Verwaltung der User
+ * @tpye: workaround
+ * @author:opr
+ */
+div.detailsPanelTypeElement .navigationBorder_content { width:auto }
+
+/*
+ * @de: Gestaltungen für die headline innerhalb einer detailsPanelTypeElement
+ *      CSS-Klasse im Report
+ * @en: Stylings for headline inside of detailsPanelTypeElement CSS-class in
+ *      a report
+ *
+ * @author: opr
+ */
+/* define background color */
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_header_left,
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_header_center, 
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_footer_center,
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_content
+{
+    background-color:#d7e3d5;
+}
+
+div.border_content_green div.detailsPanelTypeElement div.navigationBorder_header_left,
+div.border_content_green div.detailsPanelTypeElement div.navigationBorder_header_center, 
+div.border_content_green div.detailsPanelTypeElement div.navigationBorder_footer_center,
+div.border_content_green div.detailsPanelTypeElement div.navigationBorder_content,
+div.border_content_green div.detailsPanelTypeElement div.headline
+{
+	width:auto;
+}
+
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_header_left {
+    background-image:url(green_navBorder_headline_corner_topleft.jpg);
+}
+
+
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_header_right {
+    background-image:url(green_navBorder_headline_corner_topright.jpg);
+}
+
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_footer_left {
+    background-image:url(green_navBorder_headline_corner_bottomleft.jpg);
+}
+
+div.border_content_green div.detailsPanelTypeElement .navigationBorder_footer_right {
+    background-image:url(green_navBorder_headline_corner_bottomright.jpg);
+}

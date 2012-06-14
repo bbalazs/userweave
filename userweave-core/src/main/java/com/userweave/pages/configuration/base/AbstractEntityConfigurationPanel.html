@@ -1,0 +1,131 @@
+<html xmlns:wicket>
+<wicket:head>
+	<script type="text/javascript">
+	/**
+	 * Reset color picker to prompt default color
+	 */
+	function resetColorPicker()
+	{
+		var hex = "000000";
+		$('.colorpicker-comp div').css('backgroundColor', '#' + hex); +
+		$('input.newBackgroundColor').focus().val('#' + hex).trigger('blur');
+	}
+	
+	/**
+	 * Open Urls on click at showUrl
+	 */
+	function showUrlForFinished(){ showUrl("finishedPageUrl"); }
+	function showUrlForNotAvailable(){ showUrl("notAvailableUrl"); }
+		
+	function showUrl(nameAttri)
+	{
+		var url = $('input[name="' + nameAttri + '"]').val();	
+		
+		if(!/^(https?|ftp):\/\//i.test(url)) {
+       		url = 'http://'+url; // set both the value
+       	}
+       	
+		window.open(url);
+	}
+		
+	/**
+	 * Reset urls to userweave url.
+	 */
+	function resetUrlForFinished(){ resetUrl("finishedPageUrl"); }
+	function resetUrlForNotAvailable(){ resetUrl("notAvailableUrl"); }
+	
+	function resetUrl(nameAttr)
+	{
+		$('input[name="' + nameAttr + '"]').focus().val("http://www.user-weave.net/").trigger('blur');
+	}
+	</script>
+</wicket:head>
+
+<wicket:panel>
+	<form wicket:id="form">
+		<table class="contentTable">
+
+			<tr>
+				<td style="vertical-align: top">
+					<span>
+						<wicket:message key="logo" />
+					</span>
+				</td>
+
+				<td>
+					<div wicket:id="logoUpload"></div>
+				</td>
+
+				<td style="vertical-align: top">
+					<p>
+						<wicket:message key="logo_legend" />
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td style="vertical-align: top">
+					<span>
+						<wicket:message key="primary_color" />
+					</span>
+				</td>
+				
+				<td>
+					<span wicket:id="backgroundColor" class="newBackgroundColor" style="width:0;border:0px none;margin:0;padding:0;"></span>
+			
+					<div>
+						
+						<div class="colorpicker-comp" style="float: left;">
+							<div></div> <!-- DON'T REMOVE! -->
+						</div>
+						
+						<span class="buttonContainer" 
+							  style="float: left; margin-top:6px;">
+							
+							<a class="baseButton baseButtonLast" href="#"
+							   wicket:id="resetColorLink"
+						   	   onclick="resetColorPicker();return false;">
+						   		<span>
+						   			<wicket:message key="resetColor" />
+						   		</span>   
+						   	</a>	
+						</span>
+						
+					</div>
+				</td>
+				
+				<td style="vertical-align: top">
+					<p>
+						<wicket:message key="primary_color_legend" />
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="font_color" />
+					</span>
+				</td>
+				
+				<td>
+					
+					<select wicket:id="fontColor"
+							class="baseButton baseButtonLast"
+							style="width:100%"></select>
+				
+				</td>
+				
+				<td>
+					<p>
+						<wicket:message key="font_color_legend" />
+					</p>
+				</td>
+			</tr>
+			
+			<wicket:child/>
+			
+		</table>
+	</form>
+</wicket:panel>
+</html>

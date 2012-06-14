@@ -1,0 +1,139 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<span class="buttonContainer">
+		<a href="#" wicket:id="writeMessageLink" class="baseButton">
+			<span>
+				<wicket:message key="writeMessage" />
+			</span>
+		</a>
+		
+		<a href="#" wicket:id="becomingGuest" class="baseButton baseButtonLast">
+			<span>
+				<wicket:message key="becoming_guest" />
+			</span>
+		</a>
+	</span>
+
+	<div wicket:id="writeMessageModal"></div>
+
+	<table class="contentTable">
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="administrators" />
+				</span>
+			</td>
+			
+			<td>
+				<div wicket:id="adminList"></div>
+			</td>
+			
+			<td>
+				<p>
+					<wicket:message key="admin_legend" />
+				</p>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="participant" />
+				</span>
+			</td>
+			
+			<td>
+				<div wicket:id="participantsList"></div>
+			</td>
+			
+			<td>
+				<p>
+					<wicket:message key="participant_legend" />
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="guest" />
+				</span>
+			</td>
+			
+			<td>
+				<div wicket:id="guestList"></div>
+			</td>
+			
+			<td>
+				<p>
+					<wicket:message key="guest_legend" />
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="pending_invitations" />
+				</span>
+			</td>
+			
+			<td>
+				<div class="whiteContainer">
+					<table class="userTable">
+						<wicket:enclosure>
+							<tr>
+								<td colspan="3">
+									<span wicket:id="noInvitations"></span>
+								</td>
+							</tr>
+						</wicket:enclosure>
+					
+						<tr wicket:id="pendingInvitations">
+							<td>
+								<span>
+									<span wicket:id="addressee.email"></span>
+								</span>
+							</td>
+							
+							<td style="width:200px;">
+								<span wicket:id="role"></span>
+							</td>
+							
+							<td style="width:55px;"></td>
+							
+							<td style="width:84px;" class="ie7-lastChild">
+								<span class="buttonContainer">
+									<a href="#" wicket:id="deleteInvitation" 
+									   class="baseButton baseButtonLast">
+										<span>
+											<wicket:message key="delete_invitation" />
+										</span>
+									</a>
+								</span>
+							</td>
+						</tr>
+					</table>
+					<div class="addButton">
+						<a href="#" wicket:id="inviteUser" class="baseButton addButton">
+							<span>+</span>
+							<span>
+								<wicket:message key="inviteUser" />
+							</span>
+						</a>
+					</div>
+					
+					<div wicket:id="inviteUserModal"></div>
+				</div>
+			
+			</td>
+			
+			<td>
+				<p>
+					<wicket:message key="pending_invitations_legend" />
+				</p>
+			</td>
+		</tr>
+	</table>
+</wicket:panel>
+</html>

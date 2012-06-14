@@ -1,0 +1,78 @@
+<html xmlns:wicket>
+<wicket:extend>
+
+<table class="statisticsTable">
+	
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="finished_module"/>
+			</span>
+		</td>
+		<td>
+			<table class="statisticsContainer">
+				<tr>
+					<th>
+						<span>
+							<wicket:message key="method_name" />
+						</span>
+					</th>
+					
+					<th style="text-align: right">
+						<span>
+							<wicket:message key="participant_finished" />
+						</span>
+					</th>
+					
+					<th style="text-align: right">
+						<span>%</span>
+					</th>
+				</tr>
+				<tr wicket:id="modules">
+					
+					<td style="padding-right:9px;">
+						<span wicket:id="name"></span>
+					</td>
+					
+					<td style="text-align: right">
+						<span wicket:id="count"></span>
+					</td>	
+					
+					<td style="text-align: right">
+						<span><span wicket:id="percent"></span>%</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		
+		<td>
+			<p>
+				<wicket:message key="course_table" />
+			</p>
+		</td>
+	</tr>
+</table>
+	
+</wicket:extend>
+
+   <!--  <wicket:extend>
+    	<a href="#" wicket:id="addFilter">ADD FITLER</a>
+    
+    	<div wicket:id="filterModal"></div>
+    
+        <div style="padding:3px 0px 3px 3px; width:620px;">
+			<span wicket:id="position" style="float:left; width:20px; display:block;" class="lightGrey"/>
+			<a href="#" wicket:id="select" class="link darkGrey" style="margin-left:3px;">
+				<span style="float: left; display: block; width:525px;" wicket:id="name" class="darkGrey"/>
+			</a>
+			<a href="#" wicket:id="select3" class="link darkGrey">
+	        	<span class="lightGrey" style="float: right; display: block; text-align: right; width: 35px; padding-right: 1px;">
+	        		<span wicket:id="percent"/>%
+				</span>
+			</a>
+	        <a href="#" wicket:id="select2" class="link darkGrey">
+	        	<span style="float: right; display: block; text-align: right; width: 16px; padding-right: 20px;" wicket:id="count" class="lightGrey"/>
+			</a>
+		</div>
+    </wicket:extend> -->
+</html>

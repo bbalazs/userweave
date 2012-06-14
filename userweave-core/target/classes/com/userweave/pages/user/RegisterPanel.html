@@ -1,0 +1,65 @@
+<html xmlns:wicket>
+<wicket:panel>
+    <div class="signin">
+        <div class="register">
+            <div class="register_content">
+               	<h1>
+               		<wicket:message key="register_headline"/>
+               	</h1>
+                
+                <br/>
+                
+                <wicket:container wicket:id="init_messages"/>
+                
+                <div style="margin-left: 15px;">
+                    <span wicket:id="feedback" class="feedback"></span>
+                </div>
+                <br/>
+                <form wicket:id="registerForm">
+                    <table>
+                        <tr>
+                            <td>
+                                <span>
+                                	<wicket:message key="email_username"/>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            	<input type="text" wicket:id="email" class="inputIndent"/>
+                            </td>
+                        </tr>
+						<tr>
+							<td>
+								<span wicket:id="invitationCode"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" wicket:id="code" class="inputIndent"/>
+							</td>
+						</tr>
+                    </table>
+                    
+					<wicket:container wicket:id="containerForInterests">
+						<span>
+							<wicket:message key="no_personal_code_first_part"/> 
+							<wicket:message key="interestList"/>
+							<wicket:message key="no_personal_code_second_part"/>
+						</span>
+					</wicket:container>
+					
+					<div wicket:id="saveButton" class="inputIndent" style="height:34px;"></div>
+
+                </form>
+
+				<br/>
+	            <a href="#" wicket:id="back_to_login">
+	                <wicket:message key="back_to_login_text"/>
+	            </a>
+            </div>
+		</div>
+        
+    </div>
+</wicket:panel>
+</html>

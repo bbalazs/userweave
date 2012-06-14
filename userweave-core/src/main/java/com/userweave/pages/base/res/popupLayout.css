@@ -1,0 +1,32 @@
+/**
+ * Base layout for pupup page components.
+ *
+ * @author  opr
+ * @version 1.0
+ */
+select { height:24px; } 
+ 
+div.popupPageContent { background-color:#fff; }
+
+div.popupPageContent,
+div.popupPageButtons { padding: 12px; }
+
+table.popupContentTable { width:100%; }
+
+table.popupContentTable > tbody > tr > td:first-child { 
+	min-width: 120px;
+	padding-right:9px;
+	vertical-align: top;
+}
+
+table.popupContentTable > tbody > tr:nth-child(n+1) > td { padding-top: 6px; }
+
+a.decline { float:right; }
+
+div.browserBox {
+	width:200px;
+	height:200px;
+	overflow:scroll;
+	margin-right:10px;
+	float:left;
+}

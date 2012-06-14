@@ -1,0 +1,57 @@
+<html xmlns:wicket>
+<wicket:head>
+  <wicket:link>
+  	<link rel="stylesheet" type="text/css" href="signin.css"/>
+  </wicket:link>
+</wicket:head>
+<body>
+<wicket:extend>
+    <div class="signin" style="padding-top:20px;">
+    	<div class="login">
+    		<div class="login_content"><p class="darkGrey bold"><wicket:message key="member_question"/></p>
+			<br/>
+			<p class="darkGrey bold"><wicket:message key="signin"/></p>
+			<br/>
+			<form wicket:id="signInForm">
+			    <span class="darkGrey">
+			    	<wicket:message key="user"/>
+			    </span> 
+			    
+			    <br/>
+			    
+			    <input type="text" wicket:id="username" class="inputIndent"/>
+			    
+			    <br/>
+			    
+			    <span class="darkGrey">
+			    	<wicket:message key="pass"/>
+			    </span>
+			    
+			    <br/>
+			    
+			    <input type="password" wicket:id="password" class="inputIndent"/>
+			    
+			    <br/>
+				
+				<div wicket:id="saveButton" class="inputIndent" style="height:34px;"></div>
+				
+			</form>
+			
+			<div style="margin-left:15px;">
+                <span wicket:id="feedback" class="feedback"></span>
+            </div>
+			<br/>
+			<a href="#" wicket:id="forgot_password" class="linkColor"><wicket:message key="forgot_password">Forgot your password? Click here!</wicket:message></a></div>
+    	</div>
+		<div class="register">
+			<div class="register_content"><p class="darkGrey bold"><wicket:message key="new_question"/></p>
+			<br/>
+			<p class="darkGrey bold"><wicket:message key="register_new"/></p>
+			<br/>
+			<a href="#" class="linkColor" wicket:id="register"><wicket:message key="account"/></a></div>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+</wicket:extend>
+</body>
+</html>

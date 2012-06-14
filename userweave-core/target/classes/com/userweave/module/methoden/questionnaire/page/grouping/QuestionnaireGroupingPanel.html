@@ -1,0 +1,70 @@
+<html xmlns:wicket>
+<wicket:panel>
+
+<div class="simple_underlined_headline_no_bottom_margin" style="width:100%; margin-bottom:0px;">
+	<b class="darkGrey">
+		<wicket:message key="groups" />
+	</b>
+</div>
+<div class="studiesAccordion">
+	
+	<div wicket:id="moduleGroups">
+		
+		<table>
+			<tr>
+				<td style="width:500px">
+					<div wicket:id="group"/>
+				</td>
+				<td style="width:64px">
+					<form wicket:id="deleteForm">
+						<input wicket:id="delete" type="submit" value="delete"/>
+					</form>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+	
+	<div wicket:id="studyGroups">
+		<table>
+			<tr>
+				<td style="width:500px">
+					<div wicket:id="group"/>
+				</td>
+				<td style="width:64px">
+					<form wicket:id="deleteForm">
+						<input wicket:id="delete" type="submit" value="delete"/>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div>
+
+<br>
+<br>
+
+<div class="simple_underlined_headline_no_bottom_margin" style="width:100%;">
+	<b>
+		<wicket:message key="newFilter" />
+	</b>
+</div>
+
+<span>
+	<wicket:message key="selectQuestion" />
+</span>
+
+<br>
+<br>
+
+<form wicket:id="form">
+	<select wicket:id="groupTypes"></select>
+</form>
+
+<br/>
+<div wicket:id="addGroupPanel"/>
+<br/>
+</wicket:panel>
+</html>
+  

@@ -1,0 +1,19 @@
+/** class for wicket:child in freetext **/
+.freetext { padding-left:6px; z-index:10; position:relative; }
+
+#freetext { width:510px; display:block; color:#7f7f7f; margin-bottom: 4px;}
+#freetext * { color:#7f7f7f; }
+
+#freetext hr { color:#cdcdcd;
+			   border:0;
+    		   background-color:#cdcdcd; 
+    		 }
+
+#freetext h1 { font-size:14px; color: #403f3f; font-weight:bold; margin: 20px 0px 15px; }
+#freetext h2 { font-size:12px; color: #403f3f; font-weight:bold; margin: 20px 0px 15px; }
+
+#freetext ol { margin:0px 0px 7px 26px; padding-left:10px; }
+#freetext ul { margin:0px 0px 7px 26px; padding-left:10px; }
+#freetext dl { margin:0px 0px 7px 26px; padding-left:10px; }
+
+#freetext p { margin-bottom:7px; }

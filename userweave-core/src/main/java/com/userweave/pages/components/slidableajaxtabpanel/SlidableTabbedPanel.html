@@ -1,0 +1,31 @@
+<html xmlns:wicket>
+
+	<wicket:panel>
+		<div wicket:id="tabs-container" class="tab-row">
+			
+			<div class="slideContainer slideLeft">
+				<div></div>
+			</div>
+			
+			<div class="tab-window">
+				<div class="tab-wrapper">
+					<div wicket:id="tabs" class="tab">
+						<a href="#" wicket:id="link">
+							<span wicket:id="title">[[tab title]]</span>
+						</a><span class="tab-end"></span> <!-- DON'T BREAK LINE HERE -->
+					</div>
+				</div>
+			</div>
+			
+			<div class="slideContainer slideRight">
+				<div></div>
+			</div>
+			
+			<wicket:child/>
+			
+		</div>
+		
+		
+		<div wicket:id="panel" class="tab-panel">[panel]</div>
+	</wicket:panel>
+</html>

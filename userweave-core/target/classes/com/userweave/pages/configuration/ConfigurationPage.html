@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns:wicket>
+<wicket:head>
+    <script type="text/javascript">
+    	
+    	function initColorPicker()
+    	{
+    		$(".colorpicker-comp").ColorPicker(
+    		{
+    			color: '#99cc33',
+				onShow: function(colpkr) 
+						{
+							$(colpkr).fadeIn(500); 
+							return false;
+						},
+				onHide: function(colpkr) 
+						{
+							$(colpkr).fadeOut(500); 
+							return false;
+						},
+				onSubmit: function(hsb, hex, rgb, el) 
+						  {
+						      $('.colorpicker-comp div').css('backgroundColor', '#' + hex);
+							  $(el).ColorPickerHide();
+							  $('input.newBackgroundColor').focus().val('#' + hex).blur();
+						  }	
+			});
+			
+    		var backgroundColor;
+			
+    		if($('input.newBackgroundColor').length == 0)
+    		{
+    			backgroundColor = $('span.newBackgroundColor:first').text();
+    		}
+			else
+			{
+				backgroundColor = $('input.newBackgroundColor:first').val();
+			}
+			
+    		$('div.colorpicker-comp div').css('backgroundColor', backgroundColor);
+    	}
+    	
+    </script>
+</wicket:head>
+    
+    <wicket:extend>
+		<div wicket:id="content" class="mainContent"></div>
+		
+		<div wicket:id="ajaxIndicator" />
+	</wicket:extend>
+</html>
+

@@ -1,0 +1,74 @@
+<html xmlns:wicket>
+<wicket:panel>
+
+	<form wicket:id="form">
+	
+		<table class="contentTable">
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="choices" />
+					</span>
+				</td>
+				<td>
+					<select wicket:id="choices" size="5" style="width: 100%"></select>
+				</td>
+				<td>
+					<p>
+						<wicket:message key="choices_legend" />
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="name" />
+					</span>
+				</td>
+				<td style="text-align:left">
+					<span class="buttonContainer" style="float:right">
+						<a href="#" 
+						   wicket:id="create"
+						   class="baseButton baseButtonLast">
+							<span>
+								<wicket:message key="create" />
+							</span>
+						</a>
+					</span>
+				
+					<input type="text" wicket:id="itemName" style="width:400px;"/>
+					
+				</td>
+				<td>
+					<p>
+						<wicket:message key="name_legend" />
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td style="vertical-align: top;">
+					<span>
+						<wicket:message key="preview" />
+					</span>
+				</td>
+				<td>
+					<div class="previewMethodDisplay">
+						<img wicket:id="previewImage" />
+					</div>
+				</td>
+				<td  style="vertical-align: top;">
+					<p wicket:id="preview_legend" />
+				</td>
+			</tr>
+			
+		</table>
+		
+	</form>
+
+	<div wicket:id="feedback"></div>
+
+</wicket:panel>
+</html>

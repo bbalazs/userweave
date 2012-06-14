@@ -1,0 +1,28 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="file" />
+				</span>
+			</td>
+			
+			<td>
+				<wicket:container wicket:id="content"></wicket:container>
+				
+				<div wicket:id="feedback"></div>
+			</td>
+		</tr>
+		
+	<wicket:fragment wicket:id="fileUpload">
+		<input wicket:id="imageFile" type="file">
+	</wicket:fragment>
+	
+	<wicket:fragment wicket:id="fileUploadMessage">
+		<span>
+			<wicket:message key="upload_successful" />
+		</span>
+	</wicket:fragment>
+	
+	</wicket:extend>
+</html>

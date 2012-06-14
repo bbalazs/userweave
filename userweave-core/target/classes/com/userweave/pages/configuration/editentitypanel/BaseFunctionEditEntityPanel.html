@@ -1,0 +1,23 @@
+<html xmlns:wicket>
+<wicket:panel>
+	
+	<span class="buttonContainer">
+	
+		<a href="#" wicket:id="edit" class="baseButton">
+			<span>
+				<wicket:message key="edit" />
+			</span>
+		</a>
+			
+		<a href="#" wicket:id="delete" class="baseButton baseButtonLast">
+			<span wicket:id="deleteLabel"></span>
+		</a>
+	
+		<wicket:child/>
+	</span>
+	
+	<div wicket:id="editModal"></div>
+	<div wicket:id="deleteModal"></div>
+	
+</wicket:panel>
+</html>

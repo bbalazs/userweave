@@ -1,0 +1,117 @@
+/**
+ * Repair the stuff, that IE7 breaks.
+ *
+ * @author  opr
+ * @version 1.0
+ */
+
+
+/**
+ * User menu icon and crumb separator
+ */
+span.usernameIcon {
+    background-image: url("sprites.png");
+    background-position: 0px -96px;
+    background-repeat: no-repeat;
+    display: inline;
+}
+
+div#header div.breadcrumb div.crumb {
+    background-image: url("crumb_separator.png");
+	background-position: 5px 23px;
+	background-repeat: no-repeat;
+	
+}
+
+div#header div.breadcrumb div.crumb span { margin-left:33px; }
+
+/**
+ * Tab navigation 
+ * 
+ * Correcting "display:inline-block" and color setting. 
+ *
+ * @see: http://www.kollerat.com/cms/index.php/Web-admin/HTML/IE7-and-inline-block.html
+ */
+div.navTab { display:inline; }
+
+div.selectedProjectTabbedPanel div.tab.last {
+	float: none; 			/** float creates a line break, 
+    				 			so disable float */
+	border-left: 0px solid; /** border left is not needed
+								anymore, because of above */
+}
+
+div.studyTabs.tab-row div.tab,
+div.questionTabs.tab-row div.tab,
+div.icontestTabs.tab-row div.tab { display:inline; }
+
+
+div.tab-window {
+    clip: rect(0px 650px 26px 0px); /** IE7 only interprets comma-less
+    									values */
+}
+
+span.addIcon { 
+	display:inline;
+	background-image:url("icons.png");
+	background-position: -192px 0px;
+ 	width:16px;
+	height:16px;
+}
+
+a.addLink:hover span.addIcon,
+span.addLink em span.addIcon { background-position: -192px -16px; }
+
+a.moveleft span, 
+a.moveright span, 
+span.moveleft span, 
+span.moveright span {
+	display:inline;
+    background-image:url("sprites.png");
+    background-position: -192px -80px;
+}
+
+a.moveright span, 
+span.moveright span {
+    background-position: -192px -48px;
+}
+
+a.moveleft span { background-position: -176px -80px; }
+a.moveright span { background-position: -176px -48px; }
+
+
+
+
+/**
+ * Buttons
+ *
+ * Correcting color and icon setting.
+ */
+a.moveup, a.movedown,
+span.moveup, span.movedown {
+	display:inline; 
+	background-image:url("sprites.png");
+ 	width:16px;
+	height:16px;
+}
+a.moveup { background-position: -176px -32px; }
+span.moveup { background-position: -192px -30px; }
+
+a.movedown { background-position: -176px -64px; }
+span.movedown { background-position: -192px -62px; }
+
+/**
+ * Icontest fileupload transparancy fix
+ */
+input#term_upload { 
+	width:90px;
+	filter: alpha(opacity=0);
+	margin-left:20px;
+	cursor:pointer;
+}
+
+span.fakeAdd span.fakeAddIcon {
+	display:inline; 
+	background-image:url("icons.png");
+	background-position: -160px 0px;
+}

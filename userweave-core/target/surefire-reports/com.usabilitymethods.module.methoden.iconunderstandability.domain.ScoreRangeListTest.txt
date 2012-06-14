@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.usabilitymethods.module.methoden.iconunderstandability.domain.ScoreRangeListTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.865 sec

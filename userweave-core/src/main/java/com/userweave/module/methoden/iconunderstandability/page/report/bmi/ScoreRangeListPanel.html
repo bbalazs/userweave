@@ -1,0 +1,28 @@
+<html xmlns:wicket>
+<wicket:panel>
+  <form wicket:id="form">
+	
+    <select wicket:id="alignments"></select>  
+  	<table>
+	  	<tr>
+	  		<td colspan="4">Range</td>
+	  		<td align="right">Score</td>	  		
+	  	</tr>
+	  	<tr wicket:id="scoreRangeList">
+			<td width="50px" align="left" ><input type="text" size="2" wicket:id="range"/></td>
+			<td width="20px" align="right"><div wicket:id="fromString"/></td>
+			<td width="10px" align="center">:</td>
+			<td width="20px" align="right"><div wicket:id="toString"/></td>			
+			<td width="60px" align="right"><input type="text" size="2" wicket:id="score"/></td>
+		</tr>
+		<tr>
+			<td width="50px" align="left" ><input type="text" size="2" wicket:id="range"/></td>
+			<td colspan="4"></td>
+		</tr>
+	  </table>
+	  
+	  <input type="submit" value="speichern" />
+  </form>
+</wicket:panel>
+</html>
+  

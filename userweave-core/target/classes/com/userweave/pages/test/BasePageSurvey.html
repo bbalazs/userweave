@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.3-strict.dtd">
+  <head>
+    <title wicket:id="head_title">We can Usability! - userweave.net</title>
+      <wicket:link>
+		<link rel="stylesheet" type="text/css" href="basepagesurvey.css"/>
+		<link rel="stylesheet" type="text/css" href="loading.css"/>
+		
+		<!--[if IE 6]>
+			<link rel="stylesheet" type="text/css" href="iehacks.css">
+		<![endif]-->
+		
+		<link href="../base/res/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		
+	  </wicket:link>
+	<meta name="robots" content="noindex, nofollow" />
+	</head>
+    <body>
+        <noscript>
+            <div wicket:id="noscript_panel" />
+        </noscript>
+        
+		<div wicket:id="imprintModalWindow" />
+		
+		<div wicket:id="privacyModalWindow" />
+		
+		<!-- <div wicket:id="helpModalWindow" /> -->
+		
+    <div id="page" style="display:none;">
+		
+        <div id="header">
+        	<table>
+        		<tr>
+        			<td style="width:660px;">
+        				<div id="headline">
+            				<h1 wicket:id="headline"></h1>
+            				<p class="grey_dark" wicket:id="description"></p>
+            			</div>
+            		</td>
+            		<td style="width:273px;" align="right" valign="bottom">
+            			<div id="logo">
+            				<wicket:link>
+            					<img wicket:id="logo" src="user_weaver_logo_mi.png"/>
+            				</wicket:link>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+        </div>
+
+        <div id="mainbody">
+        	<div class="um_background" id="mainHeaderTop"><div class="um_background"></div></div>
+        	<div id="mainHeaderWrapper">
+                <div id="mainHeader" class="um_background">
+                	<div id="mainHeaderShade">
+                		<div></div>
+                	</div>
+                	<div id="helpButton">
+                		<!--[if IE 6]>
+                			<wicket:link><div id="ie_helpArrow"></div></wicket:link>
+                		<![endif]-->
+                		<!-- TODO: If uncomment, uncomment hover in basepagesurvey.css line 168<wicket:link><img id="helpArrow" wicket:id="helpArrow"/></wicket:link>
+						<a wicket:id="helpLink" href="#" class="helpText um_background_font_color"><wicket:message key="help" id="helptext">Hilfe</wicket:message></a> -->
+					</div>
+                	<table>
+						<tr>
+							<td>
+								<div id="counter" class="um_background_font_color" wicket:id="countTop">5</div>
+							</td>
+							<td>
+								<p id="moduleConfigurationDescription" class="headerText um_background_font_color" wicket:id="moduleConfigurationDescription"></p>
+							</td>
+						</tr>
+					</table>
+                </div>
+            </div>
+            <div id="shadeContainer">
+            	<div id="shadeContainerCenter">
+            		<div class="um_background" id="shadeContainerLeftLeft"></div>
+            		<div id="shadeContainerLeft"></div>
+            		<div class="um_background um_background_border" id="shadeContainerRight"></div>
+            	</div>
+            </div>
+
+            <div id="mainWrapper">
+            	
+            	<div class="um_background_border" id="mainContent">
+                    <div id="content" style="display:none;" class="showPostLoad">
+                    	<wicket:child/>
+                    </div>
+                    <div class="removePostLoad">
+                    <div id="loadingLeft">
+	                    <div id="loadingRight">
+		                    <div wicket:id="loading" class="loading">
+		                    	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		                    		<tr>
+		                    			<td align="center" valign="middle">
+		                    				<wicket:link><img src="wait.gif"/></wicket:link><br/>
+		                		 			<span><wicket:message key="please_wait_while_loading"/></span>
+		                		 		</td>
+		                		 	</tr>
+		                		 </table>                		
+		                	</div>
+		                </div>
+	                </div>
+	                </div>
+            	</div>
+            	<!-- <div id="contentShade">
+                    <div id="contentShadeLeft"></div>
+                    <div id="contentShadeCenter"></div>
+                    <div id="contentShadeStep"></div>
+                    <div id="contentShadeRight"></div>
+                </div> -->
+            </div>
+
+
+            <div id="mainFooterWrapper">
+                <div class="um_background_border" id="mainFooter">
+                	<div class="um_background" id="littleLeftBox"></div>
+            		<div id="progressContainer" wicket:id="progressContainer">
+	                    <div id="progressBar">
+	                    	<div class="um_background" id="progressStart"></div>
+	                    	<div class="um_background" id="progress1" wicket:id="progress1"></div>
+	                    	<div id="progress2" wicket:id="progress2"></div>
+	                    	<div id="progressEnd"></div>
+	                    </div>
+	                    <span class="progress">
+	                    	<span wicket:id="percentCount">20 %</span>
+	                    </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <hr/>
+        	<div id="metanavi">
+        		<span class="grey navi">
+        			<a wicket:id="privacyLink" href="#">
+        				<wicket:message key="privacy">Datenschutz</wicket:message>
+					</a> | 
+					<a wicket:id="imprintLink" href="#">
+						<wicket:message key="imprint">Impressum</wicket:message>
+					</a>
+				</span>
+        	</div>
+        	<div id="infoBox">
+        		<a href="http://userweave.net" target="_blank" class="usabilityImage" wicket:message="href:url_http_usability_methods"><wicket:message key="url_usability_methods"/></a>
+        		<span style="color:#cccdc5"> <wicket:message key="is_a_service_by"/> </span>
+        		<a href="http://www.user-prompt.com" target="_blank" class="promptImage">User-Prompt</a>
+        	</div>
+        </div>
+        <div style="clear:both"/>
+    </div>
+</body>
+</html>
+ 
+		

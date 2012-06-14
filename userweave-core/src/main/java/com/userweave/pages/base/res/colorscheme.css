@@ -1,0 +1,137 @@
+/**
+ * 
+ *				userweave.net Base layout.
+ *
+ * 
+ * Used colors for the configuration pages
+ *
+ * @author  opr
+ * @version 1.0
+ */
+body { background-color: #fff; }
+
+/**
+ * Font color
+ *
+ * The default font color for all text elements
+ *
+ * @section default
+ */
+p, em, strong, blockquote, h1, h2, 
+h3, ul, ol, dl, li, pre, td, span, a,
+input { color: #3a3a3a; }
+
+input#term_upload:hover ~ span.fakeAdd span.fakeAddLabel,
+input#icon_upload:hover ~ span.fakeAdd span.fakeAddLabel,
+input#input_logo:hover ~ span.fakeAdd span.fakeAddLabel,
+div.submit_term_upload_container:hover input,
+a.addLink:hover span { color: #a9a9a9; }
+
+input, textarea, iframe,
+div.whiteContainer,
+span.graph ,
+div.previewMethodDisplay,
+div.projects-column,
+div.pagingNavigator,
+div.navigator-block { border-color: #ccc; }
+
+table.contentTable > tbody > tr > td:nth-child(3) p,
+table.statisticsTable > tbody > tr > td:nth-child(3) p,
+td.iconRatingExplanation p,
+span.baseButton span { color: #909090; }
+
+table.contentTable > tbody > tr > td:nth-child(3) p.noInfo { color: #3a3a3a; }
+
+/**
+ * Header
+ *
+ * Page header colors (for header, 
+ * breadcrumb, and entity panel).
+ *
+ * @section header
+ */
+div#header { background-color:#fff; }
+
+div#header a,
+div#header span { color:#000; }
+
+div#header div.breadcrumb div.lastCrumb > span {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+div#header div.breadcrumb div.homePageActive,
+div#header a.accountPageActive { background-color: #fff; }
+
+div#header div.breadcrumb div.homePageActive a,
+div#header a.accountPageActive,
+div#header a.accountPageActive span { color: #000; }
+
+/**
+ * Footer
+ *
+ * @section footer
+ */
+div#footer { background-color:#fff; }
+
+div#footer a.footerLink { color:#000; }
+
+/**
+ * Content
+ * 
+ * Colors for the tab content of the pages.
+ *
+ * @section content.
+ */
+div.mainTabPanel li a,
+div.whiteContainer .selectableItem:nth-child(even),
+div.projectRow:nth-child(even),
+table.statisticsContainer tr:nth-child(2n + 3) td,
+table.statisticsContainer.freeAnswers tr:first-child td,
+table#ratingTable.statisticsContainer tbody tr:nth-child(2n+2) td,
+table.userTable tr:nth-child(even) td,
+tr.translationHeader { background-color:#f9f9f9; }
+
+div.whiteContainer div.selectableItem:hover,
+span.graph span,
+div.projectRow:hover { background-color:#ccc; }
+
+div.mainTabPanel li.selected a,
+td.note > div { background-color:#fafafa; }
+
+div.mainTabPanel div.tab-panel,
+div.mainTabPanel li a,
+div.iconRepeater,
+a.staticModuleTabLeft,
+div.projectRow:hover div.projects-column { border-color: #3a3a3a; }
+
+div.mainTabPanel li.selected { border-bottom-color: #eee; }
+
+div.whiteContainer,
+div.tab.selected a,
+input.submit_image_upload,
+input.submit_term_upload,
+table#ratingTable.statisticsContainer tbody tr:nth-child(2n + 3) td { background-color:#fff; }
+
+
+div.tab-row,
+div.tab.last,
+a.baseButton,
+span.baseButton,
+select.baseButton,
+table.contentTable input.baseButton,
+div.slideLeft,
+div.slideRight,
+a.configTab,
+div.questionTabs div.tab a,
+div.icontestTabs div.tab a,
+div.navTab,
+span.fakeAdd,
+table.statisticsContainer tr:nth-child(n+1),
+table#ratingTable.statisticsContainer tbody tr:nth-child(1),
+div.selectedProjectTabbedPanel div.tab.last { border-color: #d9d9d9; }
+
+span.baseButton,
+a.configTab.configTabSelected { background-color:#fff; }
+
+span.fakeAdd.baseButton { background-color:transparent }

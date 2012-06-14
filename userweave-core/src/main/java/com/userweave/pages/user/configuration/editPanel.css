@@ -1,0 +1,32 @@
+/**
+ * Designs for the user edit pages.
+ * 
+ * @author: opr
+ */
+div.editUserContainer label {
+	display:inline;
+	
+}
+
+span.gender label,
+span.locale label {
+	margin-left:8px;
+	font-weight:normal;
+}
+
+label.notRequired {
+	font-weight:normal;
+}
+
+span.radioSpacer {
+	margin-left:20px;
+}
+
+div.callnumberParent label,
+div.addressPanelParent span.star
+{ display:none }
+
+span.businessRole label {
+	margin: 0 20px 0 5px;
+	font-weight:normal;
+}

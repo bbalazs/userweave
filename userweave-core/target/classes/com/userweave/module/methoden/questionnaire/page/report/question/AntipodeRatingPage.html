@@ -1,0 +1,40 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<tbody>
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="evaluation" />
+					</span>
+				</td>
+				<td>
+					<div wicket:id="antipodeRatingReport"></div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="mean" />
+					</span>
+				</td>
+				<td style="padding-left:9px;">
+					<span>
+						<span wicket:id="mean"></span> (<span>SD = <span wicket:id="sd"></span></span>)
+					</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="givenAnswers" />
+					</span>
+				</td>
+				<td style="padding-left:9px;">
+					<span wicket:id="count"></span>
+				</td>
+			</tr>
+		</tbody>
+	</wicket:extend>
+</html>

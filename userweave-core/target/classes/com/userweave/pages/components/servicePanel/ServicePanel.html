@@ -1,0 +1,42 @@
+<wicket:head>
+	<wicket:link>
+		<link rel="stylesheet" type="text/css" href="res/servicePanel.css"/>
+	</wicket:link>
+</wicket:head>
+<wicket:panel>
+	<div class="servicePanel">
+		
+		<div class="servicePanel_header_left"/>
+		<div class="servicePanel_header_right"/>
+		<div class="servicePanel_header_center"/>
+	
+	    <div class="servicePanel_body">
+	       <table cellpadding="0" cellspacing="0">
+	       	   <tr>
+	       	   	<td style="vertical-align:top;">
+	       	   		<wicket:link>
+                        <img src="res/arrow.jpg" alt="arrow"/>
+                    </wicket:link>  
+	       	   	</td>
+				<td>
+					<p class="headline" wicket:id="servicePanelHeadline">[headline]</p>
+				</td>
+	       	   </tr>
+	       </table> 
+		   
+		   <div class="serviceTextContainer">
+		   	  <p wicket:id="serviceText">[service text]</p>
+			  <a href="#" wicket:id="more">
+                <span wicket:id="more_label"/> 
+			  </a>
+		   </div>
+		</div>
+		
+		<div class="servicePanel_footer_left"/>
+        <div class="servicePanel_footer_right"/>
+        <div class="servicePanel_footer_center"/>
+		
+		<div wicket:id="showMoreModalWindow"/>
+		
+	</div>
+</wicket:panel>

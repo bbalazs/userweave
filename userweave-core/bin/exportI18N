@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd "`basename $0`/.."
+java -jar tools/excelbundle-0.9.3/excelbundle.jar -r src/main/java/ -export userweave_translate.xls -l en,de -ref en
+
+#soffice userweave_translate.xls
+

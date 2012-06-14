@@ -1,0 +1,169 @@
+.um_webseite_local_switch {
+	color:#9FCD37;
+	float:right;
+	font-size:11px;
+	top:-24px;
+	position:relative;
+	z-index:100;
+}
+
+.um_webseite_menu_link {
+    color:#9FCD37;
+    padding-left:10px;
+    padding-right:10px;
+    text-decoration:none;
+}
+
+div.login_register_panel {
+	width:580px;
+	margin-top:21px;
+}
+
+div.headerContainer {
+	margin-top:51px;
+	background-image:url(arrow.jpg);
+    background-position:left bottom;
+    background-repeat:no-repeat;
+}
+
+div.headerContainer p,
+div.headerContainer a {
+	margin-left:18px;
+}
+
+a.more_info {
+	color:#9fcc3d;
+}
+
+a.more_info:hover {
+	text-decoration:none;
+}
+
+a.forgot_password {
+	color:#435B0F;
+    font-size:11px;
+    text-decoration:none;
+	
+	display:block;
+	margin-top:5px;
+} 
+
+div.login_gray { background-color:#d2d2d2 }
+
+div.login_panel_header,
+div.login_panel_footer_right,
+div.login_panel_footer_left {
+	background-image:url(register_panel_corners.png);
+	background-repeat:no-repeat;
+}
+
+div.login_panel_header {
+	background-position:right top;
+	height:8px;
+}
+
+div.login_panel_footer {
+	height:8px;
+}
+
+div.login_panel_footer_left {
+    background-position:0px -8px;
+	width:8px;
+	height:8px;
+	float:left;
+}
+
+div.login_panel_footer_right {
+	background-position:-8px -8px;
+	width:8px;
+    height:8px;
+    float:right;
+}
+
+div.login_panel_content {
+	padding-top:26px;
+	padding-bottom:39px;
+	height:250px;
+}
+
+div.register_container {
+	width:281px;
+	float:right;
+}
+
+div.register_container span.login_register_headline {
+    margin-left:38px;
+}
+
+div.login_container {
+	margin-right:281px;
+	padding:0px 38px;
+}
+
+div.textbox {
+	height:91px;
+}
+
+span.login_register_headline {
+    color:#fff;
+}
+
+span.login_register_headline,
+p.login_register_action,
+p.intro,
+a.more_info span {
+	font-weight:bold;
+	font-size:14px;
+}
+
+p.login_register_action {
+	margin-bottom:10px;
+}
+
+.label, label { color:#4B5147; }
+
+label { 
+    font-weight:bold; 
+	display:block;
+	margin:5px 0px;
+}
+
+div.white_border {
+	border-left:2px solid #fff;
+	padding:0px 38px;
+}
+
+div.button {
+	float:left;
+	margin-top:9px;
+}
+
+div.button_left,
+div.button_right {
+	background-image:url(button.png);
+}
+
+div.button_left,
+div.button_right {
+	width:5px;
+	height:23px;
+	float:left;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+
+div.button_right {
+	float:right;
+    background-position:-5px 0px;
+}
+
+input.input_button {
+	border:0px none;
+	height:23px;
+	border-top:3px solid #fff;
+	border-bottom:3px solid #fff;
+	padding:0px 14px;
+	cursor:pointer;
+	background-color:#9fcc3d;
+	background-repeat:repeat-x;
+}

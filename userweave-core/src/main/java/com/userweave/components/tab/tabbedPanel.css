@@ -1,0 +1,404 @@
+/*
+ * @de: Alle TabbedPanel werden ein Block Formatting Context
+ *      damit innere css-clears local wirken
+ * @en: All TabbedPanel become Block Formatting Context
+ *      so that inner css-clears affect local 
+ * @type: workaround
+ * @author: fpavkovic
+ */
+div.grayFilledTabbedPanel, div.grayTabbedPanel, div.greenTabbedPanel {
+   overflow:auto;
+   border: 0px solid red;
+}
+ 
+div.grayFilledTabbedPanel div.tab-row, div.grayTabbedPanel div.tab-row,
+div.greenTabbedPanel div.tab-row {
+  float:left;
+  width:100%;
+  line-height:normal;
+}
+
+div.grayFilledTabbedPanel div.tab-row ul, div.grayTabbedPanel div.tab-row ul,
+div.greenTabbedPanel div.tab-row ul {
+  margin:0;
+  padding:10px 10px 0 0;
+  list-style:none;
+}
+
+div.grayFilledTabbedPanel div.tab-row li, div.grayTabbedPanel div.tab-row li,
+div.greenTabbedPanel div.tab-row li, div.greenTabbedPanel div.tab-row li.tab0 {
+  float:left;
+  margin:0;
+  padding:0 0 0 9px;
+}
+  
+div.grayFilledTabbedPanel div.tab-row a, div.grayTabbedPanel div.tab-row a,
+div.greenTabbedPanel div.tab-row a {
+  display:block;
+  padding:5px 15px 3px 6px;
+  text-decoration:none;
+  font-weight:bold;
+  color:#fff;
+  white-space:nowrap;
+}
+
+/*
+ * @de: Gestalte den Inhaltsbereich von allen TabbedPanel-Varianten
+ * @en: Styling tabs content area of all TabbedPanels
+ * @author: fpavkovic
+ */
+.tab_panel_content_border_header_left,
+.tab_panel_content_border_header_right,
+.tab_panel_content_border_footer_left, 
+.tab_panel_content_border_footer_right,
+.tab_panel_content_border_header_center,
+.tab_panel_content_border_footer_center,
+.gray_tab_panel_content_border_header_left,
+.gray_tab_panel_content_border_header_right,
+.gray_tab_panel_content_border_footer_left,
+.gray_tab_panel_content_border_footer_right,
+.gray_tab_panel_content_border_header_center,
+.gray_tab_panel_content_border_footer_center,
+.green_tab_panel_content_border_header_left,
+.green_tab_panel_content_border_header_right,
+.green_tab_panel_content_border_footer_left,
+.green_tab_panel_content_border_footer_right,
+.green_tab_panel_content_border_header_center, 
+.green_tab_panel_content_border_footer_center
+ {
+	font-size:0; 
+}
+
+.tab_panel_content_border_header_left, .gray_tab_panel_content_border_header_left,
+.green_tab_panel_content_border_header_left, div.grayFilledTabbedPanel div.tab-panel {
+    clear:left;
+}
+
+.tab_panel_content_border_header_right, .tab_panel_content_border_footer_right,
+.gray_tab_panel_content_border_header_right, .gray_tab_panel_content_border_footer_right,
+.green_tab_panel_content_border_header_right, .green_tab_panel_content_border_footer_right {
+	margin-left:5px;
+	padding-right:5px;
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+.tab_panel_content_border_footer_left,
+.gray_tab_panel_content_border_header_left, .gray_tab_panel_content_border_footer_left,
+.green_tab_panel_content_border_footer_left {
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+
+.tab_panel_content, 
+.gray_tab_panel_content,
+.green_tab_panel_content {
+	/*padding: 25px 30px 10px 30px;*/
+	padding: 5px 7px 10px 30px;
+}
+
+/**
+ * Class to seperate the main content of a
+ * grey tab panel from the service panels
+ */
+div.leftContent {
+	padding-top:20px;
+}
+
+div.grayFilledTabbedPanel div.tab-panel,
+div.grayTabbedPanel div.tab-panel,
+div.greenTabbedPanel div.tab-panel {
+	padding:0px;
+}
+
+.tab_panel_content label,
+.gray_tab_panel_content label,
+.green_tab_panel_content label {
+	color: #3B3B3B;
+	display:block;
+	font-weight: bold;
+}
+
+.tab_panel_content .inputIndent,
+.gray_tab_panel_content .inputIndent,
+.green_tab_panel_content .inputIndent {
+	margin: 9px 0 20px 20px;
+}
+
+/**
+ * @de: Breite der Überschriften und 
+ *      Texte auf 450px begrenzen
+ * @author: opr 
+ */
+.tab_panel_content .simple_underlined_headline_no_bottom_margin,
+.gray_tab_panel_content .simple_underlined_headline_no_bottom_margin,
+.green_tab_panel_content .simple_underlined_headline_no_bottom_margin,
+.tab_panel_content .legend.heading,
+.gray_tab_panel_content .legend.heading,
+.green_tab_panel_content .legend.heading,
+.tab_panel_content .legend,
+.gray_tab_panel_content .legend,
+.green_tab_panel_content .legend
+ {
+    width:450px;
+}
+
+.gray_tab_panel_content p.space,
+.green_tab_panel_content p.space {
+	margin-top:5px;
+}
+
+.tab_panel_content .legend.heading,
+.gray_tab_panel_content .legend.heading,
+.green_tab_panel_content .legend.heading {
+	margin-bottom: 20px;
+	color:#3B3B3B;
+}
+
+
+div.grayFilledTabbedPanel h1, div.grayTabbedPanel h1, div.greenTabbedPanel h1 {
+	color: #3B3B3B;
+}
+
+
+
+
+/*
+ * @de: Styles fuer grau ausgefuellte TabbedPanel mit runden Ecken
+ * @en: Styles for gray filled rounded TabbedPanel 
+ * @author: fpavkovic
+ ******************************************************
+ */
+
+/*
+ * @de: Gestalte den Kopfbereich des grau ausgefuellten TabbedPanel mit runden Ecken
+ * @en: styling the tabs header area of gray filled rounded TabbedPanel 
+ * @author: fpavkovic
+ */
+div.grayFilledTabbedPanel div.tab-row li {
+  background:url("./gray_Fill_left_tab_part_off.png") no-repeat left top;
+}
+  
+div.grayFilledTabbedPanel div.tab-row a {
+  background:url("./gray_Fill_right_tab_part_off.png") no-repeat right top;
+}
+
+ 
+div.grayFilledTabbedPanel div.tab-row a:hover, div.grayFilledTabbedPanel div.tab-row li.selected a {
+  color:#8B8B89;
+}
+  
+div.grayFilledTabbedPanel div.tab-row li.selected {
+  background-image:url("./gray_Fill_left_tab_part_on.png");
+}
+  
+div.grayFilledTabbedPanel div.tab-row li.selected a {
+  background-image:url("./gray_Fill_right_tab_part_on.png");
+  padding-bottom:5px;
+}
+
+
+/*
+ * @de: Gestalte den Inhaltsbereich des grau ausgefuellten TabbedPanel mit runden Ecken
+ * @en: styling tabs content area of gray filled rounded TabbedPanel
+ * @author: fpavkovic
+ */
+.tab_panel_content_border_header_left, .gray_tab_panel_content_border_header_left,
+.tab_panel_content_border_header_center, .tab_panel_content_border_footer_center,
+.tab_panel_content {
+	background: #DCDCDA;
+}
+
+.tab_panel_content_border_header_left, .gray_tab_panel_content_border_header_left,
+.green_tab_panel_content_border_header_left, div.grayFilledTabbedPanel div.tab-panel {
+    clear:left;
+}
+
+.tab_panel_content_border_header_right, .tab_panel_content_border_footer_right {
+	background-image:url(gray_Fill_tabbed_panel_lang_corner_topright.jpg);
+}
+
+.tab_panel_content_border_footer_left {
+	background-image:url(gray_Fill_tabbed_panel_lang_corner_bottomleft.jpg);
+}
+
+.tab_panel_content_border_footer_right {
+	background-image:url(gray_Fill_tabbed_panel_lang_corner_bottomright.jpg);
+}
+
+.tab_panel_content_border_header_center, .tab_panel_content_border_footer_center {
+	height:5px;
+}
+
+
+
+
+/*
+ * @de: Styles fuer TabbedPanel mit grau Rahmen und runden Ecken
+ * @en: Styles for gray rounded bordered TabbedPanel 
+ * @author: fpavkovic
+ */
+
+div.grayTabbedPanel div.tab-row {
+  background:transparent url("./background_gray.png") repeat-x bottom;
+  margin:0;
+}
+
+div.grayTabbedPanel div.tab-row li {
+  background:url("./gray_left_tab_part_off.png") no-repeat left top;
+}
+  
+div.grayTabbedPanel div.tab-row a {
+  background:url("./gray_right_tab_part_off.png") no-repeat right top;
+  padding:5px 15px 4px 6px;
+}
+
+ 
+div.grayTabbedPanel div.tab-row a:hover, div.grayTabbedPanel div.tab-row li.selected a {
+  color:#777;
+}
+  
+div.grayTabbedPanel div.tab-row li.selected {
+  background-image:url("./gray_left_tab_part_on.png");
+}
+  
+div.grayTabbedPanel div.tab-row li.selected a {
+  background-image:url("./gray_right_tab_part_on.png");
+  padding-bottom:6px;
+}
+
+
+.gray_tab_panel_tap-row_border_header_right {
+	background-image:url("./tab-row_corner_topright.png");
+	background-position:right bottom;
+	background-repeat:no-repeat;
+	float:right;
+	font-size:0;
+	height: 25px;
+	width: 5px;
+}
+
+/*
+ * @de: Gestalte den TabbedPanel-Inhaltsbereich
+ * @en: styling tabs content area
+ * @author: fpavkovic
+ */
+.gray_tab_panel_content_border_header_left, .gray_tab_panel_content_border_footer_left {
+	background-image:url(gray_tabbed_panel_lang_corner_topleft.jpg);
+}
+
+.gray_tab_panel_content_border_header_right, .gray_tab_panel_content_border_footer_right {
+	background-image:url(gray_tabbed_panel_lang_corner_topright.jpg);
+}
+
+.gray_tab_panel_content_border_footer_left {
+	background-image:url(gray_tabbed_panel_lang_corner_bottomleft.jpg);
+}
+
+.gray_tab_panel_content_border_footer_right {
+	background-image:url(gray_tabbed_panel_lang_corner_bottomright.jpg);
+}
+
+.gray_tab_panel_content_border_header_center {
+	height:2px;
+}
+
+.gray_tab_panel_content_border_footer_center {
+	height:3px;
+	border-bottom: 2px solid #A2A2A2;
+}
+
+.gray_tab_panel_content {
+	border-left: 2px solid #A2A2A2;
+	border-right: 2px solid #A2A2A2;
+}
+
+.gray_tab_panel_content_border_header_center,
+.gray_tab_panel_content,
+div.grayTabbedPanel div.tab-panel {
+	background-color:white;
+}
+
+
+
+
+
+/*
+ * @de: Styles fuer gruenen TabbedPanel mitrunden Ecken
+ * @en: Styles for green rounded tabbed panel 
+ * @author: fpavkovic
+ ******************************************************
+ */
+
+div.greenTabbedPanel div.tab-row {
+  background:transparent url("./background.png") repeat-x bottom;
+  margin:0;
+}
+
+div.greenTabbedPanel div.tab-row li {
+  background:url("./green_left_tab_part_off.png") no-repeat left top;
+}
+
+div.greenTabbedPanel div.tab-row li.tab0 {
+  background:url("./green_left_tab0_part_off.png") no-repeat left top;
+}
+  
+div.greenTabbedPanel div.tab-row a {
+  background:url("./green_right_tab_part_off.png") no-repeat right top;
+}
+ 
+div.greenTabbedPanel div.tab-row a:hover, div.greenTabbedPanel div.tab-row li.selected a {
+  color:#809E92;
+}
+  
+div.greenTabbedPanel div.tab-row li.selected {
+  background-image:url("./green_left_tab_part_on.png");
+}
+
+div.greenTabbedPanel div.tab-row li.tab0.selected {
+  background-image:url("./green_left_tab0_part_on.png");
+}
+  
+div.greenTabbedPanel div.tab-row li.selected a {
+  background-image:url("./green_right_tab_part_on.png");
+  padding-bottom:5px;
+}
+
+
+/*
+ * @de: Gestalte den TabbedPanel-Inhaltsbereich
+ * @en: styling tabs content area
+ * @author: fpavkovic
+ *******************************************
+ */
+.green_tab_panel_content_border_header_left,
+.green_tab_panel_content_border_header_center, .green_tab_panel_content_border_footer_center,
+.green_tab_panel_content,
+div.greenTabbedPanel div.tab-panel {
+	background: white;
+}
+
+.green_tab_panel_content_border_header_right, .green_tab_panel_content_border_footer_right {
+	background-image:url(green_tabbed_panel_lang_corner_topright.png);
+}
+
+.green_tab_panel_content_border_footer_left {
+	background-image:url(green_tabbed_panel_lang_corner_bottomleft.png);
+}
+
+.green_tab_panel_content_border_footer_right {
+	background-image:url(green_tabbed_panel_lang_corner_bottomright.png);
+}
+
+.green_tab_panel_content_border_header_center, .green_tab_panel_content_border_footer_center {
+	height:5px;
+}
+
+/*
+ * Reset label formats for filter
+ */
+div.filterOptions label {
+	display:inline;
+	margin-left:10px;
+}

@@ -1,0 +1,29 @@
+<html xmlns:wicket>
+	<wicket:panel>
+		<div wicket:id="homePageLinkContainer" class="homeLinkContainer">
+			<a href="#" 
+			   wicket:id="home" 
+			   class="home" 
+			   wicket:message="title:home">Start</a>
+		</div>
+		
+		<div class="crumbContainer">
+			<div wicket:id="crumb"></div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		   		
+		<wicket:child />
+	
+		<wicket:fragment wicket:id="labelFragment">
+			<span wicket:id="label"></span>
+		</wicket:fragment>
+
+		<wicket:fragment wicket:id="linkFragment">
+			<a href="#" wicket:id="link">
+				<span wicket:id="displayName"></span>
+			</a>
+		</wicket:fragment>
+	
+	</wicket:panel>
+</html>

@@ -1,0 +1,138 @@
+.questions_header_left {
+	width: 502px;
+	background-image: none;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.questions_header_right {
+	margin-left: 0px;
+	background-image: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.questions_header_center {
+	margin-right: 0px;
+	width: 502px;
+	height: 0px;
+	background-color: #f7f7f7;
+	border-top: 3px solid #e0e0e0;
+	overflow: hidden;
+}
+
+.questions_body {
+	width: 496px;
+	background-color: #f7f7f7;
+	border-left: 3px solid #e0e0e0;
+	border-right: 3px solid #e0e0e0;
+}
+
+.questions_footer_left {
+	width: 502px;
+	background-image: none;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.questions_footer_right {
+	margin-left: 0px;
+	background-image: none;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.questions_footer_center {
+	margin-right: 0px;
+	width: 502px;
+	height: 0px;
+	background-color: #f7f7f7;
+	border-bottom: 3px solid #e0e0e0;
+	overflow: hidden;
+}
+
+.multipleRating_questions_header_left {
+	width: 665px;
+	background-image: none;
+}
+
+.multipleRating_questions_header_right {
+	margin-left: 0px;
+	background-image: none;
+}
+
+.multipleRating_questions_header_center {
+	margin-right: 0px;
+	width: 665px;
+	height: 0px;
+	background-color: #f7f7f7;
+	border-top: 3px solid #e0e0e0;
+	overflow: hidden;
+}
+
+.multipleRating_questions_footer_left {
+	width: 665px;
+	background-image: none;
+}
+
+.multipleRating_questions_footer_right {
+	margin-left: 0px;
+	background-image: none;
+}
+
+.multipleRating_questions_footer_center {
+	margin-right: 0px;
+	width: 665px;
+	height: 0px;
+	overflow: hidden;
+}
+
+.dimensions_questions_header_left {
+	background-image: none;
+}
+
+.dimensions_questions_header_right {
+	margin-left: 0px;
+	background-image: none;
+}
+
+.dimensions_questions_header_center {
+	margin-right: 0px;
+	width: 693px;
+	height: 0px;
+}
+
+.dimensions_questions_footer_left {
+	background-image: none;
+}
+
+.dimensions_questions_footer_right {
+	margin-left: 0px;
+	background-image: none;
+}
+
+.dimensions_questions_footer_center {
+	margin-right: 0px;
+	width: 693px;
+	height: 0px;
+}
+
+.radio_container {
+	padding-top: 0px;
+}
+
+.choice_wrapper_left {
+	margin-bottom: 6px;
+}
+
+.singleAnswerText_dropdown {
+	height: 57px;
+}
+
+.dimensions_question_container {
+	width: 683px;
+}
+
+.dimensions_questions_header_center,.dimensions_questions_footer_center {
+	width: 683px;
+}

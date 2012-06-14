@@ -1,0 +1,74 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="guete">Güte-Indikator</wicket:message>
+			</span>
+		</td>
+		
+		<td>
+			<table class="icontestReportTable indicatorTable">
+				<tr>
+					<td>
+						<span>
+							<wicket:message key="without" />
+						</span>
+					</td>
+					
+					<td rowspan="2" style="width: 130px;">
+						<div wicket:id="scale_container">
+							<div wicket:id="barListPopup"></div> 
+							<div wicket:id="barListPanel"></div>
+						</div>
+					</td>
+					
+					<td rowspan="2" class="note">
+						<div class="indicatorNote">
+							<span wicket:id="indicator_container" class="indicatorContainer">
+								<span wicket:id="indicator"></span>
+							</span>
+						</div>
+						<div wicket:id="indicatorExplanationPopup"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>
+							<wicket:message key="conspicuity" />
+						</span>
+					</td>
+				</tr>
+			</table>
+				
+		</td>
+		
+		<td>
+			<p>
+				<wicket:message key="explanation" />
+			</p>
+		</td>
+	</tr>
+	
+	<!-- <tr>
+		<td>
+			
+		</td>
+		
+		<td>
+			<div wicket:id="indicator_legend"></div>
+			
+			
+		</td>
+		
+		<td>
+			
+		</td>
+	</tr> -->
+	
+	<!-- <p class="info_bright lightGrey">
+		<wicket:message key="further"></wicket:message>
+	</p> -->
+</wicket:panel>
+</html>
+  

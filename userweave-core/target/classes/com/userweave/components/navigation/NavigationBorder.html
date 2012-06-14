@@ -1,0 +1,41 @@
+<html xmlns:wicket>
+<wicket:head>
+	<wicket:link>
+		<link href="NavigationBorder.css" rel="stylesheet" type="text/css" />
+	</wicket:link>
+</wicket:head>
+<wicket:border>
+<div class="navContent">
+		<div style="vertical-align:top; float:left;" class="navLeft">
+			    <div wicket:id="col0" class="col_limiter">
+					<img wicket:id="openingImage" height="26" width="5"/>
+				</div>
+				<div wicket:id="col1" class="col1">
+					<img wicket:id="image" height="20" width="20"/>
+				</div>
+				<div wicket:id="col2" class="col2">				
+					<div wicket:id="header" class="bold white"/>
+				</div>
+				<div wicket:id="col3" class="col_limiter">
+					<img wicket:id="closingImage" height="26" width="5"/>
+				</div>
+				<div style="clear:both;" />
+		</div>
+		<div class="navRight">
+			<div class="navigationBorder_header_left">
+				<div class="navigationBorder_header_right">
+				  <div class="navigationBorder_header_center"></div>
+				</div>
+			</div>
+			<div class="navigationBorder_content">
+				<wicket:body/>
+			</div>
+			<div class="navigationBorder_footer_left">
+				<div class="navigationBorder_footer_right">
+				   <div class="navigationBorder_footer_center"></div>
+				</div>
+			</div>
+		</div>
+</div>
+</wicket:border>
+</html>

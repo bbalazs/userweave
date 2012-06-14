@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <wicket:panel>
+	<div class="tab_container">
+		<div wicket:id="tabs-container" class="tab-row">
+			<ul>
+				<li wicket:id="tabs">
+					<a href="#" wicket:id="link">
+						<div class="tab_left_part">
+							<div class="tab_right_part">
+								<div class="tab_center_part">
+									<span wicket:id="title">[[tab title]]</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="specialLinksContainer">
+			<a href="#" wicket:id="invite" class="linkColor"><wicket:message key="invite"/></a>
+
+			<span class="linkColor"> | </span>
+
+			<a href="#" wicket:id="feedback" class="linkColor"><wicket:message key="feedback"/></a>
+            
+            <span class="linkColor"> | </span>
+            
+            <a href="#" wicket:id="logout" class="linkColor">
+                <wicket:message key="logout"/>
+            </a>
+            
+        </div>  
+	
+	<div wicket:id="panel" class="tab-panel">[panel]</div>
+	
+	<div wicket:id="feedbackModalWindow"/>
+	<div wicket:id="inviteModalWindow"/>
+	
+	<div wicket:id="ajaxIndicator" />
+</wicket:panel>
+</body>
+</html>

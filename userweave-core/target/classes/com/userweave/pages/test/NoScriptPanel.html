@@ -1,0 +1,74 @@
+<wicket:head>
+	<wicket:link>
+		<link class="noscript" rel="stylesheet" type="text/css" href="res/noscript.css" />
+	</wicket:link>
+</wicket:head>
+
+<wicket:panel>
+<div class="um_background_border noscript" id="noscript">
+    <div class="image">
+        <wicket:link>
+            <img wicket:id="noscript_logo" src="res/usability-methods-logo.jpg" height="52px"/>
+        </wicket:link>
+    </div>
+    <div class="um_background_border" id="noscriptContainer">
+        
+		<div id="noscriptHeader">
+            <wicket:link>
+                <img src="res/noscript_ctl.png" class="um_background left top"/>
+				<img src="res/noscript_ctr.png" class="um_background right top"/>
+            </wicket:link>
+        </div>
+        
+		<div id="noscriptContent">
+            
+			<div id="contentHeader">
+                <wicket:link>
+                    <img src="res/noscript_warning.jpg" style="margin-right:7px;"/>
+                </wicket:link>
+				
+				<strong>
+                    <wicket:message key="noscript">
+                        Kein Javascript aktiviert!
+                    </wicket:message>
+                </strong>
+            </div>
+            
+			<p>
+                <wicket:message key="noscript_ask_for_javascript">
+                    M&ouml;chten sie an der Studie teilnehmen, so aktivieren sie bitte Javascript 
+					in ihrem Browser und klicken danach auf folgenden Button:
+                </wicket:message>
+            </p>
+			
+            <div id="button">
+                <form>
+                    <input type="submit" class="um_background button" value="Ich habe Javascript jetzt aktiviert!" wicket:message='value:noscript_button'/>
+                </form>
+            </div>
+            
+			<p>
+                <wicket:message key="noscript_footer">
+                    K&ouml;nnen oder wollen sie kein Javascript aktivieren, so k&ouml;nnen sie 
+					leider nicht an der Studie teilnehmen. Wir danken ihnen f&uuml;r ihr Interesse.
+                </wicket:message>
+            </p>
+			
+        </div>
+        
+		<div id="noscriptFooter">
+            <wicket:link>
+                <img src="res/noscript_cbl.png" class="left bottom"/>
+				<img src="res/noscript_cbr.png" class="right bottom"/>
+            </wicket:link>
+        
+		</div>
+    </div>
+    <div class="imprintPanel_noscript_container">
+        <h1>Impressum</h1>
+        <hr/>
+		
+		<div wicket:id="imprintPanel_noscript" class="imprintPanel_noscript"/>
+    </div>
+</div>
+</wicket:panel>

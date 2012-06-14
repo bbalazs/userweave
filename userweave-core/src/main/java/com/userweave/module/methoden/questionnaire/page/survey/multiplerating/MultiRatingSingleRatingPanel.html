@@ -1,0 +1,34 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+	<wicket:container wicket:id="group">
+			<td style="text-align:right;">
+				<div class="term" wicket:id="term"></div>		
+			</td>
+			<td colspan="2" class="multipleRating_td">
+				<table cellspacing="0" cellpadding="0" class="choice">
+					<tr>
+						<td wicket:id="choices">
+							<div wicket:id="content" class="radio_container"></div>
+						</td>									
+					</tr>			
+				</table>
+			</td>
+			<td/>
+			<td wicket:id="noAnswerOption" class="notStated_body">
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<td style="width:30px;">
+							<span wicket:id="content"></span>
+						</td>
+						<td style="width:110px; text-align:left">
+							<span style="display:block; margin-top:-4px; color:#7B7B7B">
+								<wicket:message key="noanswer">No Answer</wicket:message>
+							</span>
+						</td>
+					</tr> 
+				</table>
+			</td>		
+	   </wicket:container>
+</wicket:panel>
+</html>

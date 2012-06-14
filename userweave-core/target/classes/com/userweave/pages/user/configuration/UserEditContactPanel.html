@@ -1,0 +1,44 @@
+<html xmlns:wicket>
+    <wicket:extend>
+        <div class="seperator">
+        <div class="rightContent" style="width:240px; float:right">
+            <div wicket:id="servicePanel"/>
+            <div wicket:id="servicePanel2" style="margin-top:7px;"/><div style="clear:both"/>
+            </div>
+            <div class="leftContent" style="margin-right:260px">
+                <label>
+                    <wicket:message key="intro"/>
+                </label>
+                <br/>
+				<br/>
+				
+				<label>
+					<wicket:message key="email"/>
+				</label>
+				
+				<div class="inputIndent">
+                    <input type="text" wicket:id="email"/>
+                    <br/>
+                    <span>(<wicket:message key="no_change"/>)</span>
+                </div>
+				
+				<div class="line_with_space"/>
+                
+				<label>
+                    <wicket:message key="callnumber"/>
+                </label>
+                <div class="inputIndent callnumberParent">
+                    <div wicket:id="callnumberPanel">callnumberPanel</div>
+                </div>
+                <div class="line_with_space"/>
+                <label>
+                    <wicket:message key="address"/>
+                </label>
+                <div class="inputIndent addressPanelParent">
+                    <span wicket:id="addressPanel">addressPanel</span>
+                </div>
+            </div>
+            <div style="clear:both"/>
+        </div>
+    </wicket:extend>
+</html>

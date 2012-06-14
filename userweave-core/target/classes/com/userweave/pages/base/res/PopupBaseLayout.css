@@ -1,0 +1,26 @@
+/**
+ * Base layout rules for popup pages 
+ *
+ * The base layout for the UserWeave configuration
+ * popup pages. 
+ *
+ * @author  opr
+ * @version 1.0
+ */
+
+/**
+ * Base layout
+ *
+ * @section base layout
+ * @see		baselayout.css 
+ */
+@IMPORT url("baselayout.css");
+
+/**
+ * Popup
+ *
+ * Popup pages releated styles
+ *
+ * @section popup
+ */
+@IMPORT url("popupLayout.css");	

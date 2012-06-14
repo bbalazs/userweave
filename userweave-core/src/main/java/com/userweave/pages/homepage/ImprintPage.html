@@ -1,0 +1,50 @@
+<html>
+	<wicket:head>
+		<wicket:link>
+			<link rel="stylesheet" type="text/css" href="imprintPage.css"/>
+		</wicket:link>
+	</wicket:head>
+	<body>
+		<wicket:extend>
+
+			
+				
+					    <div class="imprint_wrapper">
+						<div class="um_webseite_content_headline" style="padding: 0px">
+					    	<wicket:message key="imprint"/>
+					    </div>
+
+						<p>
+							<b><wicket:message key="responsability"/></b>
+						</p>
+			            <br/>
+			            <p>
+			            	<wicket:message key="company"/>
+							<br/>
+							<br/>
+						</p>
+			            <p>
+			            	<wicket:message key="address"/>
+						</p>
+						<br/>
+			            <p><wicket:message key="fon"/></p>
+			            <p><wicket:message key="fax"/></p>
+						<br/>
+			            <p>
+			            	Mail <a href="mailto:info@user-prompt.com" wicket:message="title:prompt_tag,alt:prompt_tag">info@user-prompt.com</a>
+							<br/>
+							<wicket:message key="web"/> <a href="www.user-prompt.com" wicket:message="title:prompt_tag,alt:prompt_tag">www.user-prompt.com</a>
+						</p>
+			           <br/>
+			            <p>
+			            	<wicket:message key="link_disclaimer"/>
+						</p>
+	
+	            </div>
+				    
+                    <div class="startseiten_link" style="margin-top:0px;"><a href="#" wicket:message="title:prompt_start,alt:prompt_start" wicket:id="start" class="um_webseite_menu_link"><wicket:message key="backtostartseite">zurück zur Startseite</wicket:message></a></div>
+
+			
+		</wicket:extend>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<div class="seperator">
+            <div class="rightContent" style="width:240px; float:right">
+                <div wicket:id="servicePanel"/>
+                <div wicket:id="servicePanel2" style="margin-top:7px;"/>
+                <div style="clear:both"/>
+            </div>
+            <div class="leftContent" style="margin-right:260px">
+				<b class="darkGrey">
+					<wicket:message key="intro"/>
+				</b>
+				<br/>
+				<br/>
+				
+				
+				<div>
+					<label class="notRequired"> <wicket:message key="businessRole"/> </label>
+					<div class="inputIndent" >
+		            	<span wicket:id="businessRole" class="businessRole">radio choice</span>
+		        	</div>
+				</div>	
+
+
+				<div wicket:id="companyContainer">
+					<label><wicket:message key="company"/></label>
+			        <div class="inputIndent">
+			            <input type="text" wicket:id="company">
+			        </div>
+	
+	                <label class="notRequired">
+	                    <wicket:message key="position"/></label>
+	                <div class="inputIndent">
+	                    <select wicket:id="position"/>
+	                </div>
+	
+	                <label class="notRequired">
+	                    <wicket:message key="employment"/></label>
+	                <div class="inputIndent">
+	                   <input type="text" wicket:id="employment">
+	                </div>
+	
+					<label class="notRequired"><wicket:message key="company_url"/></label>
+			        <div class="inputIndent">
+			        	<input type="text" wicket:id="companyUrl">
+			        </div>
+					
+					<label class="notRequired"><wicket:message key="VATIN"/></label>
+	                <div class="inputIndent">
+	                    <input type="text" wicket:id="VATIN">
+	                </div>
+                </div>
+            </div>
+            <div style="clear:both"/>
+        </div>
+	</wicket:extend>
+</html>
+

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.userweave</groupId>
+		<artifactId>portal-parent</artifactId>
+		<version>${parentProjVersion}</version>
+	</parent>
+
+	<groupId>com.userweave</groupId>
+	<artifactId>userweave-core</artifactId>
+	<packaging>jar</packaging>
+	<name>userweave portal</name>
+	<profiles>
+		<profile>
+			<id>development</id>
+			<properties>
+				<downloadSources>true</downloadSources>
+			</properties>
+			<build>
+				<resources>
+					<resource>
+						<directory>
+							src/main/config/development
+						</directory>
+					</resource>
+				</resources>
+				<!--  ignore application.properties in src/test/resources in development mode -->
+				<testResources>
+					<testResource>
+						<directory>
+							src/test/resources/development
+						</directory>
+					</testResource>
+			</testResources>
+			</build>
+			<dependencies>
+				<dependency>
+					<groupId>p6spy</groupId>
+					<artifactId>p6spy</artifactId>
+					<version>1.3</version>
+				</dependency>
+			</dependencies>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>env</name>
+					<value>development</value>
+				</property>
+			</activation>
+		</profile>
+		<profile>
+			<id>integration</id>
+			<build>
+				<resources>
+					<resource>
+						<directory>
+							src/main/config/integration
+						</directory>
+					</resource>
+				</resources>
+			</build>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>integration</value>
+				</property>
+			</activation>
+		</profile>
+		<profile>
+			<id>production</id>
+			<build>
+				<resources>
+					<resource>
+						<directory>
+							src/main/config/production
+						</directory>
+					</resource>
+				</resources>
+			</build>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>production</value>
+				</property>
+			</activation>
+		</profile>
+	</profiles>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>6.1.5</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.geronimo.specs</groupId>
+						<artifactId>geronimo-j2ee_1.4_spec</artifactId>
+						<version>1.1</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>8080</port>
+							<maxIdleTime>3600000</maxIdleTime>
+						</connector>
+					</connectors>
+					<scanIntervalSeconds>60</scanIntervalSeconds>
+					<contextPath>userweave</contextPath>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagBase>svn://localhost/todo/</tagBase>
+				</configuration>
+			</plugin>
+
+			<!-- also create a jar, see http://communitygrids.blogspot.com/2007/11/maven-making-war-and-jar-at-same-time.html -->
+<!--
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>make-a-jar</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.0</version>
+				<configuration>
+					<goals>install</goals>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<additionalProjectnatures>
+						<projectnature> wicketbench.wicketnature </projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand> wicketbench.associatedMarkupAuditor </buildcommand>
+					</additionalBuildcommands>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/config/base</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+	<dependencies>
+
+		<!-- wicket -->
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-core</artifactId>
+			<version>${wicket.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-extensions</artifactId>
+			<version>${wicket.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-ioc</artifactId>
+			<version>${wicket.version}</version>
+			<type>jar</type>
+		</dependency>		
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-spring</artifactId>
+			<version>${wicket.version}</version>
+			
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-auth-roles</artifactId>
+			<version>${wicket.version}</version>
+		</dependency>
+
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>3.0.5.RELEASE</version>
+    </dependency>
+
+		<!-- for Spring quartz support -->
+		<dependency>
+			<groupId>org.opensymphony.quartz</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		
+		<!-- ORM -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>3.2.6.ga</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-collections</groupId>
+					<artifactId>commons-collections</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>asm</groupId>
+					<artifactId>asm</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>asm</groupId>
+					<artifactId>asm-attrs</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>cglib</groupId>
+					<artifactId>cglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+		  <groupId>cglib</groupId>
+		  <artifactId>cglib-nodep</artifactId>
+		  <version>2.1_3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.3.1.GA</version>
+		</dependency>
+
+		
+	    <!-- DB-->
+		<dependency>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>1.8.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty</artifactId>
+			<version>6.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<type>jar</type>
+			<version>8.3-603.jdbc3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency> 
+	
+		<!-- jetty -->
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-util</artifactId>
+			<version>6.1.5</version>
+		</dependency>
+		
+		<!-- logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+				
+		<!-- <dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+			<optional>true</optional>
+		</dependency> -->
+	 
+	 	<dependency>
+			<groupId>de.prompt</groupId>
+			<artifactId>utils_userweave</artifactId>
+			<version>${project.version}</version> <!-- userweave -->
+		</dependency>
+		
+		<dependency>
+			<groupId>com.userweave</groupId>
+			<artifactId>userweave-pdf</artifactId>
+			<version>${project.version}</version> <!-- userweave -->
+		</dependency>
+		
+
+		<!--  testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
+
+		<!-- extra-libs -->
+		
+		<!-- joda date time -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time-hibernate</artifactId>
+			<version>1.1</version>
+
+			<exclusions>
+				<exclusion>
+					<artifactId>cglib-full</artifactId>
+					<groupId>cglib</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-datetime</artifactId>
+			<version>${wicket.version}</version>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>bliki</groupId>
+			<artifactId>bliki</artifactId>
+			<version>3.0.7</version>
+		</dependency>
+			
+		<dependency>
+			<groupId>commons-math</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>		
+		  	<groupId>javax.mail</groupId>
+		  	<artifactId>mail</artifactId>
+		  	<version>1.4.1</version>
+		</dependency>		
+		
+		<!-- needed for better zip file extraction -->
+		<dependency>
+		    <groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.7.1</version>
+		</dependency>
+		
+		<!-- jqwicket plugin -->
+		<!-- <dependency> 
+ 			<groupId>net.javaforge.jqwicket</groupId> 
+ 			<artifactId>jqwicket</artifactId> 
+ 			<version>0.4</version> 
+		</dependency> -->
+	
+	</dependencies>
+	
+	<repositories>
+		<!--<repository>
+			<id>WicketStuff</id>
+			<url>http://wicketstuff.org/maven/repository</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>-->
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+			<layout>default</layout>
+		</repository>
+		
+		<!-- <repository> 
+ 			<id>googlecode</id> 
+  			<url>http://jqwicket.googlecode.com/svn/m2-repo/releases/</url> 
+ 		</repository>  -->
+<!--
+		<repository>
+			<id>databinder</id>
+			<name>Databinder repository</name>
+			<url>http://databinder.net/repo/</url>
+		</repository>
+-->
+
+	</repositories>
+	<scm>
+		<connection>
+
+		</connection>
+		<developerConnection>
+
+		</developerConnection>
+		<url/>
+	</scm>
+	<properties>
+		<!--<wicket.version>1.3.6</wicket.version>-->
+		<!--<wicket.version>1.4.19</wicket.version>-->
+		<wicket.version>1.5.3</wicket.version>
+	</properties>
+</project>

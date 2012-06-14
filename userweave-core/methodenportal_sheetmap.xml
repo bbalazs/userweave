@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--===========================================-->
+<!-- Sample sheet mapping file for excelbundle -->
+<!--===========================================-->
+<map>
+	<mapping name="Durchfuehrung">/com/userweave/pages/privacy/PrivacyPanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/pages/test/BasePageSurvey</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/pages/test/NoScriptPanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/pages/test/SelectLocalePanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/iconunderstandability/page/survey/bmi/BestMatchingIconTestUI</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/iconunderstandability/page/survey/IconMatchingTestUI</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/iconunderstandability/page/survey/termCounter/TermCounter</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/questionnaire/page/survey/QuestionnaireSurveyUI</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/questionnaire/page/survey/dimensions/DimensionsSingleRatingPanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/questionnaire/page/survey/free/FreeQuestionSurveyPanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/questionnaire/page/survey/multiplerating/MultiRatingSingleRatingPanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/questionnaire/page/survey/singleanswer/SingleAnswerSurveyPanel</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/freetext/page/survey/FreeTextTestUI</mapping>
+	<mapping name="Durchfuehrung">/com/userweave/module/methoden/rrt/page/survey/RrtSurveyUI</mapping>
+
+</map>

@@ -1,0 +1,29 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="filterlist"/>
+			</span>
+		</td>
+		
+		<td>
+			<div class="whiteContainer">
+				<table wicket:id="listViewContainer" class="userTable">
+					<tr wicket:id="groups">
+					
+						<td>
+							<span wicket:id="filterName"></span>
+							<span wicket:id="type"></span>
+						</td>
+								
+						<td>
+							<a href="#" wicket:id="delete" class="remove"></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+</wicket:extend>
+</html>

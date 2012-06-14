@@ -1,0 +1,117 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<table class="contentTable">
+		
+		<tr>
+			<td>
+				<p>
+					<wicket:message key="locale_selectable" />
+				</p>
+			</td>
+			<td>
+				<form wicket:id="form">
+					<select wicket:id="locale_selectable" 
+							class="baseButton baseButtonLast"
+							style="width:100%"></select>
+				</form>
+			</td>
+			<td>
+				<p>
+					<wicket:message key="locale_selectable_legend" /> 
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<p>
+					<wicket:message key="languages" />
+				</p>
+			</td>
+			<td>
+				<div class="whiteContainer">
+					<table class="userTable">
+						<tbody>
+							<tr>
+								<td>
+									<span wicket:id="default_locale"></span> <span>(<wicket:message key="confLocale" />)</span>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+						
+						<tbody wicket:id="localesContainer">
+							<tr wicket:id="localeList">
+								<td>
+									<span wicket:id="locale"></span>
+								</td>
+								<td style="text-align: right;">
+									<span class="buttonContainer">
+										<a href="#" 
+										   wicket:id="open"
+										   class="baseButton" 
+										   target="_blank">
+											<span>
+												<wicket:message key="open" />
+											</span>
+										</a>
+										
+										<a href="#" wicket:id="delete"
+										   class="baseButton baseButtonLast">
+											<span>
+												<wicket:message key="delete" />
+											</span>
+										</a>
+									</span>
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<wicket:enclosure child="addLocale">
+					<div class="addButton">
+						<a href="#" wicket:id="addLocale" class="baseButton addButton">
+							<span>+</span>
+							<span>
+								<wicket:message key="addLocale" />
+							</span>
+						</a>
+					</div>
+					
+					<div wicket:id="addLocaleModal"></div>
+					</wicket:enclosure>
+				</div>
+			</td>
+			<td>
+				<p>
+					<wicket:message key="languages_legend" /> 
+				</p>
+			</td>
+		</tr>
+		
+		<!-- <tr>
+			<td>
+				<label>
+					<wicket:message key="lang_of_translation"/>
+				</label>
+			</td>
+			<td>
+				<form wicket:id="form">
+					<select wicket:id="selectedLocale" /> style="width:120px"
+				</form>
+			</td>
+			<td>
+				<p class="legend space">
+					<wicket:message key="lang_of_translation_legend"/>
+				</p>
+			</td>
+		</tr> -->
+	
+	</table>
+	
+	<!-- <div wicket:id="localizationPanel"/> -->
+
+</wicket:panel>
+</html>
+  

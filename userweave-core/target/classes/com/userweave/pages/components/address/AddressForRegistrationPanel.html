@@ -1,0 +1,61 @@
+<html xmlns:wicket>
+<wicket:panel>
+    
+	<div>
+		<div style="float:left">
+
+		    <label>
+		        <wicket:message key="street"/><span class="star">*</span>
+		    </label>
+		    <div class="inputIndent">
+		        <input type="text" size="19" wicket:id="street" />
+		    </div>
+			
+		</div>
+		<div style="float:left">
+			
+			<label>
+		        <wicket:message key="houseNumber"/><span class="star">*</span>
+		    </label>
+		    <div class="inputIndent">
+		       <input type="text" size="5" wicket:id="houseNumber"/>
+		    </div>
+			
+		</div>
+		<div style="clear:both;"/>
+	</div>
+    <div>
+    	<div style="float:left">
+    		
+			<label>
+		        <wicket:message key="plz"/><span class="star">*</span>
+		    </label>
+		    <div class="inputIndent">
+		        <input type="text" size="5" wicket:id="postcode" />
+		    </div>
+			
+    	</div>
+		<div style="float:left">
+			
+			<label>
+		        <wicket:message key="town"/><span class="star">*</span>
+		    </label>
+		    <div class="inputIndent">
+		        <input type="text" size="12" wicket:id="city" />
+		    </div>
+			
+		</div>
+		<div style="clear:both;"/>
+    </div>
+    
+	<div>
+            <label>
+                <wicket:message key="country"/><span class="star">*</span>
+            </label>
+            <div class="inputIndent">
+                <select wicket:id="country"/>
+            </div>
+        </div>
+
+</wicket:panel>
+</html>

@@ -1,0 +1,43 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<span wicket:id="group">
+		<td style="text-align: right">
+			<div wicket:id="antipode1" class="term" />
+		</td>
+		
+		<td>
+			<div class="choice_wrapper_left"></div>			
+				<table cellspacing="0" cellpadding="0" class="dimension_rating_choices">
+					<tr>
+						<td wicket:id="choices">
+							<div wicket:id="content" class="radio_container"/>
+						</td>
+					</tr>
+				</table>		
+			<div class="choice_wrapper_right"></div>
+		</td>
+		
+		<td style="text-align: left">
+			<div wicket:id="antipode2" class="term" />
+		</td>
+		
+		<td>
+			<table class="notStated_body" wicket:id="noAnswerOption" cellspacing="0" cellpadding="0">
+				<tr>
+					<td style="width:30px;">
+						<span wicket:id="content"/>
+					</td>
+					<td style="width:110px; text-align:left">
+						<span style="display:block; margin-top:-4px; color:#7B7B7B">
+							<wicket:message key="noanswer">No Answer</wicket:message>
+						</span>
+					</td>
+				</tr> 
+			</table>
+		</td>
+	</span>
+
+</wicket:panel>
+</html>
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns:wicket>
+  	<head></head>
+  	<body>
+  	
+  		<div class="popupPageContent">
+  			<form wicket:id="form">
+	  			<table class="popupContentTable">
+	  				<wicket:child/>
+	  			</table>
+  			</form>
+  		</div>
+  		
+  		
+  		<div class="popupPageButtons">
+	  		<table class="popupContentTable">
+	  			<tr>
+	  				<td>
+	  					<span class="buttonContainer">
+					  		<a href="#" wicket:id="accept" class="accept baseButton baseButtonLast">
+					  			<span wicket:id="accept_label" />
+					  		</a>
+					  	</span>
+	  				</td>
+	  				
+	  				<td>
+				  		<span class="buttonContainer">
+					  		<a href="#" wicket:id="decline" class="decline baseButton baseButtonLast">
+					  			<span wicket:id="decline_label" />
+					  		</a>
+				  		</span>
+	  				
+	  				</td>
+	  			</tr>
+	  		</table>
+  		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<html xmlns:wicket>
+    <wicket:extend>
+    	<tr>
+    		<td>
+    			<p><wicket:message key="number"/></p>
+    		</td>
+    		
+    		<td>
+    			<table style="width: 100%">
+    				<tr>
+    					<td style="padding-left:6px;">
+    						<p>
+			    				<wicket:message key="antipode_one"/>
+			    			</p>
+    					</td>
+    				
+    					<td style="text-align: center;">
+    						<select wicket:id="numberOfRatingSteps" 
+    								size="1"
+    								class="baseButton baseButtonLast dimensionRating"></select>
+    						
+    						<span>
+    							<wicket:message key="steps" />
+    						</span>
+    					</td>
+    				
+    					<td style="padding-right:11px;">
+    						<p style="text-align: right;">	
+			    				<wicket:message key="antipode_two"/>
+			    			</p>
+    					</td>
+    					
+    				</tr>
+    			</table>
+    			
+    		</td>
+    		
+    		<td>
+    			<p class="legend space">
+                	<wicket:message key="number_legend"/>
+            	</p>
+    		</td>
+    	</tr>
+    	
+    	<tr>
+    		<td>
+    			<p><wicket:message key="antipode_list"/></p>
+    		</td>
+    		
+    		<td>
+    			<div wicket:id="antipodeList" class="whiteContainer"></div>
+    		</td>
+    		
+    		<td>
+    			<p>
+	            	<wicket:message key="antipode_list_legend"/>
+	        	</p>
+    		</td>
+    	</tr>
+    	
+       	<tr>
+       		<td>
+       			<span>
+       				<wicket:message key="noreply"/>
+       			</span>
+       		</td>
+       		
+       		<td>
+       			<select wicket:id="showNoAnswerOption"
+        				class="baseButton baseButtonLast selectionChoice"></select>
+       			
+       			<!-- TODO: Remove in resurce file -->
+       			<!-- <span>
+				<wicket:message key="noreply_checkbox_value"/>
+			</span> -->
+       		</td>
+       		
+       		<td>
+       			<p>
+	            	<wicket:message key="noreply_legend"/>
+	        	</p>
+       		</td>
+       	</tr>
+       	
+       	<tr>
+       		<td>
+       			<span>
+       				<wicket:message key="randomPosition"/>
+       			</span>
+       		</td>
+       		
+       		<td>
+       			<select wicket:id="randomPos"
+        				class="baseButton baseButtonLast selectionChoice"></select>
+       			
+       			<!-- TODO: Remove in resurce file -->
+       			<!-- <span>
+				<wicket:message key="noreply_checkbox_value"/>
+			</span> -->
+       		</td>
+       		
+       		<td>
+       			<p>
+	            	<wicket:message key="randomPosition_legend"/>
+	        	</p>
+       		</td>
+       	</tr>
+		
+    </wicket:extend>
+</html>

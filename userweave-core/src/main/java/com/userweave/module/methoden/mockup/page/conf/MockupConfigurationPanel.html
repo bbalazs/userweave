@@ -1,0 +1,147 @@
+<html xmlns:wicket>
+<wicket:head>
+	<script type="text/javascript">
+	function showUrl()
+	{
+		var url = $('input[name="url"]').val();	
+		
+		if(!/^(https?|ftp):\/\//i.test(url)) {
+    		url = 'http://'+url; // set both the value
+    	}
+    	
+		window.open(url);
+	}
+	
+	function resetUrl()
+	{
+		$('input[name="url"]').focus().val("http://userweave.net/").trigger('blur');
+	}
+	
+	</script>
+</wicket:head>
+<wicket:extend>
+
+	<tr>
+		<td>
+			<p><wicket:message key="freetext_label" /></p>
+		</td>
+		<td>
+			<div wicket:id="mockuptext"></div>
+		</td>
+		<td>
+			<p>
+				<wicket:message key="freetext_descr" />
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<p><wicket:message key="url_label" /></p>
+		</td>
+		<td>
+			<span wicket:id="url" style="margin-bottom: 5px;"></span>
+			
+			<span class="buttonContainer">
+				<a class="baseButton" href="#"
+				   onclick="showUrl(); return false;">
+					<span>
+						<wicket:message key="showUrl" />
+					</span>
+				</a>
+					
+				<a class="baseButton baseButtonLast" href="#"
+				   wicket:id="resetUrlLink">
+					<span>
+						<wicket:message key="resetUrl" />
+					</span>   
+				</a>
+			</span>
+		</td>
+		<td>
+			<p>
+				<wicket:message key="url_descr" />
+			</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<p><wicket:message key="layerVisible_label" /></p>
+		</td>
+		<td>
+			<select wicket:id="layerVisible"
+        			class="baseButton baseButtonLast selectionChoice"></select>
+
+			<!-- TODO: remove also in resource file -->
+			<!-- <span>
+				<wicket:message key="layerVisible_checkbox_descr" />
+			</span> -->
+		</td>
+		<td>
+			<p>
+				<wicket:message key="layerVisible_descr" />
+			</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<p><wicket:message key="next_config_label" /></p>
+		</td>
+		<td>
+			<select wicket:id="switchToNextConfigType"
+					class="baseButton baseButtonLast selectionChoice"></select>
+		</td>
+		<td>
+			<p>
+				<wicket:message key="next_config_descr" />
+			</p>
+		</td>
+	</tr>
+
+	<tbody wicket:id="timerContainer">
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="time_label" />
+				</span>
+			</td>
+			<td>
+				<span wicket:id="time" style="width:auto"></span>
+				<span>
+					<wicket:message key="seconds" />
+				</span>
+			</td>
+			<td>
+				<p>
+					<wicket:message key="time_descr" />
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="timeVisible_label"/>
+				</span>
+			</td>
+			<td>
+				<select wicket:id="timeVisible"
+        			class="baseButton baseButtonLast selectionChoice"></select>
+				
+				<!-- TODO: remove also in resource file -->
+				<!-- <span>
+					<wicket:message key="checkbox_label"/>
+				</span> -->
+				
+			</td>
+			<td>
+				<p>
+					<wicket:message key="checkbox_descr"/>
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</wicket:extend>
+</html>

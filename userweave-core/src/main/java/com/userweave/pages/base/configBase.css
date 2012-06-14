@@ -1,0 +1,676 @@
+/**
+ * Basic styles for the UserWeave.
+ * 
+ * Most of the components used in this
+ * project get their style informations
+ * from here, like buttons, colors, etc.
+ * 
+ * @author: opr
+ * 
+ */
+
+
+/**
+ * Styling for the main components of
+ * this project.
+ */
+* {
+font-family: netto;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+color: #000066;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:13px;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a.nohover:hover {
+	text-decoration:none;
+}
+
+a.link:hover {
+	text-decoration:underline;
+}
+
+#page {
+	width:944px;
+	padding:0px 0px 0px 5px;
+	margin:0px auto 20px;
+}
+
+#header {
+	padding-top:58px;
+}
+
+#mainbody {}
+
+
+/**
+ * Base colors and font formats
+ */
+.bold { font-weight:bold; }
+
+.tabBackground { background-color:#f5f5f5; }
+.darkGrey, .detail_value  { color:#3b3b3b; }
+.lightGrey, .detail_label { color:#888888; }
+.linkColor { color:#0197CA; }
+div.specialLinksContainer .linkColor { color:#a8d049 }
+.lineColor { 
+	background-color:	#c2c2c0; 
+	color:				#c2c2c0; 
+	border-color:		#c2c2c0; 
+}
+
+.relAndQuestColor { color:#1F3139 }
+
+.tabPanelColor {color:#809E92 }
+
+/**
+ * @override: set light grey color for
+ *    the detail_value class in an Accordion
+ */
+div.studiesAccordion .detail_value { color:#888888; }
+
+/**
+ * useful classes to style headlines, buttons, etc.
+ */
+
+/*
+ * creates a simple line to separate
+ * content.
+ */
+div.line_with_space {
+	
+	border-bottom:1px solid #c2c2c0;
+	margin:20px 0px;
+}
+
+
+/**
+ * used by accordion seperator
+ */
+div.headSpace {
+    margin-top:36px;
+}
+
+/**
+ * space block for popups to create
+ * a line between content and button 
+ */
+div.hr_space_block { 
+    margin:35px 10px 5px 0px;
+	border-bottom:1px solid #c2c2c0;
+}
+
+/** creates a simple underlined hedline */
+div.simple_underlined_headline, 
+div.simple_underlined_headline_no_bottom_margin {
+	border-bottom:1px solid #c2c2c0;
+	max-width:707px;
+	color:#3b3b3b;
+	padding-bottom:7px;
+	margin-bottom:20px;
+}
+
+div.simple_underlined_headline_no_bottom_margin {
+	margin-bottom:7px;
+	max-width:100%;
+}
+
+/**
+ * general information panel
+ * (contains statistics)
+ */
+div.generalInfo {
+	margin-bottom:25px;
+}
+
+/**
+ * buttons
+ */
+input.ok_button, input.no_button {
+	background-image:url(ok_button.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	
+	color:#888888;
+	
+	width:39px;
+	height:24px;
+	padding-bottom:4px;
+	border:0px none;
+	
+	font-size:11px;
+	font-weight:bold;
+	
+	cursor:pointer;
+}
+
+input.ok_button {
+	width:29px;
+}
+
+input.cancel_button, input.cancel_button:hover {
+	background-image:url(cancel.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+
+	color:#888888;
+
+	width:100px;
+	height:24px;
+	padding-bottom:4px;
+	border:0px none;
+
+	font-size:11px;
+	font-weight:bold;
+
+	cursor:pointer;
+}
+
+input.cancel_button:hover {
+    background-image:url(cancel_hover.png);
+	color:#3b3b3b;
+}
+
+input.ok_button:hover, input.no_button:hover {
+    background-image:url(ok_button_hover.png);
+	color:#3b3b3b;
+}
+
+input.save_button {
+	background-image:url(save_button.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+    
+    color:#888888;
+    
+    width:75px;
+    height:24px;
+    padding-bottom:4px;
+    border:0px none;
+    
+    font-size:11px;
+    font-weight:bold;
+    
+    cursor:pointer;
+}
+
+input.save_button:hover {
+    background-image:url(save_button_hover.png);
+    color:#3b3b3b;
+}
+
+input.no_button {
+	background-image:url(no_button.png);
+}
+
+input.no_button:hover {
+    background-image:url(no_button_hover.png);
+}
+
+
+input.save_button_width_150 {
+	background-image:url(save_button_w150px.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+    
+    color:#888888;
+    
+    width:150px;
+    height:24px;
+    padding-bottom:4px;
+    border:0px none;
+    
+    font-size:11px;
+    font-weight:bold;
+    
+    cursor:pointer;
+}
+
+input.save_button_width_150:hover {
+    background-image:url(save_button_w150px_hover.png);
+    color:#3b3b3b;
+}
+
+/**
+ * Default button, when above buttons
+ * not in use.
+ * @see: hover.js for the hover effect
+ */
+div.defaultButton_left,
+span.defaultButton_left,
+a.defaultButton_left {
+	display:block;
+	float:left;
+	background-image:url(dynamic_interaction_button_left.jpg);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+div.defaultButton_right,
+span.defaultButton_right {
+	display:block;
+	margin-left:11px;
+	padding-right:10px;
+    background-image:url(dynamic_interaction_button_right.jpg);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+div.defaultButton_center,
+span.defaultButton_center,
+input.defaultButton_center,
+button.defaultButton_center {
+    /*margin-right:10px;*/
+    display:block;
+    background-image:url(dynamic_interaction_button_center.jpg);
+    background-position:center center;
+    background-repeat:repeat-x;
+	height:22px;
+	padding-top:2px;
+	cursor:pointer;
+}
+
+input.defaultButton_center,
+button.defaultButton_center {
+    padding-top:0px;
+	padding-bottom:4px;
+    height:24px;
+    border: 0px;
+    font-size:11px;
+    font-weight:bold;
+    color:#888888;
+}
+
+div.defaultButton_right span.wicket-ajax-indicator {
+	display:block;
+    float:right;
+    height:24px;
+	
+	background-image:url(dynamic_interaction_button_center.jpg);
+	background-position:right center;
+}
+
+span.wicket-ajax-indicator img {
+	padding-top:4px;
+}
+
+div.defaultButton_left_hover,
+span.defaultButton_left_hover,
+a.defaultButton_left_hover {
+    background-image:url(dynamic_interaction_button_left_hover.jpg);
+	cursor:pointer;
+}
+
+div.defaultButton_left_hover div.defaultButton_right,
+span.defaultButton_left_hover span.defaultButton_right,
+a.defaultButton_left_hover span.defaultButton_right {
+    background-image:url(dynamic_interaction_button_right_hover.jpg);
+}
+
+div.defaultButton_left_hover div.defaultButton_center, 
+div.defaultButton_left_hover input.defaultButton_center
+span.defaultButton_left_hover span.defaultButton_center, 
+a.defaultButton_left_hover span.defaultButton_center {
+    background-image:url(dynamic_interaction_button_center_hover.jpg);
+}
+
+div.defaultButton_center > span,
+span.defaultButton_center > span, 
+div.defaultButton_center > a > span, 
+div.defaultButton_center > input {
+	font-size:11px;
+	font-weight:bold;
+	color:#888888;;
+}
+
+div.defaultButton_left_hover input.defaultButton_center,
+div.defaultButton_left_hover div.defaultButton_center > a > span,
+a.defaultButton_left_hover span.defaultButton_center span,
+span.defaultButton_left_hover span.defaultButton_center span/*,
+div.defaultButton_left_hover div.defaultButton_center > span, 
+div.defaultButton_left_hover div.defaultButton_center > input
+*/
+{
+	color:#3b3b3b;
+}
+
+div.newStudyWidth, 
+div.addModuleWidth {	
+	margin-top:10px;
+}
+
+/**
+ * table rows
+ */
+
+tr.even_first td {
+	border-top:1px solid #c2c2c0;
+}
+
+tr.odd {
+	background-color:#f5f5f5;
+}
+
+tr.even_first td, tr.even > td, tr.odd > td {
+	border-bottom:1px solid #c2c2c0;
+}
+
+div.listItem {
+	padding:3px 5px 3px 10px;
+}
+
+div.listItem a:hover {
+	text-decoration:none;
+}
+
+div.studiesAccordion div.listItem:hover,
+tr.even:hover, tr.odd:hover, tr.even_first:hover {
+	background-color:#cccccc;
+}
+
+div.studiesAccordion div.oddRow {
+    background-color:#F5F5F5;
+}
+
+div.studiesAccordion > div {
+    border-bottom:1px solid #C2C2C0;
+}
+
+/**
+ * @override: 
+ *      reset border bottom on a button
+ */
+div.studiesAccordion > div.defaultButton_left {
+    border-bottom:0px none;
+}
+/**
+ * headline suroundings for a table
+ */
+.headline_grid_left {
+	margin:3px 0px 0px;
+	background-image:url(headline_grid_left.jpg);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+div.headline_grid_right {
+	margin-left:5px;
+	background-image:url(headline_grid_right.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+div.headline_grid_center {
+	border-top:2px solid #e3efdb;
+	border-bottom:2px solid #e3efdb;
+	height:18px;
+	margin-right:5px;
+	padding:2px 0px 0px 3px;
+}
+
+/**
+ * table rows for rrt and questionnaire
+ */
+.answer_header_left,
+.answer_header_right,
+.answer_footer_left,
+.answer_footer_right,
+.answer_header_center,
+.answer_footer_center {
+	font-size:0;
+}
+ 
+ 
+.answer_header_left {
+	background-image:url(possibleAnswer_corner_topleft.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	border: 0px solid red;
+	
+	margin-top:3px;
+}
+
+.answer_header_right {
+	margin-left:5px;
+	padding-right:5px;
+	background-image:url(possibleAnswer_corner_topright.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+    border: 0px solid green;
+}
+
+.answer_footer_left {
+	background-image:url(possibleAnswer_corner_bottomleft.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+
+.answer_footer_right {
+	margin-left:5px;
+	padding-right:5px;
+	background-image:url(possibleAnswer_corner_bottomright.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+.answer_header_center, .answer_footer_center {
+	height:5px;
+	background-color:#c7d9d1;
+}
+
+.answer_content {
+	padding:0 16px;
+	background-color:#c7d9d1;
+	border: 0px solid red;
+}
+
+.answer_end {
+	background-image:url(possibleAnswer_end.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+	width:5px;
+	height:24px;
+	margin-top:3px;
+}
+
+.count {
+	background-color:#6B8987;
+	color:#1F3139;
+	display:block;
+	font-weight:bold;
+	height:21px;
+	margin-top:3px;
+	padding-top:3px;
+}
+
+/******************************************* 
+ * Header Elements of config page
+ *******************************************/
+
+div.specialLinksContainer {
+	float:right;
+	margin-top:-19px;
+} 
+
+.header_center_bottom_right {
+	width:944px;
+	height:19px;
+	background-image:url(header_right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+.header_bottom {
+	width:221px;
+	height:22px;
+}
+
+.header_bottom_right {
+	float:right;
+	width:10px;
+	height:22px;
+	background-image:url(header_bottom_left_right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+.header_bottom_footer_left {
+	background-image:url(corner_bottomleft.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.header_bottom_footer_right {
+	margin-left:5px;
+	background-image:url(header_bottom_left_corner_right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+.header_bottom_footer_center {
+	margin-right:5px;
+	width:206px;
+	height:5px;
+}
+/***********************************
+ * content
+ ***********************************/
+ #left_column {
+ 	width:220px;
+ 	float:left;
+ }
+ 
+ .left_column_repeater {
+ 	margin-top:3px;
+ 	width:216px;
+ 	height:180px;
+ 	background-image:url(left_column_img.jpg);
+	background-position:top left;
+	background-repeat:repeat-y;
+ }
+ 
+ .left_column_background {
+ 	margin-top:3px;
+ 	width:197px;
+ 	height:24px;
+ 	background-image:url(left_column_img.jpg);
+	background-position:top left;
+	vertical-align: middle;
+	padding:10px 0 0 19px;	
+ }
+ 
+ #right_column {
+ 	float:right;
+ 	min-width:200px;
+ 	display:none;
+ }
+ #center_column {
+ 	margin:0px 0px 0px 220px;
+ }
+
+
+/**
+ * Header Panel
+ */
+div.content_with_border_left {
+    border-right: 1px solid #C2C2C0;
+    width:674px;
+    margin:0px 0px 0px 19px;
+    float:left;
+}
+
+div.importantLinksContainer {
+    float:right;
+    width:180px;
+    margin:22px 46px 0px 0px;
+}
+
+div.importantLinksContainer div.importantLinks {
+    height:24px;
+    margin-bottom:6px;
+}
+
+div.top_margin {
+    margin-top:22px;
+}
+
+div.bottom_padding {
+    padding-bottom:14px;
+}
+
+/***********************************
+ * Individualisierung der Input 
+ * Buttons zum Upload von Bildern
+ ***********************************/
+#input_button,
+#input_button_logo {
+	position: absolute;
+	text-align: left;
+	left:0;
+	height:24px;
+	cursor:pointer;
+    opacity:0;
+	filter:alpha(opacity: 0);
+	margin-left:115px;
+}
+
+#input_button_logo { margin-left:0px; }
+
+#fake_button_input {
+    height:17px;
+}
+
+.logo_upload_fake_input {
+	display:block;
+	float:left;
+}
+
+.fake_button {
+    height:24px;
+    padding:0px 4px;
+}
+
+/***********************************
+ * Fehlerseite
+ ***********************************/
+ 
+.internal_content a{
+ color:#0197CA;
+text-decoration:none;
+ }
+ 
+.internal_content{
+margin-top:50px;
+width:460px;
+margin-bottom:100px;
+}
+
+.internal_headline{
+font-size:15px;
+font-weight:bold;
+padding-bottom:2px;
+}
+
+/**
+ * invitation layer
+ */
+span.inviteLocaleChoice label {
+	margin-left:5px;
+}
+
+
+/**
+ *
+ */
+.legend {
+	color:#809E92;
+}
+
+

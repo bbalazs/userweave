@@ -1,0 +1,30 @@
+<html xmlns:wicket>
+<wicket:panel>
+  	<table class="statisticsTable">
+    	<wicket:enclosure>
+	    	<tbody>
+	    		<tr>
+	    			<td>
+	    				<span>
+	    					<wicket:message key="typeOfModule" />
+	    				</span>
+	    			</td>
+	    			<td>
+	    				<span wicket:id="typeOfModule"></span>
+	    			</td>
+	    			<td>
+	    				<p>
+	    					<wicket:message key="typeOfModule_legend" />
+	    				</p>
+	    			</td>
+	    		</tr>
+	    	</tbody>
+    	</wicket:enclosure>
+    		
+    	<tbody wicket:id="statistics"></tbody>
+    </table>
+    	
+   	<div wicket:id="reportPanel"></div>
+    	
+</wicket:panel>
+</html>

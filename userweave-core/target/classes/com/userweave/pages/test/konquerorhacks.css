@@ -1,0 +1,17 @@
+.imageButtonSubmitValue {
+	display:block;
+	position:absolute;
+	margin:61px 0px 0px 766px;
+	font-size:10px;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+.imageButtonSubmitValueForMockup {
+	display:block;
+	position:absolute;
+	margin: 8px 0px 0px 85px;
+	font-size:10px;
+    font-weight:bold;
+	cursor:pointer;
+}

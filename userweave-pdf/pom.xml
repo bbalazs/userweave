@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project>
+	<parent>
+		<groupId>com.userweave</groupId>
+		<artifactId>portal-parent</artifactId>
+		<version>${parentProjVersion}</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.userweave</groupId>
+	<artifactId>userweave-pdf</artifactId>
+	<name>userweave-pdf</name>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- itext -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.1.7</version>
+		</dependency>
+		
+		<!-- fop -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+    			<artifactId>fop</artifactId>
+    			<version>0.95beta-1</version>
+		</dependency>
+		 
+	</dependencies>
+</project>

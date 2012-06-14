@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!--===========================================-->
+<!-- Sample sheet mapping file for excelbundle -->
+<!--===========================================-->
+<map>
+	<mapping name="foo">/path/to/foo/module</mapping>
+	<mapping name="bar">/path/to/bar/module</mapping>
+</map>

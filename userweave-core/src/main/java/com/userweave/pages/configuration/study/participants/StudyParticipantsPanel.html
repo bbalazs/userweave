@@ -1,0 +1,29 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<div class="seperator">
+        <div class="rightContent" style="width:240px; float:right">
+	       <div wicket:id="servicePanel"/>
+		   <div style="clear:both"/>
+	    </div>
+        <div class="leftContent" style="margin-right:260px">
+			<b class="darkGrey"><wicket:message key="participants_tab_heading"/></b>
+			<br/>
+		  	<p class="legend heading"><wicket:message key="participants_tab_legend"/></p>
+		
+		    <div class="line_with_space"/>
+		
+		  	<label><wicket:message key="number_of_participants"/></label>
+		  	
+			<div class="inputIndent">
+			   <span wicket:id="numberOfParticipants"/>
+			   <p class="legend space"><wicket:message key="how_many"/></p>
+			</div>
+			
+			 <div wicket:id="feedback" />
+			 
+	    </div>
+		<div style="clear:both"/>
+	</div>
+</wicket:extend>
+</html>
+  

@@ -1,0 +1,26 @@
+/*
+ * Styles for the loading screen
+ */
+.mainContentHeight { height:222px; }
+
+#loadingLeft {
+	background:url(loadingLeft.jpg) no-repeat left center;
+	margin: 0px 5px 4px;
+}
+#loadingRight {
+	background:url(loadingRight.jpg) no-repeat right center;
+}
+
+#loading { 
+   width: auto;
+   height: 218px;
+   text-align:center; 
+}
+
+.loading { 
+	margin:0px 10px; 
+	background: url(loading.jpg) repeat-x;
+}
+.loading img { width:32px; margin:0px auto; }
+
+.contentShadeInvisible { display:none; }
