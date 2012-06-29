@@ -1,0 +1,57 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="email" />
+			</span>
+		</td>
+		
+		<td>
+			<input type="text" wicket:id="emailAddress"/>
+			
+			<div wicket:id="feedback"></div>
+			
+			<p>
+				<wicket:message key="email_legend" />
+			</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="locale" />
+			</span>
+		</td>
+		
+		<td>
+			<select wicket:id="locales"
+					class="baseButton baseButtonLast studyChangeButton"
+					style="float: none;"></select>
+			
+			<p>
+				<wicket:message key="locale_legend" />
+			</p>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="roles" />
+			</span>
+		</td>
+		
+		<td>
+			<select wicket:id="roles"
+					class="baseButton baseButtonLast studyChangeButton"
+					style="float: none;"></select>
+			
+			<p>
+				<wicket:message key="roles_legend" />
+			</p>
+		</td>
+	</tr>
+</wicket:panel>
+</html>

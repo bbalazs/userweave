@@ -1,0 +1,67 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="project" />
+			</span>
+		</td>
+		
+		<td>
+			<div wicket:id="projects" class="baseButton baseButtonLast"></div>  <!-- class="browserBox"></div> -->
+		</td>
+	</tr>
+	
+	<wicket:enclosure>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="study" />
+				</span>
+			</td>
+			
+			<td>
+				<div wicket:id="studies" class="baseButton baseButtonLast"></div>  <!-- class="browserBox"></div> -->
+			</td>
+		</tr>
+	</wicket:enclosure>
+	
+	<wicket:enclosure>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="module" />
+				</span>
+			</td>
+			
+			<td>
+				<div wicket:id="modules" class="baseButton baseButtonLast"></div>   <!-- class="browserBox"></div> -->
+			</td>
+		</tr>
+	</wicket:enclosure>
+	
+	<!-- <tr>
+		<td>
+			<wicket:message key="question" />
+		</td>
+		
+		<td>
+			<div wicket:id="questions" class="baseButton baseButtonLast"></div>  class="browserBox"></div>
+		</td>
+	</tr> -->
+	
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="new_name" />
+			</span>
+		</td>
+		
+		<td>
+			<input type="text" wicket:id="name" />
+			<div wicket:id="feedback"></div>
+		</td>
+	</tr>
+
+</wicket:extend>
+</html>

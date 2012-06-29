@@ -1,0 +1,17 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<div wicket:id="border">
+		<div style="padding: 15px;">
+			<div><wicket:message key="apiHeading"/></div>
+			<div id="errorMessage" wicket:id="errorMessage"></div><br />
+			<br />
+			<div><wicket:message key="debugHeading" /> </div>
+			<div wicket:id="noParameter"></div>
+			<div id="secTokenHash" wicket:id="secTokenHash"></div>
+			<div wicket:id="repeater">
+				<span wicket:id="key" />:&nbsp;<span wicket:id="value" /><br />
+			</div>
+		</div>
+	</div>
+</wicket:panel>
+</html>

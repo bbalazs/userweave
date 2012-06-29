@@ -1,0 +1,56 @@
+<html xmlns:wicket>
+<wicket:panel>
+
+	<div class="whiteContainer">
+		<div wicket:id="imageContainer" class="imageContainer">
+			<div wicket:id="repeater" class="iconRepeater">
+
+				<div class="iconTile">
+					<div wicket:id="image" class="image"></div>
+				</div>
+
+				<wicket:enclosure>
+					<a href="#" wicket:id="delete" class="remove"></a>
+				</wicket:enclosure>
+
+			</div>
+			<div style="clear: both"></div>
+		</div>
+
+		<a wicket:id="upload" class="baseButton addButton">
+			<span>+</span>
+			<span>
+				<wicket:message key="uploadIcons" /> 
+			</span>
+		</a>
+
+		<div wicket:id="uploadModal"></div>
+
+		<!-- <div wicket:id="upload" style="position: relative"
+			class="icon_upload_container"></div> -->
+
+	</div>
+
+	
+	
+	
+	
+<!-- 	<form wicket:id="form" name="form">
+		
+		  
+		<wicket:enclosure>
+		  	<div class="submit_image_upload_container">
+		  		<span class="submit_image_upload"></span>
+		  		
+		  		<input type="submit" 
+		  			   wicket:id="submit" 
+		  			   wicket:message="value:add" 
+		  			   name="submitImage" 
+		  			   class="submit_image_upload"/>
+		  	</div>
+		</wicket:enclosure>
+		  
+	</form> -->
+</wicket:panel>
+</html>
+  

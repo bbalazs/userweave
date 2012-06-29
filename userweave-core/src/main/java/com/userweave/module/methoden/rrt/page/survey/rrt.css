@@ -1,0 +1,259 @@
+/******************************************
+ * Formats for Rangreihentool
+ ******************************************/
+
+.highlightakt{
+	background:transparent url(unter_hoover_black.png) no-repeat scroll 0 0;
+	height:32px;
+	width:250px;
+	padding-top:2px;
+	font-weight:bold;
+	color:#2e2d2d;
+	z-index:5;
+}
+
+.main{
+	width:210px;
+	height:auto;
+	cursor: pointer;
+}
+
+.listPositioner {
+	margin:46px 0px 0px 45px;
+	position:relative;
+}
+
+#myList{
+	position:relative;
+	cursor: pointer;
+    width:250px;
+
+}
+
+.list{
+	background:transparent url(unterlage.png) no-repeat scroll 0 0;
+	height:32px;
+	width:250px;
+	padding-top:2px;
+	font-weight:bold;
+	color:#5c5959;
+	z-index:5;
+}
+
+.hover {
+	background:transparent url(hover.png) no-repeat scroll 0 0;
+	height:32px;
+	margin-left:8px;
+	margin-top:2px;
+	padding-left:26px;
+	padding-top:2px;
+	width:199px;
+	font-weight:bold;
+  }
+
+.zahl{
+	background:transparent url(unter_zahl.png) no-repeat scroll 0 0;
+	height:24px;
+	padding-left:13px;
+	padding-top:10px;
+	width:83px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+#counterList{ height:33px; }
+
+.zahlen{
+	width:96px;
+	float:left;
+	margin: 61px 0px 0px 25px;
+	position:absolute;
+}
+
+.list p {
+	display:block;
+	padding:7px 0px 0px 26px;
+}
+
+.zahl p {
+	margin-left:-7px;
+	margin-top:-6px;
+}
+
+.highlightakt p {
+	display:block;
+	padding:7px 0px 0px 26px;
+}
+
+#pointerOfBox {
+	width:62px;
+    height:30px;
+	float:right;
+	margin:-23px 0px 0px 260px;
+    display:none;
+    position:absolute;
+    background:url(rrt_center_arrow.png) no-repeat center center;
+}
+
+/**********
+ * Skala
+ **********/
+#skala { width: 12px; float:left; font-family:verdana; position:relative;}
+
+.borderDiv {
+    width:6px;
+    padding: 0px 2px;
+}
+.image {
+    background-color:#b0b0b0;
+    height:100%;
+    width:6px;
+}
+
+.arrow {
+    width:7px;
+    height:14px;
+    margin-left:-3px;
+    position:relative;
+}
+
+.up { background: url(arrow_up.png) no-repeat top center; margin-bottom:6px; }
+.down { background: url(arrow_down.png) no-repeat bottom center; margin-top:6px; }
+
+.topLine {
+    min-width:60px;
+    padding-top:13px;
+    margin-bottom:6px;
+    display:block;
+    font-size:10px;
+    font-weight:normal;
+    color:#777777;
+    white-space:nowrap;
+}
+.bottomLine {
+    min-width:60px;
+    padding-bottom:15px;
+    margin-top:6px;
+    display:block;
+    font-size:10px;
+    font-weight:normal;
+    color:#777777;
+    white-space:nowrap;
+}
+
+/***********
+ * description
+ ***********/
+.beschr_container_header_left {
+	background-image:url(corner_top_left.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.beschr_container_header_right {
+	margin-left:6px;
+	background-image:url(corner_top_right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+.beschr_container_header_center {
+	margin-right:6px;
+	height:4px;
+	width:338px;
+	border-top:2px solid #e1e1e1;
+	background-color:#ffffff;
+}
+.beschr_container_footer_left {
+	background-image:url(corner_bottom_left.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.beschr_container_footer_right {
+	margin-left:6px;
+	background-image:url(corner_bottom_right.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+.beschr_container_footer_center {
+	margin-right:6px;
+	height:4px;
+	width:338px;
+	border-bottom:2px solid #e1e1e1;
+}
+#beschr_container {
+	margin: 37px 0px 0px 86px;
+	width:350px;
+	min-height:262px;
+	position:relative;
+}
+
+#questionmarkBox {
+	width:36px;
+	height:36px;
+	float:left;
+	margin: -24px 0px 0px 9px;
+}
+
+.description_container {
+	border-left:2px solid #e1e1e1;
+	border-right:2px solid #e1e1e1;
+	padding:17px 27px 17px 50px;
+	width:269px;
+}
+#description h2, .description h2 {
+	color:#b7b7b7;
+	margin-bottom:8px;
+	font-size:14px;
+}
+#description hr, .description hr {
+	width:100%;
+	margin:0px 0px 13px;
+	padding:0;
+}
+
+.infos {
+	display:block;
+	text-align:justify;
+	color:#777777;
+}
+
+.infos strong, .infos b {
+	color:#5e5e5e;
+}
+
+.visible { display:block; }
+.unvisible { display: none; }
+
+
+/*********
+ * styles for the round corners
+ *********/
+.corner {
+	width: 6px;
+	height: 6px;
+}
+.top_left {
+	float:left;
+	margin:-13px 0px 0px -45px;
+	background: url(corner_top_left.png) no-repeat center center;
+}
+.top_right {
+	float:right;
+	margin:-13px -33px 0px 0px;
+	background: url(corner_top_right.png) no-repeat center center;
+}
+.footer {
+	border-bottom:2px solid #e1e1e1;
+	margin-left:86px;
+	width:327px;
+	position:relative;
+}
+
+.footer_ecke_links{
+	float:left;
+	margin-top:-4px;
+}
+
+.footer_ecke_rechts{
+	float:right;
+	margin-top:-4px;
+}

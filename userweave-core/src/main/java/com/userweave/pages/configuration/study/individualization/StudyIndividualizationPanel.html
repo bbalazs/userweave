@@ -1,0 +1,75 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<div class="seperator">
+        <div class="rightContent" style="width:240px; float:right">
+	       <div wicket:id="servicePanel"/>
+		   <div style="clear:both"/>
+	    </div>
+        <div class="leftContent" style="margin-right:260px">
+			<b class="darkGrey">
+				<wicket:message key="individual_tab_heading"/>
+			</b>
+			<br/>
+			<p class="legend heading"><wicket:message key="individual_tab_legend"/></p>
+		
+		    <div class="line_with_space"/>
+		
+			<label><wicket:message key="individual_head"/></label>
+			
+			<div class="inputIndent">
+				<span wicket:id="headline" />
+				<p class="legend space"><wicket:message key="individual_head_legend"/></p>
+			</div>
+			
+			<div class="line_with_space"/>
+			
+			<label><wicket:message key="individual_desc"/></label>
+			
+			<div class="inputIndent">
+				<div wicket:id="description" />
+		        <p class="legend space"><wicket:message key="individual_desc_legend"/></p>        
+		    </div>
+			
+			<div class="line_with_space"/>
+			
+			<label><wicket:message key="individual_url"/></label>
+		
+		    <div class="inputIndent">
+		        <span wicket:id="finishedPageUrl" />    
+		        <p class="legend space"><wicket:message key="individual_url_legend"/></p>
+		    </div>
+		
+		    <div class="line_with_space"/>
+		
+			<label><wicket:message key="individual_not_available_url"/></label>
+		
+			<div class="inputIndent">
+		        <span wicket:id="notAvailableUrl" />    
+		        <p class="legend space"><wicket:message key="individual_not_available_url_legend"/></p>
+			</div>
+			
+			<div class="line_with_space"/>
+			
+		    <label><wicket:message key="individual_background"/></label>
+		
+		    <div class="inputIndent">
+		        <span wicket:id="backgroundColor" />
+				<p class="legend space"><wicket:message key="individual_background_legend"/></p>
+		    </div>
+		
+		    <div class="line_with_space"/>
+		
+			<label><wicket:message key="individual_logo"/></label>
+			
+		    <div class="inputIndent">
+		        <div wicket:id="logoUpload"/>
+				<p class="legend space"><span wicket:id="individualLogoLegend"/></p>
+		    </div>
+			
+			<div wicket:id="feedback" />
+        </div>
+        <div style="clear:both"/>
+    </div>
+</wicket:extend>
+</html>
+  

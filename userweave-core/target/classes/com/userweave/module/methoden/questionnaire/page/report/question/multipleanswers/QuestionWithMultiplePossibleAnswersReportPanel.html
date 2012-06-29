@@ -1,0 +1,52 @@
+<html xmlns:wicket>
+    <wicket:extend>
+	    <tr>
+	    	<td>
+	    		<span>
+	    			<wicket:message key="answers" />
+	    		</span>
+	    	</td>
+	    	
+	    	<td>
+	    		<table id="ratingTable" class="statisticsContainer">
+					<thead>
+						<tr>
+							<th>
+								<span>
+			                    	<wicket:message key="answer" />
+			                    </span>
+							</th>
+							
+							<th style="text-align: right">
+								<span>
+									<wicket:message key="absolute_frequency" />
+			                    </span>
+							</th>
+							
+							<th style="text-align: right">
+								<span>
+									<wicket:message key="relative_frequency" />
+			                    </span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+			            <tr wicket:id="answers">
+			            	<td>
+			                	<span wicket:id="possibleAnswer"></span>
+			                </td>
+			                
+			                <td style="text-align: right">
+			                	<span wicket:id="absoluteCount"></span>
+			                </td>
+			                
+			                <td style="text-align: right">
+			                  	<span><span wicket:id="relativeCount"></span>%</span>
+			                </td>
+			            </tr>
+			    	</tbody>
+		        </table>
+	    	</td>
+		</tr>
+    </wicket:extend>
+</html>

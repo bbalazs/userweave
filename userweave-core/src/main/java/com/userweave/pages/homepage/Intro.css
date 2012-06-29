@@ -1,0 +1,131 @@
+div.introContainer {
+    width:712px;
+    margin-left:167px;
+}
+
+div .intro_locale_switch {
+	color:#9FCD37;
+    margin-left:167px;
+	margin-top:126px;
+	text-align:right;
+	width:712px;
+}
+
+div.introContainer h1 {
+	margin-bottom:50px;
+	font-weight: bold;
+	
+}
+
+div.introContainer .introTextGreen, 
+div.introContainer h1,
+div.introContainer .testUs   {
+	color: #d2fb78;
+}
+
+div.introContainer .usabilityTests {
+	color: #fff;
+	margin-bottom:13px;
+}
+
+div.introContainer .rapidResults {
+	color: #c5d7a0;
+	margin-bottom:42px;
+}
+
+div.introContainer .testUs {
+	font-weight: bold;
+	margin-bottom:66px;
+}
+
+div.introPanelHeaderLeft,
+div.introPanelFooterLeft {
+    background-image:url(introframe-corner-topleft.jpg);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+div.introPanelHeaderRight,
+div.introPanelFooterRight {
+    margin-left:30px;
+    background-image:url(introframe-corner-topright.jpg);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+div.introPanelFooterLeft {
+    background-image:url(introframe-corner-bottomleft.jpg);
+}
+div.introPanelFooterRight { 
+	background-image:url(introframe-corner-bottomright.jpg); 
+}
+
+div.introPanelTop,
+div.introPanelBottom {
+    margin-right:30px;
+    height:50px;
+    
+    background-image:url(introframe-top.jpg);
+    background-position:center center;
+    background-repeat:repeat-x;
+}
+
+div.introPanelBottom {
+    height:50px;
+    background-image:url(introframe-bottom.jpg);
+}
+
+div.introPanelCenterLeft {
+    background-image:url(introframe-left.jpg);
+    background-position:left center;
+    background-repeat:repeat-y;
+}
+
+div.introPanelCenterRight {
+    margin-left:30px;
+    
+    background-image:url(introframe-right.jpg);
+    background-position:right center;
+    background-repeat:repeat-y;
+}
+
+div.introPanelCenter {
+    margin-right:30px;
+    padding:32px 0px 65px 86px;
+    background-color:#597715;
+}
+
+
+div.introContainer a.okButton,
+div.introContainer a.cancelButton {
+	background-repeat:no-repeat;
+	background-position: center center;
+	color: #2a4002;
+	display:block;
+	float:left;
+	font-weight:bold;
+	height:30px;
+	text-decoration: none;
+	width: 189px;
+	padding: 15px 0 0 0px;
+	text-align: center;	
+}
+
+div.introContainer a.okButton {
+	background-image: url(./ok_button.jpg);
+}
+
+div.introContainer a.okButton:hover {
+	background-image: url(./ok_button_hover.jpg);
+}
+
+
+div.introContainer a.cancelButton {
+	background-image: url(./cancel_button.jpg);
+	color:black;
+}
+
+div.introContainer a.cancelButton:hover {
+	background-image: url(./cancel_button_hover.jpg);
+}
+

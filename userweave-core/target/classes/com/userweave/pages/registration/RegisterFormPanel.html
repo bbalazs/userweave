@@ -1,0 +1,27 @@
+<wicket:panel>
+  <form wicket:id="form">  
+  <div class="register">
+  <div class="register_head"><wicket:message key="headline"/></div>
+        <span wicket:id="feedback">feedbackmessages will be put here</span>   
+        <br><br>
+  <p><wicket:message key="first_p"/></p>
+  <span><p><wicket:message key="name"/>:</p><input  wicket:id="forename"></span>
+  <span><p><wicket:message key="surname"/>:</p><input  wicket:id="lastname"></span>
+  <p><wicket:message key="second_p"/></p>
+  <span><p><wicket:message key="mail"/>:</p><input  wicket:id="email"></span>
+    <p><wicket:message key="mail_text"/></p>
+  <span><p><wicket:message key="password"/>:</p><input wicket:id="password" type="password"></span>
+  <p><wicket:message key="pass_text"/></p>
+	
+	
+  
+  <p><wicket:message key="third_p"/></p>
+<br>
+<p><input type="checkbox" wicket:id="checked" id="checked"><wicket:message key="fourth_p"/><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">http://creativecommons.org/licenses/by/3.0/</a> 
+<wicket:message key="fifth_p"/> <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">http://opendatacommons.org/licenses/odbl/1.0/</a>
+ <wicket:message key="sixt_p"/></p>           	
+            	<input class="register_submit" type="submit" value="submit">
+       </div>
+            </form>
+
+</wicket:panel>

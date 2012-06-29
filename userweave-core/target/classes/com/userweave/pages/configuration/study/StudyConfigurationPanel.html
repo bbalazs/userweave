@@ -1,0 +1,68 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<!--  <div wicket:id="paymentModalWindow" />-->
+	
+		<tr>
+			<td  style="vertical-align: top;">
+				<label><wicket:message key="finishedPageUrl"/></label>
+			</td>
+			<td>
+				<span wicket:id="finishedPageUrl" style="margin-bottom: 5px;"></span>
+				
+				<span class="buttonContainer">
+					<a class="baseButton" href="#"
+					   onclick="showUrlForFinished(); return false;">
+						<span>
+							<wicket:message key="showUrl" />
+						</span>
+					</a>
+						
+					<a class="baseButton baseButtonLast" href="#"
+					   wicket:id="resetFinishedUrlLink">
+						<span>
+							<wicket:message key="resetUrl" />
+						</span>   
+					</a>
+				</span>	
+			
+			</td>
+			<td  style="vertical-align: top;">
+				<p><wicket:message key="finishedPageUrl_legend"/></p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td  style="vertical-align: top;">
+				<label><wicket:message key="notAvailableUrl"/></label>
+			</td>
+			<td>
+			
+				<span wicket:id="notAvailableUrl" style="margin-bottom: 5px;"></span>
+				
+				<span class="buttonContainer">
+					<a class="baseButton" href="#"
+					   onclick="showUrlForNotAvailable(); return false;">
+						<span>
+							<wicket:message key="showUrl" />
+						</span>
+					</a>
+						
+					<a class="baseButton baseButtonLast" href="#"
+					   wicket:id="resetNotAvailableUrlLink">
+						<span>
+							<wicket:message key="resetUrl" />
+						</span>   
+					</a>
+				</span>	
+				
+			</td>
+			<td style="vertical-align: top;">
+				<p><wicket:message key="notAvailableUrl_legend"/></p>
+			</td>
+		</tr>
+	
+	<!-- <div wicket:id="content"></div> -->
+	
+	<div wicket:id="feedback"></div>
+</wicket:extend>
+</html>

@@ -1,0 +1,24 @@
+<html xmlns:wicket>
+	<wicket:extend>
+	
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="supportedLocales"/>
+				</span>
+			</td>
+			
+			<td>
+				<select wicket:id="locales" 
+						style="width:100%;height:auto;"></select>
+				
+				<p>
+					<wicket:message key="selection_legend" />
+				</p>
+				
+				<div wicket:id="feedback"></div>
+			</td>
+		</tr>
+	
+	</wicket:extend>
+</html>

@@ -1,0 +1,27 @@
+.footer {
+	border-top: 2px solid #A7D13F;
+	
+	margin-top:20px;
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding: 5px 0px;
+	
+	width:auto;
+	
+}
+
+.footer > .content {
+	border: 0px solid blue;
+}
+
+a.footerLink {
+	color:#0197ca;
+	text-decoration:none;
+	margin-right: 5px;
+}
+
+a.footerLink > span {
+	font-size:10px;
+}

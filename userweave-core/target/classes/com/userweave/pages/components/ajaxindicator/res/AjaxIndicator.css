@@ -1,0 +1,37 @@
+#ajaxindicator-modal-overlay {
+	position: fixed;
+	z-index:10000;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	background-color:gray;
+	display: none;
+}
+
+#ajaxindicator-modal-overlay .ajaxindicator-vertical-align { 
+	height: 20em;
+	margin-top: -10em;
+	position:absolute;
+	top:50%;
+	width:100%;
+	
+}
+
+#ajaxindicator-modal-overlay .ajaxindicator-vertical-align .ajaxindicator-centered {
+	display:block;
+	margin:auto;
+	width: 130px;
+	height: 98px;
+	background-image: url("bubble.png");
+}
+
+#ajaxindicator-modal-overlay .ajaxindicator-vertical-align .ajaxindicator-centered img {
+	position:relative;
+	left: 49px;
+	top: 31px;
+}
+
+#ajaxindicator-modal-overlay .ajaxindicator-overlay { 
+	opacity: 0.8; 
+}

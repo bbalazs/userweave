@@ -1,0 +1,38 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<table class="contentTable" style="width: 100%;">
+			<tr>
+				<td>
+					<span class="buttonContainer">
+						<a href="#" 
+						   wicket:id="preview" 
+						   class="baseButton baseButtonLast"
+						   target="_blank">
+							<span>
+								<wicket:message key="preview" />
+							</span>
+						</a>
+					</span>
+				</td>
+				
+				<td style="width: 392px; padding-right: 9px;">
+					<p>
+						<wicket:message key="translation_legend" />
+					</p>
+				</td>
+				
+				<td style="width: 398px; padding: 0px 9px 0px 6px;">
+					<p class="noInfo">
+						<wicket:message key="translation_legend2" />
+					</p>
+					<br/>
+					<p class="noInfo">
+						<wicket:message key="translation_legend2_secondPart" />
+					</p>
+				</td>
+			</tr>
+		</table>
+	
+		<div wicket:id="localizationPanel"></div>
+	</wicket:extend>	
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+  <head>
+     <title> <wicket:message key="title">userweave.net</wicket:message></title>
+     <wicket:link>
+		<link rel="stylesheet" type="text/css" href="BaseHomepage.css"/>
+		  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	</wicket:link>
+	<meta wicket:id="metaDescription" name="description">
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="resources/com.userweave.pages.homepage.BaseHomepage/ie6hacks.css">
+	<![endif]-->
+
+   
+  </head>
+  <body>
+
+ 	 <div class="um_webseite_main_left"><!--Shadow left side-->
+ 	 <div class="um_webseite_header">
+			<div class="um_webseite_claim"> <a href="#" wicket:id="base_start"><wicket:link><img wicket:message="title:base_claim,alt:base_claim" style="border: none; margin-left:30px; margin-top: -2px;  position: relative; z-index: 10;" src="main_page_claim.png" /></wicket:link></a></div>
+							<a href="#" wicket:id="base_imprint" wicket:message="title:base_imprint,alt:base_imprint" class="um_webseite_menu_link_imprint"><wicket:message key="imprint">Impressum</wicket:message></a>
+			<div class="um_webseite_local_switch "><a href="#" wicket:id="switchToGerman" class="um_webseite_menu_link">DE</a> | <a href="#" wicket:id="switchToEnglish" class="um_webseite_menu_link">EN</a></div>
+			<div class="um_webseite_shadow"></div>
+</div>
+ 	 <div class="um_webseite">
+ 		 <div class="um_webseite_content_login">
+                   
+                    <div class="um_webseite_content_login_content">
+                        <div class="um_webseite_content_login_headline">
+                            LogIn
+                        </div>
+						
+                        <form class="signInForm" wicket:id="signInForm">
+                        	<label> <wicket:message key="user" /></label><br />
+                            <input type="text" wicket:id="username">
+                            </input>
+                            <br/>
+                            <label> <wicket:message key="pass" /></label><br />
+                            <input type="password" wicket:id="password">
+                            </input>
+                            <br/>						
+                            <input type="submit" value="LogIn" class="um_webseite_content_login_button"/>
+                        </form>
+						
+						<a href="#" wicket:id="forgot_password">
+                            <wicket:message key="lost_pass">
+                                Passwort vergessen
+                            </wicket:message>
+                        </a>
+                        <br>
+                        <a href="#" wicket:id="register">
+                            <wicket:message key="member">
+                                Mitglied werden
+                            </wicket:message>
+                        </a>
+                        
+                        <div>
+                        	<span class="um_webseite_login_feedback" wicket:id="feedback"/>
+						</div>
+                    </div>
+                        
+                    </div>	
+     
+           <div class="main-content_container">         
+			<wicket:child></wicket:child>
+		   </div>
+		   <div class="main-content_container-shadow"/>
+	<div style="clear:both;"/>
+	</div><!--end left shadow-->	
+
+</div>
+
+</body>
+</html>

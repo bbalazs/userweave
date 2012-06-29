@@ -1,0 +1,51 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<wicket:head>
+	<script type="text/javascript">
+		/**
+		 * Get the filename of the image file.
+		 */
+		function setImageFileName()
+		{
+			var InputText = document.getElementById("input_logo").value;
+			document.getElementById("fake_button_input").value=InputText;
+			
+			if(InputText != "")
+				$("div.submit_image_upload_container").show();
+		}
+		
+		/**
+		 * Hide the submit button if file selection changes.
+		 */
+		function hideSubmit()
+		{
+			$("div.submit_image_upload_container").hide();
+		}	
+	</script>
+</wicket:head>
+	<wicket:panel>
+		<img wicket:id="image" src="#"/>
+		
+		<span class="buttonContainer" style="position: relative; display: inline-block; width: 225px;vertical-align: top;">
+			 
+			 <a wicket:id="upload"
+			 	class="baseButton baseButtonLast" 
+			    style="width: 95px; text-align: center;">
+				 	<span>
+				   		<wicket:message key="browse">Durchsuchen</wicket:message>
+				   	</span>
+				</a>
+				
+				<a href="#" 
+				   wicket:id="delete" 
+				   class="baseButton baseButtonLast"
+				   style="margin-left: 10px">
+					<span>
+						<wicket:message key="reset" />
+					</span>   
+				</a>
+		</span>
+		
+		<div wicket:id="iconUploadModal"></div>
+		
+	</wicket:panel>
+</html>

@@ -1,0 +1,76 @@
+/**
+ * Styles for the signin page
+ * 
+ * @author: opr
+ */
+
+div.signin {
+	margin-bottom:20px;
+}
+
+input.inputIndent,
+div.inputIndent {
+    margin: 9px 0 20px 20px;
+}
+
+div.login, div.register {
+	width:420px;
+	padding:0px 0px 20px;
+}
+
+div.login { float:left; }
+
+div.login_content, 
+div.register_content {
+	padding:0px 20px;
+}
+
+div.login_content {
+	padding-left:0px;
+}
+
+div.login_content {
+	border-right:1px solid #3b3b3b;
+}
+
+span.feedback ul {
+	color:#91d04b;
+}
+
+/**
+ * reset password page
+ */
+div.old_password_spacer {
+	height:16px;
+}
+
+/*
+ * user form
+ */
+.userForm label {
+	color:#3b3b3b
+}
+
+div.userEdit {
+	width:400px;
+}
+
+div.userEdit hr {
+	margin-bottom:20px;
+}
+
+div.userEdit h2,
+div.userEdit p,
+div.userEdit table.checkbox_table {
+	margin-bottom:22px;
+}
+
+div.userEdit p.checkbox_text {
+	margin-bottom:0px;
+}
+
+span.gender label {
+    margin:0px 20px 0px 5px;
+}
+
+span.feedbackPanelERROR { color:red; }

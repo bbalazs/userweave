@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<wicket:head>
+    <wicket:link>
+        <link rel="stylesheet" type="text/css" href="res/login_panel.css" />
+		<!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="res/login_panel_ie7.css"/>
+        <![endif]-->
+    </wicket:link>
+</wicket:head>
+
+<body>	
+<wicket:extend>
+	
+	<div class="um_webseite_local_switch ">
+		<a href="#" wicket:id="switchToGerman" class="um_webseite_menu_link">deutsch</a> | 
+		<a href="#" wicket:id="switchToEnglish" class="um_webseite_menu_link">english</a>
+	</div>
+	
+	<div class="headerContainer">
+		<p class="intro label">
+			<wicket:message key="prototype_ready" />
+		</p>
+		
+		<p class="intro label">
+			<wicket:message key="test_it" />
+		</p>
+		<p class="intro lightGrey">
+			<wicket:message key="slogan" />
+		</p>
+		
+		<a href="#" wicket:id="more_info" class="more_info" target="_blank">
+			<span><wicket:message key="more_info" /></span>
+		</a>
+	</div>
+	
+	<div style="float:right">
+	<wicket:link>
+	   <img src="res/api.png" />
+	</wicket:link>
+	</div>
+	<div wicket:id="loginRegisterPanel" class="login_register_panel"/>
+	
+</wicket:extend>
+</body>
+</html>

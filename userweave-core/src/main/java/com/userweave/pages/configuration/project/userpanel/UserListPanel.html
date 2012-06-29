@@ -1,0 +1,71 @@
+<html xmlns:wicket>
+	<wicket:panel>
+		<div class="whiteContainer">
+			<table class="userTable">
+			
+				<wicket:enclosure>
+					<tr>
+						<td colspan="4">
+							<span wicket:id="noUserLabel"></span>
+						</td>
+					</tr>
+				</wicket:enclosure>
+			
+				<tr wicket:id="userList">
+				
+					<td>
+						<span>
+							<span wicket:id="userName"></span>
+							<!-- <br/>
+							(<span wicket:id="userEmail"></span>) -->
+						</span>
+					</td>
+					
+					<td style="width:200px;">
+						<wicket:container wicket:id="roleFragment"></wicket:container>
+					</td>
+					
+					<td style="width:55px;">	
+						<span class="buttonContainer">
+							<a wicket:id="mailto" class="baseButton baseButtonLast">
+								<span>
+									<wicket:message key="mailto" />
+								</span>
+							</a>
+						</span>
+					</td>
+					
+					<td style="width:84px;" class="ie7-lastChild">
+						<span class="buttonContainer">
+						
+							<a href="#" wicket:id="delete" class="baseButton baseButtonLast">
+								<span>
+							   		<wicket:message key="delete" />	
+							    </span>
+						   </a>
+						</span>
+						
+						<div wicket:id="deleteModal"></div>
+						
+						<div wicket:id="unableToDeleteModal"></div>
+					</td>
+				
+				</tr>
+			</table>
+		</div>
+		<div wicket:id="feedback"></div>
+		
+		<wicket:fragment wicket:id="labelFragment">
+			<span wicket:id="role"></span>
+		</wicket:fragment>
+		
+		<wicket:fragment wicket:id="listChoiceFragment">
+			<form wicket:id="form" style="display:inline-block;">
+				<select wicket:id="roleChoice" 
+						size="1"
+						class="baseButton baseButtonLast"
+						style="height: 24px;"></select>
+			</form>
+		</wicket:fragment>
+	</wicket:panel>
+</html>

@@ -1,0 +1,15 @@
+
+# export resource bundles to excel
+# ATTENTION the keys MUST all exist in the bundle files of reference language en!!!!!
+java -jar tools/excelbundle-0.9.3/excelbundle.jar -r src/main/java/ -export userweave_translate_new.xls -l en,de -ref en -m userweave_sheetmap.xml
+
+# import resource bundles ? not yet tested
+#Deutsch einlesen
+java -jar tools/excelbundle-0.9.3/excelbundle.jar -r src/main/java/ -import userweave_translate.xls -l de -ref en
+
+#Englisch einlesen
+java -jar tools/excelbundle-0.9.3/excelbundle.jar -r src/main/java/ -import userweave_translate.xls -l en -ref de
+
+#Am besten vor dem Import einmal den Aufruf um -p erg�nzen um ihn zu testen. Werden Dateien als gel�scht angezeigt ist es tendenziell schlecht!
+
+

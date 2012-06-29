@@ -1,0 +1,188 @@
+<html xmlns:wicket>
+	<wicket:extend>
+	
+		<span class="buttonContainer userPanelLinkContainer">
+			
+			<a href="#" 
+			   wicket:id="endMembership"
+			   class="baseButton baseButtonLast endMembership">
+				<span>
+					<wicket:message key="endMembership"/>
+				</span>
+			</a>
+			
+			<a href="#" 
+			   wicket:id="changePassword"
+			   class="baseButton baseButtonLast">
+				<span>
+					<wicket:message key="changePassword"/>
+				</span>
+			</a>
+			
+			<a href="#" 
+			   wicket:id="enableUser"
+			   class="baseButton baseButtonLast">
+				<span>
+					<wicket:message key="enableUser"/>
+				</span>
+			   
+			</a>
+			
+		</span>
+		
+		<div wicket:id="changePasswordModal"></div>
+		
+		<div wicket:id="endMembershipModal"></div>
+	
+		<table class="contentTable">
+		
+			<!-- <tr>
+				<td>
+					<span>
+						<wicket:message key="gender"/>
+					</span>
+				</td>
+				
+				<td>
+					<span wicket:id="gender" class="gender">radio choice</span>				
+				</td>
+				
+				<td>
+				
+				</td>
+			</tr> -->
+		
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="forename"/>
+					</span>
+				</td>
+				
+				<td>
+					<input type="text" wicket:id="forename">
+				</td>
+				
+				<td>
+					<p>
+						<wicket:message key="forename_helptext"/>
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="surname"/>
+					</span>
+				</td>
+				
+				<td>
+					 <input type="text" wicket:id="surname">
+				</td>
+				
+				<td>
+					<p>
+						<wicket:message key="surname_helptext"/>
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="email"/>
+					</span>
+				</td>
+				
+				<td>
+					 <span wicket:id="email"></span>
+				</td>
+				
+				<td>
+					<p>
+						<wicket:message key="email_helptext"/>
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="news"/>
+					</span>
+				</td>
+				
+				<td>
+					 <select wicket:id="receiveNews"
+					 		 class="baseButton baseButtonLast selectionChoice">
+					 </select>
+				
+				<!-- TODO: remove in resource file  -->
+					<!-- <span>
+						<wicket:message key="news_ack"/>
+					</span>   -->
+				</td>
+				
+				<td>
+					<p>
+						<wicket:message key="news_helptext"/>
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					 <span>
+					 	<wicket:message key="locale"/>
+					 </span>
+				</td>
+				
+				<td>
+					<select wicket:id="locale"
+					 		 class="baseButton baseButtonLast selectionChoice">
+					 </select>
+				</td>
+				
+				<td>
+					<p>
+					 	<wicket:message key="locale_helptext"/>
+					 </p>
+				</td>
+			</tr>
+		
+		</table>
+			<!-- 
+		
+		        <label class="notRequired"><wicket:message key="personal_news"/></label>
+		        <div class="inputIndent">
+		            <input type="checkbox" wicket:id="receivePersonalNews" />
+					<span class="darkGrey"><wicket:message key="personal_news_ack"/></span>        
+		        </div>
+		        
+		        <span wicket:id="container">
+			        <label class="notRequired"><wicket:message key="employment"/></label>
+		    	    <div class="inputIndent">
+		    	    	<input type="text" wicket:id="employment">
+		        	</div>
+		
+			        <label class="notRequired"><wicket:message key="position"/></label>
+		    	    <div class="inputIndent">
+		    	 		<select wicket:id="position">
+							<option>one</option>
+							<option>two</option>
+						</select>
+		        	</div>
+		
+			        <label class="notRequired"><wicket:message key="sector"/></label>
+		    	    <div class="inputIndent">
+		    	    	<input type="text" wicket:id="sector">
+		        	</div>
+		
+		       	</span>
+            </div>
+            <div style="clear:both"/>
+        </div>-->
+	</wicket:extend>
+</html>
+

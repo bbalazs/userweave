@@ -1,0 +1,48 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="iconLabel" />
+				</span>
+			</td>
+			
+			<td>
+				<table class="statisticsContainer" style="width: 100%;">
+					<tr>
+						<th>
+							<span>
+								<wicket:message key="term" />
+							</span>
+						</th>
+						
+						<th style="text-align: right;">
+							<span>
+								<wicket:message key="assi" /> 
+							</span>
+						</th>
+					</tr>
+					
+					<tr wicket:id="termAssignments">
+                		<td>
+                            <span wicket:id="term"></span>
+                        </td>
+                        
+                		<td style="text-align: right;">
+                			<span>
+                    			<span wicket:id="assignment"></span>%
+							</span>
+                		</td>
+            		</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+            <td></td>
+            <td>
+            	<p><wicket:message key="iconExplanation"/></p>
+            </td>
+        </tr>
+	</wicket:extend>
+</html>

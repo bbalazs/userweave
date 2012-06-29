@@ -1,0 +1,54 @@
+<html>
+	<wicket:head>
+        <wicket:link>
+            <link rel="stylesheet" type="text/css" href="Intro.css"/>
+        </wicket:link>
+        
+    <!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="resources/com.userweave.pages.homepage.BaseHomepage/ie6hacks.css">
+	<![endif]-->
+    <!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="resources/com.userweave.pages.homepage.BaseHomepage/ie7hacks.css">
+	<![endif]-->
+        
+    </wicket:head>
+<body>
+<wicket:panel>
+
+	<div class="intro_locale_switch"><a href="#" wicket:id="switchToGerman" class="um_webseite_menu_link">deutsch</a> | <a href="#" wicket:id="switchToEnglish" class="um_webseite_menu_link">english</a></div>
+    <div class="introContainer">
+		<div class="introPanelHeaderLeft">
+			<div class="introPanelHeaderRight">
+				<div class="introPanelTop"/>
+			</div>
+		</div>
+		
+		<div class="introPanelCenterLeft">
+			<div class="introPanelCenterRight">
+				<div class="introPanelCenter">            
+					<h1><wicket:message key="heading">Möchten Sie von userweave.net profitieren</wicket:message></h1>
+					<p class="usabilityTests"><wicket:message key="usabilityTests">Wir sind die <b>eine Adresse</b> für <b>viele verschiedene</b> und <br/><b>frei kombinierbare Online Usability-Tests</b>.</wicket:message></p>
+					<p class="rapidResults"><wicket:message key="rapidResults">Jede Untersuchung lässt sich flink einrichten und bringt schnelle Ergebnisse.</wicket:message></p>
+					<p class="testUs"><wicket:message key="testUs">Einfach unverbindlich testen!</wicket:message></p>
+					<p>
+						<a wicket:id="yes" class="okButton">
+							<wicket:message key="ok"/>
+						</a>
+						<a wicket:id="no" class="cancelButton">
+							<wicket:message key="cancel"/>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		                
+		<div class="introPanelFooterLeft">
+			<div class="introPanelFooterRight">
+				<div class="introPanelBottom"/>
+			</div>
+		</div>
+    </div>
+</wicket:panel>	
+</body>
+</html>
+

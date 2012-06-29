@@ -1,0 +1,34 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<span wicket:id="writeMessage"></span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="subject" />
+					</span>
+				</td>
+				<td>
+					<input type="text" wicket:id="subject" style="width:254px">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="your_message" />
+					</span>
+				</td>
+				<td>
+					<textarea wicket:id="yourMessage" style="width:254px"></textarea>
+					<div wicket:id="feedback"></div>
+				</td>
+			</tr>
+		</tbody>
+	</wicket:extend>
+</html>

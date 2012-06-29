@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<style type="text/css">
+			
+			.inputIndent {
+				margin: 9px 0 20px 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="simple_underlined_headline" style="margin-right:10px;">
+            <span class="darkGrey bold">
+                <wicket:message key="feedback_headline"/>
+			</span>
+        </div>
+		
+		<form wicket:id="form">
+			
+			<span class="darkGrey">
+				<wicket:message key="typeof_feedback"/>
+			</span>
+			
+			<br/>
+			
+			<span wicket:id="feedbackSelectionType">
+				<div class="inputIndent">
+					<input type="radio" checked="checked" wicket:id="question">
+                    <span class="darkGrey">
+                        <wicket:message key="question"/>
+                    </span>
+				    
+					<br/>
+					
+					<input type="radio" wicket:id="praise">
+	                <span class="darkGrey">
+	                    <wicket:message key="praise"/>
+	                </span>
+                    
+					<br/>
+				
+					<input type="radio" wicket:id="critique">
+	                <span class="darkGrey">
+	                    <wicket:message key="critique"/>
+	                </span>
+                    
+					<br/>
+				
+					<input type="radio" wicket:id="comment">
+	                <span class="darkGrey">
+	                    <wicket:message key="comment"/>
+	                </span>
+                </div>
+			
+			</span>  
+				
+		    <span class="darkGrey">
+		    	<wicket:message key="your_text"/>
+			</span>
+			<br/>
+			
+			<div class="inputIndent">
+                <textarea wicket:id="textarea" rows="7" cols="36"></textarea>
+			</div>
+			
+			<div class="hr_space_block"/>
+			
+			<div wicket:id="button"/>
+				
+		</form>
+		
+	</body>
+
+</html>

@@ -1,0 +1,20 @@
+div.textbox {
+	padding-right:5px;
+}
+
+div.login_container div.button {
+	width:159px;
+	margin-left:53px;
+}
+
+div.login_container div.button input {
+	width:149px!important;
+}
+
+div.register_container div.button {
+    width:112px;
+}
+
+div.register_container div.button input {
+    width:102px!important;
+}

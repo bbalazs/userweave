@@ -1,0 +1,68 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<!-- Override markup, because of IE7 floating bug 
+		 (Line break of right floating elements, if they appear after
+		  non-floating elements) -->
+	<span class="buttonContainer">
+	
+		<select wicket:id="changeView" class="baseButton baseButtonLast studyChangeButton"></select>
+		
+		<a href="#" 
+		   wicket:id="changeState" 
+		   class="changeState baseButton baseButtonLast studyChangeButton"
+		   style="margin-right:12px;">
+			<span wicket:id="action"></span>
+		</a>
+		
+		<a href="#" 
+		   wicket:id="resetState" 
+		   class="changeState baseButton baseButtonLast studyChangeButton"
+		   style="margin-right:12px;">
+			<span wicket:id="resetStateLabel"></span>
+		</a>
+	
+		<a href="#" wicket:id="edit" class="baseButton">
+			<span>
+				<wicket:message key="edit" />
+			</span>
+		</a>
+			
+		<a href="#" wicket:id="delete" class="baseButton baseButtonLast">
+			<span wicket:id="deleteLabel"></span>
+		</a>
+	
+		<a href="#" wicket:id="copy" class="copy baseButton baseButtonLast">
+			<span>
+				<wicket:message key="copy" />
+			</span>
+		</a>
+		
+		<a href="#" wicket:id="preview" class="preview baseButton baseButtonLast" target="_blank">   
+			<!-- <span>
+				<wicket:message key="preview" />
+			</span> -->
+			<span wicket:id="previewLabel"></span>
+		</a>
+		
+		<a href="#" wicket:id="filterOverview" class="filter baseButton baseButtonLast">
+			<span>
+				<wicket:message key="filterList" />
+			</span>
+		</a>
+		
+		<a href="#" wicket:id="csvExportLink" class="filter baseButton baseButtonLast">
+			<span>
+				Export to CSV
+			</span>
+		</a>
+	</span>
+	
+	<div wicket:id="editModal"></div>
+	<div wicket:id="deleteModal"></div>
+	<div wicket:id="copyModal"></div>
+	<div wicket:id="filterOverviewModal"></div>
+	<div wicket:id="changeStateModal"></div>
+	<div wicket:id="notRegisteredModal"></div>
+</wicket:panel>
+
+</html>

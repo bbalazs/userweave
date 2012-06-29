@@ -1,0 +1,7 @@
+#!/bin/sh 
+
+export ENTITIES
+
+find src -name "*.html" | xargs -n1 -ixxx sh -c \
+  "cat xxx | sed -e 's/<br>/<br\/>/g' | sed -e 's/wicket:/wicket/g' | sed -e 's/ xmlns:.*>/>/g' | sed -e 's/&.*;//g' | xmllint --noout - || echo xxx"
+#  "cat xxx | sed -e 's/<input \([^>]*\)>/<input $1\/>/g' |sed -e 's/<br>/<br\/>/g' | sed -e 's/wicket:/wicket/g' | sed -e 's/ xmlns:.*>/>/g' | sed -e 's/&.*;//g' | xmllint --noout - || echo xxx"

@@ -1,0 +1,33 @@
+<html xmlns:wicket>
+
+<wicket:extend>
+
+  <form wicket:id="form">
+    <table>
+    	<tr>
+    		<wicket:container wicket:id="group">
+    			<td style="text-align:right;">
+					Text		
+				</td>
+				<td colspan="2" class="multipleRating_td">
+					<table cellspacing="0" cellpadding="0" class="choice">
+						<tr>
+							<td wicket:id="choices">
+								<div wicket:id="content" class="radio_container"/>
+							</td>									
+						</tr>			
+					</table>
+				</td>
+    		</wicket:container>
+    	</tr>
+    </table>
+    
+    <input type="text" wicket:id="answerNumber" />
+    
+    <input type="submit" value="submit">
+    
+    <!-- <button wicket:id="submit" style="display:none">submit</button> -->
+  </form>
+  
+</wicket:extend>
+</html>

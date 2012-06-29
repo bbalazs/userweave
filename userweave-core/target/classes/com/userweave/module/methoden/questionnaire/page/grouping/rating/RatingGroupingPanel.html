@@ -1,0 +1,37 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<wicket:child/>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="the_value"/>
+			</span>
+		</td>
+		
+		<td>
+			<div>
+				<span wicket:id="operator"></span>
+			</div>
+			
+			<div>
+				<input type="text" value="lower" size="2" wicket:id="lowerBound"/>
+			</div>
+			
+			<div wicket:id="and"><wicket:message key="and"/></div>
+			
+			<div>
+				<input type="text" value="lower" size="2" wicket:id="upperBound"/>
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<span>
+				<wicket:message key="have"/>
+			</span>		
+		</td>
+	</tr>	
+</wicket:extend>
+</html>
+  

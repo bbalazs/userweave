@@ -1,0 +1,45 @@
+<html xmlns:wicket>
+<wicket:panel>
+
+<div class="whiteContainer">
+
+	<div wicket:id="publicProjects" class="projectRow">
+	
+		<div class="projects-action-column">
+			<a href="#" wicket:id="moveUp" class="moveup"></a>
+			
+			<a href="#" wicket:id="moveDown" class="movedown"></a>
+		</div>
+	
+		<div class="projects-logo-column">
+			<a href="#" wicket:id="logoSelect">
+				<img wicket:id="logo" alt="Logo" />
+			</a>
+		</div>
+		
+		<div class="projects-column">
+			<a href="#" wicket:id="select">
+				<span style="display:inline-block">
+					
+					<span wicket:id="projectName"></span>:
+					<span wicket:id="projectDescription"></span>
+				</span>
+			</a>
+		</div>
+		
+	</div>
+	
+	<div class="projects-action-column navigator-block"></div>
+	
+	<div wicket:id="navigator" class="pagingNavigator"></div>
+
+	<div wicket:id="addProject"></div>
+
+	<div wicket:id="createNewProjectModalWindow"></div>
+
+</div>
+
+
+
+</wicket:panel>
+</html>

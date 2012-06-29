@@ -1,0 +1,5 @@
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/)
+
+XML support is provided by dom4j:
+MetaStuff, Ltd (dom4j, http://www.dom4j.org)

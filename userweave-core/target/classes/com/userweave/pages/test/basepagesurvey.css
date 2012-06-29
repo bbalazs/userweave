@@ -1,0 +1,480 @@
+/*
+ * The base Stylesheet of the UserWeave Template
+ */
+
+/******************************************
+ * Rules for all HTML Elements
+ ******************************************/
+* { padding:0;
+	margin:0;
+	font-family: verdana;
+	font-size:12px;
+  }
+
+
+.input-text {
+	border:1px solid #7f7f7f;
+	color:#666666;
+}
+
+.input-text-invalid {
+	border:2px solid salmon;	
+	color:#666666;
+}
+
+body {
+	background-color:#ffffff;
+}
+
+/*
+ * Headlines
+ */
+h1 { color: #868c8a;
+     font-size:16px;
+    }
+
+/*
+ * a class for gey fonts
+ */
+.grey { color:#b3b3b3; }
+.grey_dark { color:#777777; }
+
+/*
+ * set a hr always grey
+ */
+hr { color:#e5eae4;
+    border:0;
+    background-color:#e5eae4;
+    height:1px;
+    margin: 0px 15px 0px 25px;
+  }
+a { color:#b3b3b3; text-decoration:none; font-size:10px;}
+a:hover { text-decoration:underline; }
+
+/******************************************
+ * The main divs of the skeleton goes here
+ * (page, header, mainbody, footer)
+ *******************************************/
+#page { width: 950px;
+        min-height: 420px;
+        margin: 0px auto;
+      }
+
+#header{ min-height:67px; padding-top:1px; }
+
+#mainbody { padding: 0px 15px; }
+
+#footer{ padding-top:19px;}
+
+/***********************************************************************************
+ * Formats for header Elements
+ ***********************************************************************************/
+#headline { min-width:200px;
+			max-width:660px;
+			margin: 17px 0px 18px 27px;
+		    
+		  }
+
+#logo { /*max-width: 240px;
+		max-height: 45px;
+		margin:23px 27px 23px 0px;*/
+		float:right;
+		margin:20px 0 0;
+		min-height:20px;
+		max-height:41px;
+		max-width:170px;
+		overflow:hidden;
+	  }
+	  
+#logo img {
+		max-height:40px;
+		/*height:100%; 
+		  don't use it, because it will see to it that 
+		  image won't display in Webkit browsers, like Safari 'n google chrome */
+		max-width:169px;
+}
+
+/***********************************************************************************
+ * Formats for the mainbody
+ ***********************************************************************************/
+
+/************
+ * mainHeader
+ ************/
+#mainHeaderTop {
+	width: 923px;
+	height: 5px;
+	background-image: url(topLeft.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;	
+}
+#mainHeaderTop div { 
+	width: 913px;
+	height: 5px;
+	margin-left:10px;
+	background-image: url(topRight.png); 
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+#mainHeaderWrapper { 
+	width: 918px;
+	height: 60px;
+	padding-left: 5px;
+	background: url(shadeLeft.png) repeat-y;
+}
+
+#mainHeader { 
+	width: 918px;
+	height: 60px;
+}
+
+#mainHeader table { margin-top:6px; position:absolute; }
+
+#mainHeaderShade { 
+	width:827px;
+	position:absolute;
+	margin-top:33px;
+	background:url(mainHeaderShadeRight.png) no-repeat right bottom; 
+}
+#mainHeaderShade div { 
+	width:824px;
+	height:27px;
+	margin-right:3px;
+	background:url(mainHeaderShade.png) repeat-x;
+}
+
+.headerText { width:510px;
+			  display:block;
+			  margin-left:10px;
+			  color:white;
+			  font-weight:bold;
+			}
+
+#helpButton { width: 60px;
+			  height: 20px;
+			  margin: 41px 0px 0px 845px;
+			  position:absolute;
+			  float:right;
+			}
+
+.helpText { 
+	color:white;
+    font-weight:bold;
+	position:absolute;
+	margin: -1px 0px 0px 6px; 
+}
+.helpText * { font-size:10px; color:white; }
+
+/* #helpButton:hover { cursor:pointer; }
+ */
+/*
+ * White Circle
+ */
+#counter { 
+    width: 39px;
+    height: 27px;
+    padding: 12px 0px 0px 1px;
+    margin-left: 15px;
+    font-weight:bold;
+}
+
+.circle_white {
+	background: url(circle_white.png) no-repeat;
+}
+
+.circle_black {
+    background: url(circle_black.png) no-repeat;
+}
+
+#counter p { text-align:center; vertical-align:middle; }
+
+/************
+ * Shade box
+ ************/
+#shadeContainer { width: 918px;
+			      height: 7px;
+			      padding-left: 5px;
+			      background: url(shadeLeft.png) repeat-y;
+			    }
+
+#shadeContainerLeftLeft {
+	float:left;
+	width: 12px;
+	height: 7px;
+	background-image: url(shade.png);
+	background-repeat: repeat-x;
+	margin-left:-12px;
+}
+
+#shadeContainerLeft{
+	float:left;
+	background: url(shadeBoxLeft.png) no-repeat left center;
+	width:8px;
+	height:8px;
+	margin-left:-8px;
+}
+#shadeContainerCenter {
+	height:8px;
+	margin:0px 12px;
+	background: url(shadeBoxCenter.png) repeat-x center;
+}
+#shadeContainerRight {
+	float:right;
+	background-image: url(shadeBoxRight.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width:8px;
+	height:8px;
+	margin-right:-12px;
+	border-right-width:4px;
+	border-right-style: solid;
+}
+
+/**************
+ * mainContent
+ **************/
+#mainWrapper { width: auto;
+			   padding-left: 5px;
+			   background: url(shadeLeft.png) repeat-y;
+			 }
+
+#mainContent { 
+	border-left-width: 4px; 
+	border-left-style: solid;
+	border-right-width: 4px;
+	border-right-style: solid;
+	width:910px;
+	min-height:186px;
+	
+	background-image: url("content-background.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+#contentShade {
+	height:181px;
+	width:900px;
+	margin:-181px 0px 0px 9px;
+	z-index:1;
+}
+#contentShadeLeft {
+	width:9px;
+	height:181px;
+	float:left;
+	background: url(contentBackgroundLeft.jpg) no-repeat center;
+}
+#contentShadeCenter {
+	width:734px;
+	height:181px;
+	float:left;
+	background: url(contentBackgroundCenter.jpg) repeat-x center;
+}
+#contentShadeStep {
+	width:6px;
+	height:181px;
+	float:left;
+	background: url(contentBackgroundStep.jpg) no-repeat center;
+}
+#contentShadeRight {
+	width:151px;
+	height:181px;
+	float:left;
+	background: url(contentBackgroundRight.jpg) repeat-x center;
+}
+
+#content { 
+	width: auto;
+    height: auto;
+    padding:28px 60px 40px;
+}
+
+.wicketChild { min-height:200px; }
+/*************
+ * mainFooter
+ *************/
+#mainFooterWrapper { width: 914px;
+			         height: 48px;
+			         padding-left: 5px;
+				   }
+
+#mainFooter { 
+	width: 914px;
+	height: 48px;
+	margin-left: 4px;
+	background: url(footer_shade.png) repeat-x;
+	border-top-width: 4px;
+	border-top-style: solid;
+}
+
+#littleLeftBox { 
+	width: 12px;
+	height: 12px;
+	margin: -7px 0px 0px -9px;
+	float:left;
+	background-image: url(corner_bottom_left3.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+div#progressContainer {
+	height:37px;
+	float:right;
+	margin-right:170px;
+}
+
+#progressBar { 
+    width: 125px;
+	height: 23px;
+	margin-top: 14px;
+}
+
+.progress {
+	font-size: 10px; 
+	position:relative;
+	top:-18px;
+	left:44px;
+}
+
+.progress * {font-size: 10px;}
+
+.progress span.highlight { font-weight:bold; color: #868c8a; }
+	
+#progressStart { 
+	width: 16px;
+	height: 23px;
+	float:left;
+	background-image: url(progress_start.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#progress1 { 
+	height: 23px;
+	float:left;
+	background-image: url(progress.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#progress2 { 
+			 height: 23px;
+			 float:left;
+			 background:#ffffff url(progress.png) repeat-x center;
+			}
+#progressEnd {width: 16px;
+			  height: 23px;
+			  float:left;
+			  background:#ffffff url(progress_end.png) no-repeat center;
+		     }
+
+.submitMessage {position:absolute; margin: 20px 0px 0px 82px; float:right; font-size: 10px; font-weight: bold; color:white; }
+
+.submitButton { width:190px;
+                height:46px;
+                padding:5px 0px 0px 20px;
+                margin:40px 0px 0px 681px;
+                position:absolute;
+                background-image: url(submitImg2.png);
+                background-repeat: no-repeat;
+                background-position: top right;
+                border:0px;
+                font-size:10px;
+                font-weight:bold;
+                color:#ffffff;
+                cursor:pointer;
+              }
+
+.imageSubmitButton {
+	width:190px;
+    height:46px;
+    /*padding:5px 0px 0px 20px;*/
+    margin:40px 0px 0px 681px;
+    position:absolute;
+    border:0px;
+    font-size:10px;
+    font-weight:bold;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.imageButtonSubmitValue {
+	display:block;
+	position:absolute;
+	margin:59px 0px 0px 766px;
+	font-size:10px;
+    font-weight:bold;
+	cursor:pointer;
+}
+
+
+/**
+  *
+  */
+.imageSubmitButtonForMockup {
+	width:175px;
+    height:38px;
+    position:absolute;
+    border:0px;
+    font-size:10px;
+    font-weight:bold;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.imageButtonSubmitValueForMockup {
+	display:block;
+	position:absolute;
+	margin: 10px 0px 0px 85px;
+	font-size:10px;
+    font-weight:bold;
+	cursor:pointer;
+}
+
+/******************************************
+ * Formats for footer Elements
+ ******************************************/
+#metanavi { margin: 10px 0px 0px 25px;
+			float:left;
+		  }
+.navi * { font-size: 10px; }
+
+#infoBox { height:30px;
+	       margin: 7px 15px 0px 0px;
+	       float:right;
+	     }
+
+#infoBox * { border:0; }
+#infoBox span * { margin-top:3px; font-size:10px;}
+
+#infoBox a:hover { text-decoration:underline; }
+.promptImage { margin:3px 0px 0px 3px;}
+.usabilityImage { margin:3px 3px 0px 0px; }
+
+/*********************************
+ * Formats for the error page
+ *********************************/
+#freetext_error { width:510px; display:block; color:#7f7f7f;}
+#freetext_error * { color:#7f7f7f; }
+
+#freetext_error hr { color:#cdcdcd;
+			   border:0;
+    		   background-color:#cdcdcd; 
+    		 }
+
+#freetext_error h1 { font-size:14px; color: #403f3f; font-weight:bold; margin: 20px 0px 15px; }
+#freetext_error h2 { font-size:12px; color: #403f3f; font-weight:bold; margin: 20px 0px 15px; }
+
+#freetext_error ol { margin:0px 0px 7px 26px; padding-left:10px; }
+#freetext_error ul { margin:0px 0px 7px 26px; padding-left:10px; }
+#freetext_error dl { margin:0px 0px 7px 26px; padding-left:10px; }
+
+#freetext_error p { margin-bottom:7px; }
+.error_italic { color:#7f7f7f; }
+.error_ul { color:#7f7f7f; margin-left:15px; }
+
+/******************************************
+ * Formats for SelectLocalePanel
+ ******************************************/
+ 
+.NextButtonLocale{
+padding-top:102px;
+}

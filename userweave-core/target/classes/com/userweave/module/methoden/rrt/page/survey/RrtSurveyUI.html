@@ -1,0 +1,121 @@
+<html xmlns:wicket>
+<wicket:head>
+	<wicket:link>
+		<link rel="stylesheet" type="text/css" href="rrt.css"/>	
+	</wicket:link>
+
+	<!--[if IE 6]>
+	<style type="text/css">
+	.highlightakt{
+		background:none;
+		filter:progid: DXImageTransform.Microsoft.AlphaImageLoader(src='unter_hoover.png', sizingMethod='scale');
+	}
+	
+	</style>
+	<![endif]-->
+	
+</wicket:head>
+
+<wicket:extend>
+<div id="ie6hackBox">
+<table>
+	<tr>
+		<td valign="top">
+			<div id="skala">
+				<span class="topLine" wicket:id="prefix">prefix</span>
+				<div class="arrow up"></div>
+				<div class="borderDiv" style="height:34px" wicket:id="scale"> <!-- ACHTUNG: height: wird multipliziert mit der Anzahl der Items!!!! -->
+					<wicket:link>
+						<img src="skala_shade.png" alt="skala" class="image"/>
+					</wicket:link>
+
+				</div>
+				<div class="arrow down"></div>
+				<span class="bottomLine" wicket:id="postfix">postfix</span>
+			</div>
+			<div class='zahlen'>
+				<div wicket:id="counterList">
+					<div class='zahl' wicket:id="counter">
+					    <p wicket:id="value">1</p>
+				    </div>
+			   	</div>
+			</div>
+		</td>
+		<td valign="top">
+			<div class="listPositioner">
+				<div id="myList">
+			   		<div class='list' id="id_0123" wicket:id="term">
+			   			<p wicket:id="value"></p>
+			   		</div>
+				</div>
+			</div>
+    	</td>
+		<td valign="top">
+			<div id="pointerOfBox"></div>
+			<div id="beschr_container" class="bescheibungs_container">
+				<div class="beschr_container_header_left">
+					<div class="beschr_container_header_right">
+						<div class="beschr_container_header_center">
+							<div id="questionmarkBox">
+								<wicket:link><img src="questionmark.png" alt="question"/></wicket:link>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="description_container" style="height:34px" wicket:id="desc_box">
+					<div id="description" class="visible">
+						<span>
+							<h2><span><wicket:message key="was"/></span></h2>
+							<hr/>
+							<span class="infos">
+								<strong><span><wicket:message key="please_sort"/></span></strong>
+								<br />
+								<span><wicket:message key="helptext"/></span>
+								<br /> <br />
+								<span><wicket:link><img src="tipp.png" class="um_background" style="position:absolute; 
+								margin-top:-2px;"/></wicket:link>
+								<span style="margin-left: 54px;"><wicket:message key="click"/></span>
+								<span style="line-height:17px;">
+								<span><wicket:message key="tipp"/></span>
+								</span></span>
+							</span>
+						</span>
+					</div>
+			
+					<div wicket:id="termValueAndDescription" class="unvisible">
+						<div class="description">
+							<h2><span><wicket:message key="was"/></span></h2>
+							<hr/>
+							<span class="infos">
+								<b wicket:id="value"></b>
+								<p wicket:id="description">
+									Beschreibung1
+								</p>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="beschr_container_footer_left">
+					<div class="beschr_container_footer_right">
+						<div class="beschr_container_footer_center"></div>
+					</div>
+				</div>	
+			</div>
+		</td>
+	</tr>
+</table>
+</div>
+<form wicket:id ="return" class="return rrt" id="return" name="Rangreihe" method="post" action="get.php">
+
+	<input type="hidden" value="Rangreihe" name="Methode" />
+	<!-- <input type="hidden" wicket:id="inputs" />  --> 
+	<input type="hidden" value="" name="Position_Eins" id="0" class="result" wicket:id="position" />
+	<input type="hidden" wicket:id="rrtChanged" class="rrtChanged"/>
+	
+	<input wicket:id="nextButton" type="submit" value="Weiter" class="um_background submitButton"/>
+ </form>
+
+
+
+ </wicket:extend>
+</html>

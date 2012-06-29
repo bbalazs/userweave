@@ -1,0 +1,55 @@
+<html xmlns:wicket>
+<wicket:panel>
+
+	<span style="display: inline-block; margin-bottom: 6px;">
+		<strong wicket:id="entityName"></strong>
+	</span> 
+
+	<form wicket:id="form">
+		
+		<table class="contentTable">
+			
+			<tr class="translationHeader">
+				<td></td>
+				
+				<td style="width: 392px">
+					<span wicket:id="hostLocale"></span>
+				</td>
+				
+				<td style="width: 392px">
+					<span wicket:id="translateToLocale"></span>
+				</td>
+			</tr>
+			
+			<tr wicket:id="configurations">
+				
+				<td>
+					<span wicket:id="label"></span>
+				</td>
+				
+				<td  style="width: 407px;" wicket:id="localeColumns">
+				
+					<wicket:container wicket:id="valueFragment"></wicket:container>
+				
+				</td>
+				
+			</tr>
+			
+		</table>
+		
+	</form>
+
+	<wicket:fragment wicket:id="textFieldFragment">
+		<input wicket:id="value" style="width: 393px;">
+	</wicket:fragment>
+
+	<wicket:fragment wicket:id="textAreaFragment">
+		<textarea wicket:id="value" style="width: 393px;"></textarea>
+	</wicket:fragment>
+	
+	<wicket:fragment wicket:id="labelFragment">
+		<p wicket:id="value"></p>
+	</wicket:fragment>
+
+</wicket:panel>
+</html>

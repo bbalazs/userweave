@@ -1,0 +1,94 @@
+<html xmlns:wicket>
+    <wicket:panel>
+        <br/>
+		<div class="userEdit">
+		<h2>
+			<wicket:message key="our_promise"/>
+		</h2>
+				 <table class="checkbox_table">
+                <tr>
+                    <td style="vertical-align:top; width: 35px;">
+                        <input type="checkbox" checked="checked" disabled="disabled"/>
+                    </td>
+                    <td>
+                        <p class="checkbox_text">
+                            <wicket:message key="our_promise_text"/>  
+                        </p>
+                    </td>
+                </tr>
+            </table>
+		
+		<h2>
+			<wicket:message key="your_promise"/>
+		</h2>
+			
+        <form wicket:id="userForm" class="userForm">
+			
+			 <table class="checkbox_table">
+                <tr>
+                    <td style="vertical-align:top; width: 35px;">
+                        <input type="checkbox" wicket:id="verified" />
+                    </td>
+                    <td>
+                        <p class="checkbox_text">
+                            <wicket:message key="your_promise_text"/> <a href="#" class="linkColor" wicket:id="agb" target="_blank"><wicket:message key="agb"/></a> <wicket:message key="your_promise_text_after_agb"/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+			
+			<div wicket:id="container">
+							
+				<table>
+					<tr>
+						<td>
+							<label>
+			                    <wicket:message key="forename"/>*
+			                </label>
+			                <div>
+			                    <input type="text" size="19" wicket:id="forename" />
+			                </div>
+						</td>
+						<td>
+							<label>
+			                    <wicket:message key="surname"/>*
+			                </label>
+			                <div>
+			                    <input type="text" size="19" wicket:id="surname" />
+			                </div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>
+			                    <wicket:message key="language"/>*
+			                </label>
+			                <div>
+			                    <select wicket:id="locale"></select>
+			                </div>
+						</td>
+					</tr>
+				</table>	
+								
+				<div>
+                    <select wicket:id="receiveNews" 
+                    		class="baseButton baseButtonLast"
+                    		style="width: auto"></select>
+                    <span>
+                        <wicket:message key="receiveNews"/>
+                    </span>
+                </div>
+                
+			<div wicket:id="saveButton" style="height:34px;"></div>
+        
+		</div>
+		
+		<div wicket:id="feedback"></div>
+		
+		</form>
+		
+		<div wicket:id="agbModalWindow"></div>
+		
+		</div>
+    </wicket:panel>
+</html>

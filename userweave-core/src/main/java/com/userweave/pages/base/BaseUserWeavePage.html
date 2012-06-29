@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns:wicket>
+  <head>
+    
+    <title>
+     	<wicket:message key="you_can"/> <wicket:message key="agile"/> - userweave.net
+	</title>
+     
+	<wicket:link>
+		<link rel="stylesheet" type="text/css" href="res/baselayout.css"/>
+		
+		<!--[if IE]> 
+			<link rel="stylesheet" type="text/css" href="res/iehacks.css"/>
+		<![endif]-->
+		
+		<!--[if lte IE 7]> 
+			<link rel="stylesheet" type="text/css" href="res/ie7hacks.css"/>
+		<![endif]-->
+		
+		<link href="res/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	</wicket:link>
+    
+  </head>
+  <body>
+  	<div id="page">
+		
+		<div id="header">
+		
+			<div class="um_webseite_claim_admin"> <a href="/"><wicket:link><img  style="border: none;" src="user_weaver_logo_mi.png" /></wicket:link></a></div>
+
+			<div wicket:id="userMenuPanel" id="userMenuPanel"></div>
+		
+			<div wicket:id="breadcrumb" class="breadcrumb"></div>
+		</div>
+		
+	    <wicket:child/>
+	    
+		<div id="footer">
+			<a href="#" wicket:id="contact" class="footerLink">
+				<wicket:message key="contact_feedback" />
+			</a>
+			
+			&nbsp;&nbsp;
+			
+			<a class="footerLink" href="#" wicket:id="imprint" target="_blank">
+				<wicket:message key="imprint">[imprint]</wicket:message>
+			</a>
+			
+			<div wicket:id="contactModal"></div>
+		</div>
+	</div>
+</body>
+</html>

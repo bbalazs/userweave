@@ -1,0 +1,47 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<wicket:extend>
+	
+	<table class="contentTable">
+		
+		<tr>
+			<td>
+				<p>
+					<wicket:message key="type"/>
+				</p>
+			</td>
+			<td>
+				<span wicket:id="typeOfModule"></span>
+			</td>
+			<td>
+				<p>
+					<wicket:message key="type_legend"/>
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<p>
+					<wicket:message key="headline"/>
+				</p>
+			</td>
+			<td>
+				<span wicket:id="headline"></span>
+			</td>
+			<td>
+				<p>
+					<wicket:message key="headline_legend"/>
+				</p>
+			</td>
+		</tr>
+		
+		<wicket:child/>
+		
+	</table>
+	
+	<div wicket:id="feedback"></div>
+	
+</wicket:extend>
+</html>
+
+

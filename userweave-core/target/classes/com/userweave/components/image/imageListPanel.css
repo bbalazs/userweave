@@ -1,0 +1,75 @@
+/**
+ * Styling for the image upload tab
+ * of icon usability
+ * 
+ * @author: opr
+ */
+
+div.imageContainer {
+    width:480px;
+}
+
+div.tileContainer {
+	margin-bottom:8px;
+	float:left;
+}
+
+div.tile_header_left,
+div.tile_header_right,
+div.tile_header_center,
+div.tile_footer_left,
+div.tile_footer_right,
+div.tile_footer_center {
+	background-image:url(tile_1.png);
+}
+
+div.tile_header_left,
+div.tile_footer_left {
+	float:left;
+	width:4px;
+	height:4px;
+	
+	background-position:0px 0px;
+}
+
+div.tile_footer_left {
+    background-position:0px -4px;
+}
+
+div.tile_header_right,
+div.tile_footer_right {
+    float:right;
+    width:4px;
+    height:4px;
+    
+    background-position:-4px 0px;
+}
+
+div.tile_footer_right {
+    background-position:-4px -4px;
+}
+
+div.tile_header_center,
+div.tile_footer_center {
+	height:4px;
+	margin:0px 4px;
+	background-position:0px -9px;
+	background-repeat:repeat-x;
+}
+
+div.tile_footer_center {
+	background-position:0px -14px;
+}
+
+div.deleteButtonContainer {
+    width:24px;
+    height:24px;
+    float:right;
+	margin-left:5px;
+}
+
+div.tile_center {
+	border-left:1px solid #d6d6d6;
+	border-right:1px solid #d6d6d6;
+	padding:8px 11px;
+}

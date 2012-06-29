@@ -1,0 +1,68 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+	<td style="vertical-align: middle; width: 120px; padding-right: 9px; text-align: center;">
+		<img src="#" wicket:id="image" class="icontestImage" />
+	</td>
+	
+	<td>
+		<table class="icontestReportTable iconRatingTable">
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="aso" />
+					</span>
+				</td>
+				
+				<td rowspan="3" style="width:130px;">
+					<div wicket:id="scale_container">
+						<div wicket:id="barListPanel"></div>
+						<div wicket:id="barListPopup"></div>
+					</div>
+				</td>
+				
+				<td rowspan="3" class="note">
+					<div class="imageNote">
+						<span wicket:id="rating">
+							<span wicket:id="totalRating" class="rating"></span>
+						</span>
+					</div>
+					
+					<div wicket:id="totalRatingExplanationPopup"></div>
+				</td>
+				
+				<td rowspan="3" class="note">
+					<a href="#" 
+					   wicket:id="openIconOrderLink" 
+					   class="openIconOrderLink baseButton baseButtonLast">
+						<span>
+							<wicket:message key="details" />
+						</span>
+					</a>
+					
+					<div wicket:id="iconOrderModalWindow"></div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="trennschaerfe" />
+					</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="auffaleigkeit" />
+					</span>
+				</td>
+			</tr>
+			
+		</table>
+	</td>
+
+</wicket:panel>
+</html>
+  

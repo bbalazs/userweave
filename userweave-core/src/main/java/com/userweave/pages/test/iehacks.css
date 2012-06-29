@@ -1,0 +1,264 @@
+/***********************************************************************************
+ * Formats for the mainbody
+ ***********************************************************************************/
+#mainContent {
+	height:186px;
+}
+
+/************
+ * mainHeader
+ ************/
+#mainHeaderTop { 
+	background-image: none;
+	background-position: left top;
+	background-repeat: no-repeat;
+	width: 913px;
+	margin-bottom:-9px;
+}
+
+#mainHeaderTop div {
+	display:none; 
+	background-image: none;
+	background-position: right top;
+    background-repeat: no-repeat;
+    width: 913px;
+	padding-top:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-left: 10px;
+	height:5px;
+}
+
+#mainHeaderWrapper { 
+	width: 918px;
+	height: 60px;
+	padding-left: 5px;
+	margin-bottom:4px;
+	background-image: url(iehacks_shade_left.jpg);
+	background-repeat: repeat-y;
+}
+#mainHeader { 
+	width: 918px;
+	height: 60px;
+}
+#helpArrow{
+	display:none;
+} 
+#ie_helpArrow {
+	background-image: url(arrow.png);
+	width:13px;
+	height:12px;
+}
+
+.helpText { 
+	color:white;
+    font-weight:bold;
+	margin:-14px 0px 0px 15px; 
+}
+/*****************************
+ * Shade box below Header Box
+ *****************************/
+#shadeContainer {
+	display:none;
+	width: auto;
+	height: 8px;
+	margin: 0px;
+	background-image: none;
+	background-repeat: repeat-y;
+}
+
+/**************
+ * mainContent
+ **************/
+#mainWrapper { 
+	width: auto;
+	padding-left: 5px;
+	margin:0px 0px 0px 0px;
+	position:relative;
+	background-image: url(iehacks_shade_left.jpg);
+	background-repeat: repeat-y;
+}
+
+#mainContent { 
+	margin-top:-4px;
+}
+
+.wicketChild {
+	height:200px;
+}
+
+/*************
+ * mainFooter
+ *************/
+mainFooterWrapper { 
+	width: 914px;
+	height: 48px;
+	padding-left: 0px;
+} 
+#mainFooter { 
+	width: 918px;
+	height: 48px;
+	margin-left: 0px;
+	background: url(iehacks_footer_shade.jpg);
+	background-repeat: repeat-x;
+}
+
+#littleLeftBox { 
+	display:none;
+	width: 12px;
+	height: 12px;
+	margin: -7px 0px 0px -5px;
+	float:left;
+	position:relative;
+	background-color:#ffffff;
+	background-image: url(iehacks_corner_bottom_left3.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+.submitButton { 
+	width:190px;
+    height:46px;
+    padding:5px 0px 0px 20px;
+    margin:40px 0px 0px 681px;
+    position:absolute;
+    border:0px;
+    font-size:10px;
+    font-weight:bold;
+    color:#ffffff;
+    cursor:pointer;
+}
+/****************
+ * Iconmatching
+ ****************/
+#termCounter {
+	margin:0px 0px 0px 0px;
+}
+
+#content_right { margin-right:41px; }
+
+/******************
+ * Freetext Module
+ ******************/
+.freetext { 
+ 	padding-left:6px; 
+ 	z-index:10; 
+ 	position:relative;
+ 	margin-right:282px;
+	width:500px;
+}
+
+/******************
+ * Questionnaire
+ ******************/
+.questions {
+	margin-right:53px;
+	margin-left:52px;
+}
+.multipleRating_panel_header_center, .multipleRating_panel_footer_center,
+.notStated_header_center, .notStated_footer_center, .dimensions_questions_header_center,
+.dimensions_questions_footer_center {
+	overflow:hidden;
+	font-size:0;
+}
+.multipleRating_headerBoxLeft, .multipleRating_headerBoxRight,
+.antipode1_wrap, .antipode2_wrap, wrap {
+	height:24px;
+}
+/********
+ * RRT
+ *******/
+#ie6hackBox {
+	margin-right:38px;
+}
+
+#ie6hackBox .beschr_container_header_left, 
+#ie6hackBox .beschr_container_header_right,
+#ie6hackBox .beschr_container_header_center,
+#ie6hackBox .beschr_container_footer_left, 
+#ie6hackBox .beschr_container_footer_right,
+#ie6hackBox .beschr_container_footer_center {
+	margin:0px;
+}
+#ie6hackBox .beschr_container_header_center,
+#ie6hackBox .beschr_container_footer_center {
+	width:350px;
+}
+
+.description_container{
+	margin-top:-12px;
+	margin-bottom:-14px;
+	height:auto !important;
+    height:262px;
+	
+}
+/***********
+ * Popup
+ **********/
+.popupDrag { height:210px; }
+
+#topLeft, #topRight { position:relative; }
+
+#popupShadeTop {
+    width:432px;
+    padding-top:5px;
+    margin:0px 30px 0px 36px;
+    height:31px;
+}
+
+#popupWrapLeft { margin-top:0px; width:493px; }
+
+#ie6PopupHackBox { 
+	width:449px; 
+	margin-right:7px; 
+	background-color:#ffffff; 
+}
+
+#popupHeaderWrapperLeft {
+    width:445px;
+    height:43px;
+    position:absolute;
+    margin:-21px 0px 0px 10px;
+    background-color:#ffffff;
+    background-image: none;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#popupHeaderWrapperRight {
+    width:440px;
+    height:43px;
+    margin-left:0px;
+    background-image:none;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#popup {
+    margin:0px 21px 0px 0px;
+    padding:0px 0px 0px 10px;
+    background-color: #ffffff;
+    position:relative;
+}
+
+.jScrollPaneTrack { margin:0px; }
+
+#popupShadeBottom {
+    width:auto;
+    margin:0px 0px 0px 0px;
+    height:31px;
+}
+
+#bottomLeft {
+	margin:0px 500px 0px -26px;
+	position:absolute;
+	display:inline;
+}
+#bottomRight { margin-left:440px; position:absolute; clear:both; overflow:visible; }
+#bottomCenter {
+	width:440px;
+	margin: 0px 30px 0px 27px;
+	height:6px;
+	background-color:#ffffff;
+	position:relative;
+}

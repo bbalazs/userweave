@@ -1,0 +1,277 @@
+* {
+	margin:0;
+	padding:0;
+}
+/******************************
+ * Formats for the scale box
+ *****************************/
+div.scale_container {
+	padding-right:9px;
+}
+
+.scale_box_header_left {
+    background-image:url(content_box_one_corner_topleft.png);
+    background-position: left center;
+    background-repeat:no-repeat;
+}
+.scale_box_header_right {
+    margin-left:5px;
+    background-image:url(content_box_one_corner_topright.png);
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+.scale_box_header_center {
+    width:auto;
+    height:5px;
+    margin-right:5px;
+    background-color:#eeeeee;
+}
+
+.scale_box_footer_left {
+    background-image:url(content_box_one_corner_bottomleft.png);
+    background-position: left bottom;
+    background-repeat:no-repeat;
+    margin-bottom:8px;
+}
+
+.scale_box_footer_right {
+    margin-left:5px;
+    background-image:url(content_box_one_corner_bottomright.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+.scale_box_footer_center {
+    width:auto;
+    height:5px;
+    margin-right:5px;
+    background-color:#eeeeee;
+}
+
+.scale_box {
+    width:auto;
+    min-height:145px;
+    background-color:#eeeeee;
+}
+
+/****************************************************
+ * formats for the diagram container called imagebox
+ ****************************************************/
+.imagebox {
+	padding:10px 16px 0px 10px;
+}
+
+.imagebox_header_left {
+	background-image:url(popup_scale_imagebox_corner_topleft.jpg);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+.imagebox_header_right {
+	margin-left:5px;
+	background-image:url(popup_scale_imagebox_corner_topright.jpg);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+.imagebox_header_center {
+	margin-right:5px;
+	width:55px;
+	height:3px;
+	background-color:#d5d5d5;
+	border-top:2px solid #ffffff;
+}
+.imagebox_content {
+	height:100px;
+	width:56px;
+	border-left:2px solid #ffffff;
+	border-right:2px solid #ffffff;
+	padding:6px 0px 4px 5px;
+	background-color:#d5d5d5;
+}
+.imagebox_footer_left {
+	margin-bottom:22px;
+	background-image:url(popup_scale_imagebox_corner_bottomleft.jpg);
+    background-position:left top;
+    background-repeat:no-repeat;
+}
+.imagebox_footer_center {
+	width:60px;
+	height:3px;
+	margin-left:5px;
+	background-color:#d5d5d5;
+	border-bottom:2px solid #ffffff;
+}
+
+.scale_assoc_background {
+	background-color:#adadad;
+	width:14px;
+	height:100px;
+}
+
+.scale_assoc_bar {
+	width:14px;
+	background-color:#92C257;
+	position:absolute;
+}
+
+/****************
+ * grey note formating
+ ****************/
+ .grey_note {
+	width:41px;
+	height:41px;
+	margin:-15px 0px 0px 27px;
+	position:absolute;
+	background-image:url(grey_note.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.grey_note span {
+	display:block;
+	margin:12px 0px 0px 1px;
+	color:#ffffff;
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+	vertical-align:middle; 
+}
+/****************************************
+ * formats for the rating bars inside an imagebox
+ ****************************************/
+.scale_assoc {
+	width:14px;
+	height:100px;
+	position:absolute;
+	background-image:url(scale_assoc.png);
+	background-repeat:no-repeat;
+}
+
+.scale_assoc_span {
+	display:block;
+	margin:0px 0px 32px -1px;
+	font-size:10px;
+	font-weight:bold;
+	color:#adadad;
+}
+/****************************************
+ * formats for the impulse diagram inside an imagebox
+ ****************************************/
+.impulse_diagram {
+	width:41px;
+	height:100px;
+	margin:0px 0px 0px 5px;
+	background-image:url(impulse.jpg);
+	background-repeat:no-repeat;
+}
+
+.upper_bound, .lower_bound {
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	color:#adadad;
+}
+
+.upper_bound {
+	margin-left: 25px; 
+	padding-top: 17px;
+}
+
+.lower_bound {
+	margin-left: 21px; 
+	padding-top: 42px;
+}
+
+.upper_bound_bar {
+	width:20px;
+	height:27px;
+	margin-top:-59px;
+	background-image:url(upper_bound_bar.png);
+	background-repeat:no-repeat;
+	position:absolute;
+}
+
+.lower_bound_bar {
+	width:20px;
+	height:27px;
+	margin-top:-30px;
+	background-image:url(lower_bound_bar.png);
+	background-repeat:no-repeat;
+	position:absolute;
+}
+
+/********************************
+ * description an explanation for each imagebox
+ *******************************/
+.imagebox_desc {
+	display:block;
+	padding:10px 13px 0px 0px;
+}
+
+.imagebox_headline {
+	font-size:11px;
+	font-weight:bold;
+	color:#616060;
+}
+
+.percent {
+	color:#8a8a8a;
+}
+
+.imagebox_expl {
+	display:block;
+	padding-top:15px;
+	font-size:11px;
+	font-weight:bold;
+	color:#8a8a8a;
+}
+
+/****************************
+ * conclusion formats
+ *****************************/
+.conclusion {
+    width:auto;
+    height:59px;
+    margin-bottom: 16px;
+}
+.conclusion_left {
+    width:5px;
+    height:59px;
+    float:left;
+    background-image:url(conclusion_left.jpg);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+.conclusion_center {
+    width:241px;
+    height:59px;
+    float:left;
+    background-color:#99cc33;
+}
+.conclusion_right {
+    width:5px;
+    height:59px;
+    float:left;
+    background-image:url(conclusion_right.jpg);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+.conclusion_note {
+    width:49px;
+    height:35px;
+    position:relative;
+    float:right;
+    margin-top: -28px;
+    margin-right:24px;
+	padding-top:14px;
+	text-align:center;
+    background-image:url(note.png);
+}
+
+.conclusion_note .rating {}
+
+.conclusion_desc {
+	color:#ffffff;
+	font-weight:bold;
+	font-size:13px;
+	display:block;
+	padding:14px 0px 0px 11px;
+}

@@ -1,0 +1,53 @@
+<html xmlns:wicket>
+<wicket:panel>
+<tbody wicket:id="container">
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="number_of_answers" />
+			</span>
+		</td>
+		
+		<td>
+			<span wicket:id="resultCount"></span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="detailEvaluation"/>
+			</span>
+		</td>
+		
+		<td>
+			<table class="statisticsContainer">
+		
+				<tr>
+					<th><span> <wicket:message key="term" /> </span></th>
+		
+					<th style="text-align:right">
+						<span>
+							<wicket:message key="mean" />
+						</span>
+					</th>
+		
+					<th style="text-align:right">
+						<span>
+							<wicket:message key="deviation" />
+						</span>
+					</th>
+				</tr>
+		
+				<tr wicket:id="results">
+					<td><span wicket:id="term"></span></td>
+					<td style="text-align:right"><span wicket:id="mean"></span></td>
+					<td style="text-align:right"><span wicket:id="stdDeviation"></span></td>
+		
+				</tr>
+		
+			</table>
+		</td>
+	</tr>
+</tbody>
+</wicket:panel>
+</html>

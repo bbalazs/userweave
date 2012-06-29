@@ -1,0 +1,26 @@
+tarifierung:
+
+1. Summe der Modulkonfigurationen
+2. Rabattmodell
+3. Vorkonfigurierte Studien möglich?
+4. Tarife
+
+Gibt es Tarifmodelle, die Einfluss auf die Parameter der Modulkonfigurationen nehmen?
+Gibt es vorkonfigurierte Studien mit festgelegten Modulkonfigurationen und Tarifmodellen?
+
+
+Studien-Templates:
+* Vordefinierte Zusammenstellung von Modulkonfigurationen
+
+Produkt:
+Studien-Template + Tarif
+
+Tarif:
+1. mögliche Berechnungsmodelle für Modulkonfiguration
+	* Preis/Item (z. B. 10 Euro/Icon)
+	* Fixpreis mit Mengenbeschränkung (z. B. max 20 Icons für 49,90 Euro)	
+	* Kombination der obigen (z. B. die ersten 20 Icons 49,90, danach 10 Euro für jedes weitere)
+	* Rabatt
+	
+2. 	Beschränkung der Modulauswahl (z. B. im Tarif "Usability Easy" ist das Modul "Fragebogen" nicht wählbar)
+	

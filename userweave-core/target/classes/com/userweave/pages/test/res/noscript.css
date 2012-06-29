@@ -1,0 +1,73 @@
+#noscript {
+    width:447px;
+    margin:61px auto 0px;
+}
+
+#noscript p, #noscript span { text-align:justify; color:#7e7e7e;}
+#noscript strong { color:#3f3f3f; }
+
+#noscript .image {
+	text-align: center; 
+    vertical-align:middle;
+    width:261px;
+    height:52px;
+    margin:0px auto 27px;
+}
+
+#noscript #noscriptContainer {
+    border-width: 2px;
+    border-style: solid;
+}
+
+#noscript .left { 
+    float:left;
+    position:relative;
+    left:0;
+    margin:-2px 0px 0px -2px;
+}
+#noscript .right { 
+    float:right;
+    position:relative;
+    right:0;
+    margin:-2px -2px 0px 0px;
+}
+#noscript .bottom { bottom:0; margin-top:-4px;}
+#noscript .top { top:0; }
+
+#noscriptContent { padding:21px 92px 37px; }
+#noscript #contentHeader {
+    position:relative;
+    margin-left:-45px;
+    margin-bottom:27px;
+}
+
+#noscript #button {
+    width:286px;
+    margin:21px 0px 21px -12px;
+}
+
+#noscript .button {
+    width:286px;
+    height:35px;
+    padding-bottom: 5px;
+    border:0;
+    background-image: url(noscript_button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    font-weight:bold;
+    font-size:11px;
+    font-family:verdana;
+}
+.imprintPanel_noscript_container {
+	margin-top:10px;
+}
+.imprintPanel_noscript_container hr {
+	margin:0px;
+}
+.imprintPanel_noscript_container .noscript_not_visible {
+	display:none;
+} 
+.imprintPanel_noscript *{
+	color:#7F7F7F;
+}

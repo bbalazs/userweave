@@ -1,0 +1,96 @@
+<wicket:panel>
+	
+	<div class="login_panel_header login_gray"/>
+
+    <div class="login_panel_content login_gray">
+    	
+		<div class="register_container">
+			
+			<span class="login_register_headline">
+                <wicket:message key="already_registered" />
+            </span>
+            
+            <div class="white_border">
+                <div class="textbox">
+                    <p class="login_register_action label" style="margin-bottom: 28px;">
+                        <wicket:message key="login" />
+                    </p>
+					<p class="label">
+						<wicket:message key="already_user" />
+					</p>
+                </div>
+                <div>
+                <form wicket:id="login_form">
+                    <label>
+                        <wicket:message key="username" />
+                    </label>
+                    
+                    <input type="text" wicket:id="login_text">
+                    
+                    <label>
+                        <wicket:message key="password" />
+                    </label>
+                    
+                    <input type="password" wicket:id="password">
+                    
+                    <div class="button">
+                       <div class="button_right" />
+                       <div class="button_left" />
+                       <input type="submit" class="input_button label bold" wicket:message="value:login">
+                    </div>
+                </form>
+                <div style="clear:both;" />
+                
+                <a href="#" wicket:id="forgot_password" class="forgot_password">
+                    <wicket:message key="forgot_password" />
+                </a>
+                
+                <div wicket:id="feedback" />
+                </div>
+            </div>
+			
+		</div>
+		
+		<div class="login_container">
+			
+			<span class="login_register_headline">
+                <wicket:message key="new_here" />
+            </span>
+            
+            <div>
+                <div class="textbox">
+                    <p class="login_register_action label">
+                        <wicket:message key="register" />
+                    </p>
+                    
+                    <p class="label">
+                        <wicket:message key="enter_username" />
+                    </p>
+                </div>
+                
+                
+                <form wicket:id="register_form">
+                    <label>
+                       <wicket:message key="username" />
+                    </label>
+                        
+                    <input type="text" wicket:id="register_text">
+    
+                    <div class="button">
+                       <div class="button_right" />
+                       <div class="button_left" />
+                       <input type="submit" class="input_button label bold" wicket:message="value:next">
+                    </div>
+                </form>
+            </div>
+			
+		</div>
+		
+	</div>
+	
+	<div class="login_panel_footer login_gray">
+        <div class="login_panel_footer_left" />
+        <div class="login_panel_footer_right" />
+    </div>
+	
+</wicket:panel>

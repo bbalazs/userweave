@@ -1,0 +1,97 @@
+/* MainContent HACKS 
+ *******************/
+.um_webseite_menu  {
+	margin-left:50px;
+}
+
+.um_webseite_first_balken_block {
+	margin-left:48px;
+}
+
+.um_webseite_content {
+	margin-left:95px;
+	margin-top:0px;
+}
+
+.um_webseite_content_login {
+	margin-top:0px;
+}
+
+.um_webseite_content_login_top {
+	background-image:url("um_web_login_top.gif");
+	height:20px;
+}
+
+
+.um_webseite_content_login_content  {
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+.um_webseite_content_login_bottom {
+	background-image:url("um_web_login_bottom.gif");
+	height:22px;
+}
+
+
+.um_webseite_content_left {
+	margin-left:50px;
+}
+
+div.whiteFrameHeaderRight, div.whiteFrameFooterRight {
+	margin-left:12px;
+}
+
+
+
+
+.um_webseite_hr {
+	margin-left:50px;
+	width:825px;
+}
+
+.um_webseite_content_left .whiteFrameOnGreenGroundCenter,
+.um_webseite_content_right .whiteFrameOnGreenGroundCenter {
+	padding:0px;
+	padding-bottom:20px;
+}
+
+/* HowItWorks HACKS 
+ *******************/
+.um_webseite_how_it_works {
+	width: 833px;
+}
+
+.um_webseite_how_it_works_header {
+	background-image:url("howitworkstop_ie6.png");
+	width:833px;
+}
+
+.um_webseite_how_it_works_content {
+	width:820px;
+}
+
+.um_webseite_how_it_works_bottom {
+	background-image:url("howitworksbottom_ie6.png");
+	width:836px;
+	
+}
+
+/* BecomeMember HACKS 
+ *******************/
+
+
+
+/* AboutUs HACKS 
+ *******************/
+.um_webseite_about_us_content {
+	width:740px;
+	padding:40px;
+}
+ 
+/* IntroPanel HACKS 
+ *******************/
+div.introContainer a.okButton,
+div.introContainer a.cancelButton {
+	height:45px;
+}

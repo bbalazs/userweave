@@ -1,0 +1,69 @@
+div.quotePanel {
+    width:306px;
+}
+
+div.quotePanelHeaderLeft {
+    background-image:url(quoteframe-corner-topleft.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+div.quotePanelHeaderRight,
+div.quotePanelFooterRight {
+    margin-left:12px;
+    background-image:url(quoteframe-corner-topright.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+div.quotePanelFooterRight { background-image:url(quoteframe-corner-bottomright.png); }
+
+div.quotePanelTop,
+div.quotePanelBottom {
+    margin-right:12px;
+    height:11px;
+    
+    background-image:url(quoteframe-top.png);
+    background-position:center center;
+    background-repeat:repeat-x;
+}
+
+div.quotePanelBottom {
+    height:12px;
+    background-image:url(quoteframe-bottom.png);
+}
+
+div.quotePanelCenterLeft {
+    background-image:url(quoteframe-left.png);
+    background-position:left center;
+    background-repeat:repeat-y;
+}
+
+div.quotePanelCenterRight {
+    margin-left:5px;
+    
+    background-image:url(quoteframe-right.png);
+    background-position:right center;
+    background-repeat:repeat-y;
+}
+
+div.quotePanelCenter {
+    margin-right:3px;
+    padding:28px 0px 43px 54px;
+    background-color:#dffebb;
+}
+
+div.quote {
+	padding-right:50px;
+	color:#597717;
+}
+
+a.nextQuote {
+	display:block;
+	float:right;
+	margin:11px 14px 0px 0px;
+}
+
+div.quotePanelCenter a img {
+	border:0px none;
+}

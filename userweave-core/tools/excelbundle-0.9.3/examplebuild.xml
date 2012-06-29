@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<!-- ======================================================================= -->
+<!-- Build file                                                              -->
+<!-- ======================================================================= -->
+<project name="excelbundle" basedir="..">
+	
+	<!-- You need to specify what external tasks and types you use -->
+	<typedef classname="senselogic.excelbundle.ant.SheetMapping"
+		name="sheetmapping"	classpath="dist/excelbundle.jar"/>
+	<taskdef classname="senselogic.excelbundle.ant.ExportBundles"
+		name="exportbundles" classpath="dist/excelbundle.jar"/>
+	<taskdef classname="senselogic.excelbundle.ant.ImportBundles"
+		name="importbundles" classpath="dist/excelbundle.jar"/>
+	
+	<!-- =================================================================== -->
+	<!-- Test target for exporter ant task                                   -->
+	<!-- =================================================================== -->
+	<target description="Export test bundles" name="export-test">
+		
+		<!-- 
+			Out of the following options, only root, destfile and languages are
+			required, the others are optional.
+			
+			You can specify the sheet map using a file if you want to by using
+			the sheetmap attribute. If the sheetmap attribute is specified,
+			sheetmapping elements will be ignored.
+		-->
+		<exportbundles
+			root="${basedir}/src/java"
+			destfile="${basedir}/excelexport/export.xls"
+			languages="default,en,sv"
+			reflang="en"
+			untrans="sv">
+			
+			<!-- You can specify sheet mappings directly in the ant task -->
+			<sheetmapping name="foo" prefix="/path/to/foo/module" />
+			<sheetmapping name="bar" prefix="/path/to/bar/module" />
+			
+		</exportbundles>
+		
+	</target>
+	
+	<!-- =================================================================== -->
+	<!-- Test target for importer ant task                                   -->
+	<!-- =================================================================== -->
+	<target description="Import test excel file" name="import-test">
+		
+		<!--
+			Out of the following attributes, only root, languages and either
+			srcfile or a child fileset are required, the others are optional.
+			
+			The source Excel spreadsheet file can also be specified using the
+			srcfile attribute. Specifying a fileset overrides the srcfile
+			attribute.
+		-->
+		<importbundles
+			root="${build.dir}"
+			languages="sv"
+			reflang="en"
+			pretend="false">	
+			
+			<fileset dir="${basedir}/excelimport">
+				<include name="*.xls"/>
+			</fileset>
+			
+		</importbundles>
+		
+	</target>
+	
+</project>

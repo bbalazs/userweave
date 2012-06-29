@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<wicket:head>
+	<wicket:link>
+		<link rel="stylesheet" type="text/css" href="api.css" />
+	</wicket:link>
+</wicket:head>
+<body>
+<wicket:extend>
+<div style="margin-top:20px">
+
+	<h1 style="padding: 0px">
+		<wicket:message key="api_short_headline" />
+	</h1>
+
+	<br />
+
+	<div class="startseiten_link" style="margin-top: 0px;"><a
+		href="#" wicket:id="start"
+		wicket:message="title:prompt_start,alt:prompt_start"
+		class="um_webseite_menu_link"> <wicket:message
+		key="backtostartseite">zurück zur Startseite</wicket:message> </a>
+	</div>
+	
+	<br />
+	
+	<div wicket:id="border">
+		<div style="padding: 15px;">
+			<div><wicket:message key="apiHeading"/></div>
+			<div> <span wicket:id="errorMessage" /> </div><br />
+		</div>
+	</div>
+</div>
+</wicket:extend>
+</body>
+</html>

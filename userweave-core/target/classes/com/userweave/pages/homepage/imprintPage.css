@@ -1,0 +1,13 @@
+div.imprint {
+	width:804px;
+	position:relative;
+	z-index:2;
+
+    padding-top:47px;
+	margin-left:95px;
+
+}
+
+div.imprint a {
+	color:#A7D13F;
+}

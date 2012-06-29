@@ -1,0 +1,1085 @@
+/**
+ * 
+ *				userweave.net Base layout.
+ *
+ * 
+ * Definition of the base layout for the configuration frontend.
+ * 
+ * @author  opr
+ * @version 1.0
+ * 
+ */
+
+/**
+ * Default rules
+ *
+ * Default rules for html tags.
+ *
+ * @section default rules
+ */
+body, select, textarea, input {
+	font-family: verdana;
+}
+
+p,span,a,label,input,textarea, select, strong, em {
+	font-size: 12px;
+}
+
+strong { font-weight: bolder; }
+
+input,textarea {
+	margin: 0px;
+	border: 1px solid;
+	padding: 0px 6px;
+	vertical-align: top;
+}
+
+input {
+	height: 24px;
+}
+
+textarea {
+	padding: 3px 6px;
+}
+
+table.contentTable input,
+table.contentTable textarea { width: 486px; }
+
+table.contentTable div.configurations input { width:auto; }
+
+table.contentTable textarea[name="freetext"] { width:500px; }
+
+select { vertical-align: top; }
+
+iframe {
+	border: 1px solid;
+	vertical-align: text-top;
+}
+
+/**
+ * Page styling
+ *
+ * Dimensions of the content page
+ *
+ * @section page
+ */
+div#page {
+	margin: 0px auto;
+	padding: 12px 24px;
+	width: 952px;
+}
+
+/**
+ * Header
+ *
+ * @section header
+ */
+div#header {
+	margin-bottom: 12px;
+	padding: 0px 0px;
+	min-height: 48px;
+}
+
+div.um_webseite_claim_admin{
+   float: left;
+    margin-left: -17px;
+    margin-top: -78px;
+}
+
+div#header div.breadcrumb div.homeLinkContainer,
+div#header a.breadcrumb.homeLinkContainer {
+ float: left;
+     padding-left: 10px;
+    padding-top: 29px;
+    padding-bottom: 1px;
+ /* sorgt dafür das 2te breadcrumb 
+							zeile nicht nach vorne rutscht */
+}
+
+div#header div.breadcrumb div.homePageActive,
+a.homePageActive {
+	margin-top: 21px;
+	padding: 7px 12px 0px 12px;
+	height: 30px;
+
+}
+
+a.accountPageActive {
+	display:inline-block;
+	padding: 7px 12px 0px 12px;
+	height:23px;
+	font-weight: bold;
+}
+
+div#header a.home {
+	font-weight: bold;
+}
+
+div#header div.breadcrumb div.crumb {
+	float: left;
+}
+
+div#header div.breadcrumb div.crumb:before {
+	content: url("crumb_separator.png");
+}
+
+div#header div#userMenuPanel {
+	float: right;
+	padding-top: 18px;
+}
+
+div#header div#userMenuPanel a {
+	text-decoration: none;	
+}
+
+div#header div.breadcrumb a,
+div#header div.breadcrumb span,
+a.breadcrumb {
+	font-size: 15px;
+	text-decoration: none;
+}
+
+div#header div.breadcrumb div.crumb {
+ padding-top: 29px;
+}
+
+div#header div.breadcrumb div.lastCrumb {
+	padding-top: 21px;
+}
+
+div#header div.breadcrumb div.lastCrumb>span {
+	display: inline-block;
+	height: 29px;
+	margin-top: 0;
+	padding: 9px 0px 0;
+}
+
+span.usernameIcon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+span.usernameIcon:before {
+	content: url("sprites.png");
+	position: relative;
+	top:-96px;
+	left:0px;
+}
+/**
+ * Footer
+ *
+ * @section footer
+ */
+div#footer {
+    border-top: 1px solid;
+    height: 24px;
+    margin: 12px 0;
+
+    padding-top: 10px;
+    border-color:#ccc;
+}
+
+div#footer a.footerLink {
+	text-decoration: none;
+}
+
+/**
+ * Content
+ *
+ * Design of the content table
+ *
+ * @section content
+ */
+table.contentTable {
+	margin-bottom: 12px;
+}
+
+table.contentTable>tbody>tr>td {
+	padding-top: 12px;
+	vertical-align: text-top;
+}
+
+table.filterTable>tbody>tr>td {
+	padding-top: 0px;
+}
+
+table.studyContentTable>tbody>tr>td {
+	padding-top: 6px;
+}
+
+table.contentTable>tbody>tr>td:first-child {
+	padding-right: 9px;
+	width:120px;
+	vertical-align: text-top;
+}
+
+table.contentTable>tbody>tr>td:nth-child(2) {
+	width: 500px;
+}
+
+table.contentTable>tbody>tr>td:nth-child(3) {
+	padding-left: 6px;
+}
+
+div.actions { 
+	height:24px;
+	margin-bottom:12px;
+}
+
+table.userTable { width:100% }
+table.userTable td { 
+	vertical-align: middle;
+	text-align: right;
+	padding: 5px 0px;
+}
+
+table.userTable td:first-child { 
+	text-align:left;
+	padding-left:5px; 
+}
+
+table.userTable td:nth-child(2) { text-align: left; }
+
+table.userTable td:last-child { padding-right:10px; }
+
+/**
+ * Reorderable list panel
+ *
+ * Design of the reorderable list panel
+ *
+ * @subsection reorderable list panel
+ */
+
+a.remove:before,
+span.remove:before,
+a.movedown:before,
+span.movedown:before,
+a.moveup:before,
+span.moveup:before
+	{
+	content: url("sprites.png");
+	position: relative;
+}
+
+a.remove,
+span.remove,
+a.movedown,
+span.movedown,
+a.moveup,
+span.moveup
+	{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+a.moveup:before,
+span.moveup:before {
+	top: -32px;
+	left: -176px;
+}
+
+a.movedown:before,
+span.movedown:before {
+	top: -64px;
+	left: -176px;
+}
+
+a.remove:before,
+span.remove:before {
+	top: -96px;
+	left: -176px;
+}
+
+span.moveup:before,
+span.movedown:before,
+span.remove:before {
+	left: -192px;
+}
+
+/**
+ * Buttons
+ *
+ * @subsection buttons
+ */
+a.baseButton,
+select.baseButton,
+span.fakeAdd,
+input.baseButton {
+	border: 1px solid;
+	border-right: 0px solid;
+	padding: 5px 6px 1px;
+	background-image: url("gradients_sprites.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	text-decoration: none;
+}
+span.buttonContainer {
+	letter-spacing: -4px; /** needed, to avoid whitespace **/ 
+	word-spacing: -4px;   /** for Opera **/
+}
+
+span.buttonContainer a.baseButton, 
+span.buttonContainer span.baseButton,
+span.buttonContainer select.baseButton {
+	letter-spacing: normal; /** reset whitespace **/
+	word-spacing: normal;
+}
+
+span.buttonContainer a.baseButton, 
+span.buttonContainer span.baseButton { 
+	display:inline-block; 
+	height:16px;
+	cursor:pointer;
+}
+
+span.buttonContainer.userPanelLinkContainer {
+	display:block; 
+	margin-bottom:12px;
+}
+
+a.baseButton span,
+span.baseButton span,
+input.baseButton { 
+	vertical-align: text-top;
+	
+}
+
+select.baseButton { 
+	padding:3px 2px; 
+	width: 200px;
+	height:26px;
+}
+
+table.contentTable input.baseButton {
+	border-right:1px solid;
+	padding:0px 6px;
+	width:22px;
+}
+
+table.contentTable input.baseButton.filterButton { width:198px; } 
+
+span.fakeAdd {
+	display: block;
+	padding: 4px 0 2px;
+	float:left;
+	width:100%;
+	border:0px none;
+	border-top:1px solid;
+}
+
+span.fakeAdd span.fakeAddLabel { vertical-align:top; }
+span.fakeAdd span.fakeAddIcon { margin-left:6px; }
+
+select.selectionChoice { width:100% }
+
+a.baseButton:hover,
+select.baseButton:hover,
+input.baseButton:hover {
+	background-position: 0px -71px;
+}
+
+a.baseButton:active,
+select.baseButton:active,
+input.baseButton:active {
+	background-position: 0px -142px;
+}
+
+span.baseButton {
+	border: 1px solid;
+	border-right: 0px solid;
+	padding: 5px 6px 1px;
+	background-color: #fff;
+}
+
+a.baseButtonLast,
+span.baseButtonLast,
+select.baseButtonLast {
+	border-right: 1px solid;
+}
+
+a.addButton, span.addButton { 
+	width:100%;
+	height:17px;
+	display:inline-block;
+	border:0px none;
+	border-top:1px solid;
+	padding: 5px 0px 1px;
+}
+
+a.addButton span:first-child { margin-left:5px; }
+
+a.copy {
+	border-left: 0px none;
+}
+
+a.preview,
+span.preview,
+a.filter,
+span.filter {
+	margin-left: 12px;
+}
+
+span.buttonContainer a.baseButton.moveleft, 
+span.buttonContainer a.baseButton.moveright, 
+span.buttonContainer span.baseButton.moveleft,
+span.buttonContainer span.baseButton.moveright {
+	height:22px;
+	vertical-align:top;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+span.buttonContainer a.baseButton.moveleft, 
+span.buttonContainer span.baseButton.moveleft {
+margin-left: 12px;
+}
+
+a.moveleft span:before,
+a.moveright span:before,
+span.moveleft span:before,
+span.moveright span:before {
+	content: url("sprites.png");
+	position: relative;
+	left: -192px;
+	top: -80px;
+}
+
+a.moveleft span:before,
+a.moveright span:before {
+	left: -176px;
+}
+
+a.moveright span:before,
+span.moveright span:before {
+	top: -48px;
+}
+
+a.moveleft span,
+a.moveright span,
+span.moveleft span,
+span.moveright span {
+	display: inline-block;
+	margin:7px 0px 5px;
+	width: 16px;
+	height: 10px;
+	overflow: hidden;
+}
+
+a.studyChangeButton,
+span.studyChangeButton,
+a.endMembership { 
+	float:right;
+	height:16px;
+}
+
+select.studyChangeButton { 
+	float:right;
+	height:24px;
+}
+
+select.filterSelector { 
+	height:24px;
+	margin-bottom:6px; 
+}
+
+
+
+/**
+ * Tabbed panel
+ *
+ * @subsection tabbed panel
+ */ 
+div.tab-row {
+	height:26px;
+	border: 1px solid;
+	
+	background-image: url("gradients_sprites.png");
+	background-position: left bottom;
+	background-repeat: repeat-x;
+} 
+
+div.tab-row,
+div.tab-wrapper {
+	position: relative;
+}
+
+div.tab-window,
+div.tab-wrapper {
+	height: 26px;
+}
+
+div.tab-window {
+	position: absolute;
+	z-index:1;
+	left: 29px;
+
+	clip: rect(0px, 650px, 26px, 0px);
+	overflow: hidden;
+}
+
+div.mainTabPanel div.tab-panel { margin-top:12px; }
+
+div.slideLeft,
+div.slideRight {
+	position: absolute;
+	padding:8px 6px 2px;
+	width:16px;
+	height:16px;
+	z-index:2;
+	
+	cursor: pointer;
+}
+
+div.slideLeft div,
+div.slideRight div {
+	width:16px;
+	height:16px;
+	
+	background-image:url("sprites.png");
+	background-repeat: no-repeat;
+	background-position:-176px 0px;
+}
+
+div.slideRight div { background-position:-192px 0px; }
+
+div.slideLeft { border-right:1px solid; }
+
+div.slideRight {
+	left: 678px;
+	border-left:1px solid;
+}
+
+div.tab {
+	position:relative;
+	display:inline-block;
+	height:26px;
+}
+
+div.tab0 { left:0px; }
+
+div.tab a, 
+div.tab span.addLink,
+a.configTab {
+	display:inline-block;
+	padding:6px 6px 0px 15px;
+	height:20px;
+	
+	vertical-align:top;
+	text-decoration:none;
+	
+	background-image: url("gradients_sprites.png");
+	background-position: 0px -213px;
+	background-repeat: repeat-x;
+}
+
+div.questionTabs div.tab span.addLink { padding-left:6px; }
+
+div.tab.last { border-right: 1px solid; }
+
+div.tab a span,
+a.configTab span { vertical-align: text-top; }
+
+div.tab0 a { padding-left:6px; }
+
+div.questionTabs div.tab a,
+div.icontestTabs div.tab a { 
+	border-right: 1px solid; 
+	padding-left:6px;
+}
+
+div.questionTabs div.tab.last a,
+div.icontestTabs div.tab.last a { border-right: 0px none; }
+
+div.navTab { border-right: 1px solid; }
+div.navTab a { padding-left:6px; }
+
+a.configTab { 
+	position:absolute;
+	right:29px;
+	border-left: 1px solid;
+	border-right:1px solid;
+	padding-left:6px;
+}
+
+
+div.tab span.tab-end {
+	display:inline-block;
+	height:26px;
+	width:9px;
+	
+	background-image: url("tab_separator_sprite.png");
+	background-position: 0px -1px;
+	background-repeat: no-repeat;
+}
+
+div.tab.selected a 			{ background:none; }
+
+div.tab:hover a,
+div.tab:hover span.addLink,
+a.configTab:hover 			{ background-position: 0px -296px; }
+
+div.tab.selected:hover a 	{ background-position: 0px 0px; }
+
+div.tab:active a,
+div.tab:active span.addLink,
+a.configTab:active 		 	{ background-position: 0px -379px; }
+
+div.tab.selected:active a 	{ background-position: 0px 0px; }
+
+div.tab.last span.tab-end,
+div.questionTabs span.tab-end,
+div.icontestTabs span.tab-end { width:0px; } 
+
+div.tab.selected span.tab-end { background-position: 0px -85px; }
+
+div.tab:hover span.tab-end { background-position: 0px -29px; }
+div.tab.selected:hover span.tab-end { background-position: 0px -85px; }
+
+div.tab:active span.tab-end { background-position: 0px -57px; }
+div.tab.selected:active span.tab-end { background-position: 0px -85px; }
+
+
+a.configTab.configTabSelected,
+a.configTab.configTabSelected:hover,
+a.configTab.configTabSelected:active { background-image:none; }
+
+
+div.selectedProjectTabbedPanel div.tab.last {
+	float: right; 
+	margin-right: 20px; 
+	border-left: 1px solid;
+}
+/**
+ * Statistics
+ *
+ * @subsection statistics
+ */
+table.statisticsTable { margin-bottom:12px; }
+
+table.statisticsContainer tr:nth-child(2) { border-top: 1px solid; }
+table.statisticsContainer.freeAnswers tr:nth-child(2) { border-top: 0px none; }
+
+table.statisticsContainer th { 
+	text-align: left;
+	vertical-align: bottom; 
+}
+
+table#ratingTable.statisticsContainer th { cursor:pointer }
+table#ratingTable.statisticsContainer tbody tr:nth-child(1) { border-top: 1px solid; }
+table#ratingTable.statisticsContainer tbody tr:nth-child(2) { border-top: 0px solid; }
+
+table.statisticsContainer th,
+table.statisticsContainer td { padding: 0px 9px 3px; }
+
+table.statisticsTable > tbody > tr > td {padding-right: 9px; }
+
+table.statisticsTable > tbody > tr > td:first-child { 
+	width:120px;
+	vertical-align: top;
+}
+
+table.statisticsTable > tbody > tr > td:nth-child(2) {width: 500px;}
+
+table.statisticsTable > tbody > tr > td:nth-child(2) > span { 
+	margin-left:9px;
+	display:inline-block;
+}
+
+/**
+ * Project list view
+ */
+div.projects-logo-column,
+div.projects-column {
+	min-height:42px;
+}
+
+div.projects-logo-column {
+	width: 200px;
+	text-align: center;
+	float:left;
+}
+
+div.projects-logo-column img { max-height: 40px; }
+
+div.projects-action-column {
+	width:45px;
+	padding:3px 0px 0px 5px;
+	float:right;
+}
+
+div.navigator-block {
+	border-left:1px solid; 
+	height:28px;	
+}
+
+div.projects-column {
+	margin-left:200px;
+	margin-right:50px;
+	border-left:1px solid;	
+	border-right:1px solid;
+}
+
+div.projects-column a {
+	display: inline-block; 
+	width: 100%; 
+	min-height: 36px;
+	text-decoration: none;
+}
+
+div.projects-column a > span { margin-left:10px; }
+
+div.pagingNavigator {
+	padding: 10px 5px 5px;
+	width: 190px;
+	border-right: 1px solid;
+	text-align: center;
+}
+
+/**
+ * Content
+ *
+ * @subsection content
+ */
+div.whiteContainer {
+	border-style: solid;
+	border-width: 1px;
+}
+
+div.whiteContainer div.selectableItem,
+div.configurations {
+	padding: 5px 10px 5px 5px;
+}
+
+/** styles for the rrt reorderable term list */
+div.whiteContainer tr.selectableItem td { 
+	padding:0px 0px;
+	vertical-align:top;
+}
+div.whiteContainer tr.selectableItem td:nth-child(-n+2) > span {
+	display:inline-block;
+	height:16px;
+	padding:5px 0px;
+}
+div.whiteContainer tr.selectableItem td:first-child { padding-left:5px; }
+div.whiteContainer tr.selectableItem td:last-child { 
+	padding-right:10px;
+	vertical-align: middle; 
+}
+
+
+div.whiteContainer .selectableItem a {
+	text-decoration: none;
+}
+
+/** icon test report **/
+table.icontestReportTable { margin-left:9px; }
+
+table.icontestReportTable > tbody > tr > td:first-child { 
+	padding-right:9px;
+	width: 160px;
+}
+
+/* table.indicatorTable { 
+	margin-top:18px;
+	margin-bottom:18px; 
+} */
+
+table.iconRatingTable { margin-bottom:12px; }
+
+tbody.indicatorPanel > tr > td { 
+	padding-top:18px;
+	padding-bottom:18px;
+}
+
+span.indicatorContainer { display:inline; }
+
+span.graph { 
+	display: inline-block;
+	width:100px; 
+	border:1px solid;
+	height:5px;
+	margin-left:6px;
+}
+
+span.graph span { 
+	display: block;
+	height:5px; 
+}
+
+img.icontestImage {
+	vertical-align: top;
+	width: 32px;
+	height: 32px;
+}
+
+td.note { vertical-align:middle; }
+
+td.note div.indicatorNote,
+td.note div.imageNote {
+	margin: 4px 6px 0px;
+	padding:4px;	
+}
+
+td.note div.imageNote {
+	padding-top:11px;
+	height:29px;
+	width:28px;
+	text-align:center;
+}
+
+a.openIconOrderLink {
+	display: inline-block;
+    height: 29px;
+    margin-top: 4px;
+    padding-top: 11px;	
+}
+
+select.dimensionRating { 
+	width: 45px; 
+	vertical-align: text-top;	
+}
+
+/**
+ * Translation page
+ */
+table.contentTable > tbody > tr.translationHeader > td { 
+	padding-top:6px;
+	padding-right: 9px;
+	padding-bottom: 6px;
+}
+
+/** 
+ *
+ *		!!!		Here are dragons 	!!!
+ *
+ **/
+
+/**
+ * Configuration
+ *
+ * @subsection configuration
+ */
+input.newBackgroundColor,span.newBackgroundColor {
+	opacity: 0; /** hide input field */
+	position: absolute;
+}
+
+input#input_logo {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	z-index: 2;
+}
+
+div.previewMethodDisplay {
+	border: 1px solid;
+	height: 350px;
+}
+
+/**
+ * Methods
+ *
+ * @subsection methods
+ */
+
+/**** Icontest ****/
+div.icon_upload_container { height: 24px; }
+
+input#icon_upload,input#term_upload {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+	left:0px;
+}
+
+div.iconRepeater {
+	margin: 0px 15px 10px;
+	border: 1px solid;
+	padding: 5px;
+	float: left;
+	position: relative;
+}
+
+div.iconRepeater a.remove {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+div.iconRepeater div.image {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/**
+ * Radio buttons
+ *
+ * @subsection radio buttons
+ */
+span.radioSelected,span.radioNotSelected {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+span.radioSelected:before,span.radioNotSelected:before {
+	content: url("icons.png");
+	position: relative;
+	left: -240px;
+}
+
+span.radioSelected:before {
+	top: -16px;
+}
+
+/**
+ * Buttons
+ *
+ * @subsection buttons
+ */
+span.addIcon:before,
+span.addLink em span.addIcon:before,
+a.invite:before,
+a.showUrl:before,
+span.fakeAdd span.fakeAddIcon:before,
+span.submit_term_upload:before
+	{
+	content: url("icons.png");
+	position: relative;
+}
+
+span.addIcon,
+span.fakeAdd span.fakeAddIcon,
+span.submit_term_upload {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+span.fakeAdd 
+	span.fakeAddIcon:before {
+	left: -160px;
+}
+
+span.addIcon:before,span.submit_term_upload:before
+	{
+	left: -192px;
+}
+
+a.invite:before {
+	left: -224px;
+}
+
+a.filter:before,span.filter:before {
+	left: -304px;
+}
+
+span.addLink em span.addIcon:before {
+	left: -192px;
+	top: -16px;
+}
+
+a.addLink:hover span.addIcon:before,
+span.activate:before,
+a.invite:hover:before,
+a.showUrl:hover:before,
+span.fakeAdd:hover span.fakeAddIcon:before,
+div.submit_term_upload_container:hover
+	span.submit_term_upload:before,
+input#term_upload:hover  ~ span.fakeAdd span.fakeAddIcon:before,
+input#icon_upload:hover 
+	~ span.fakeAdd span.fakeAddIcon:before,
+input#input_logo:hover  ~ span.fakeAdd span.fakeAddIcon:before {
+	top: -16px;
+}
+
+
+input.inputUrl{
+width: 320px;
+}
+
+a.addLink,a.addLink span.addIcon {
+	text-decoration: none;
+}
+
+a.remove,span.removeDisabled {
+	margin-left: 10px;
+}
+
+div.submit_term_upload_container,div.submit_image_upload_container {
+	display: none; /** initial hidden */
+}
+
+input.submit_term_upload {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	text-decoration: underline;
+}
+
+.selectableItemSpan {
+display: inline-block;
+    width: 100%;
+}
+
+.selectableItemSpan span{
+display: inline-block;
+    width: 85%;
+}
+
+/**
+*Registerform
+*/
+
+.register{
+font-family: verdana;
+    margin-top: 100px;
+    width:600px;
+}
+
+.register_head{
+   font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.register p{
+font-size: 13px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+}
+
+.register input{
+  margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.register input#checked{
+    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.register_submit{
+background-color: #19235D;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 17px;
+    height: 23px;
+    margin-left: 0px!important;
+    margin-top: 4px;
+    width: 75px;
+}
+
+.register .feedbackPanelERROR{
+ color: red;
+    font-size: 13px;
+}

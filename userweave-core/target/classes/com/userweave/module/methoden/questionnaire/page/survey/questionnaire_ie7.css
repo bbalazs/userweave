@@ -1,0 +1,20 @@
+.antipode1_wrap {
+	position:relative;
+	margin-right:-40px;
+	min-height:24px;
+}
+.antipode2_wrap {
+	position:relative;
+	margin-left:-40px;
+	min-height:24px;
+}
+.multipleRating_headerBoxLeft {
+	min-height:24px; 
+	margin-left:40px; 
+	background-color:#B6B6B6;
+}
+.multipleRating_headerBoxRight {
+	min-height:24px; 
+	margin-right:40px; 
+	background-color:#B6B6B6;
+}

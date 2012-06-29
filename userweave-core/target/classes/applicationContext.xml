@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	default-autowire="byName">
+
+	<import resource="classpath:common.xml"/>
+
+	<import resource="classpath:persistence.hibernate.xml"/>
+
+	<import resource="classpath:test.xml"/>
+
+	<bean id="modules" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+ 				<ref bean="freeTextMethod"/>
+				<ref bean="iconTermMatchingMethod" />
+				<ref bean="bestMatchingIconMethod" />
+				<ref bean="bestMatchingTermMethod" />
+ 				<ref bean="rrtMethod"/>
+ 				<ref bean="questionnaireMethod"/>
+ 				<ref bean="mockupMethod"/>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="activeModules" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+ 				<ref bean="freeTextMethod"/>
+				<ref bean="bestMatchingIconMethod" />
+ 				<ref bean="rrtMethod"/>
+ 				<ref bean="questionnaireMethod"/>
+ 				<ref bean="mockupMethod"/>
+			</list>
+		</constructor-arg>
+	</bean>
+
+		
+	<!--  autodetect annotated classes and register as spring beans -->
+	<context:component-scan base-package="com.userweave.dao.impl" />
+	<context:component-scan base-package="com.userweave.domain.service" />
+	<context:component-scan base-package="com.userweave.module.methoden" />
+	<context:component-scan base-package="com.userweave.module.methoden.iconunderstandability.service" />
+	
+	<!--  Annotationsbasierte Dependency Injection aktivieren-->
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+	<!--  Methoden -->
+	<bean id="iconTermMatchingMethod" class="com.userweave.module.methoden.iconunderstandability.IconTermMatchingMethod">	</bean>
+
+    <bean id="bestMatchingIconMethod" class="com.userweave.module.methoden.iconunderstandability.BestMatchingIconMethod">	</bean>
+    
+    <bean id="bestMatchingTermMethod" class="com.userweave.module.methoden.iconunderstandability.BestMatchingTermMethod">	</bean>
+
+
+	<bean id="freeTextMethod" class="com.userweave.module.methoden.freetext.FreeTextMethod"></bean>
+
+	<bean id="rrtMethod" class="com.userweave.module.methoden.rrt.RrtMethod"></bean>
+	
+	<bean id="questionnaireMethod" class="com.userweave.module.methoden.questionnaire.QuestionnaireMethod"></bean>
+
+	<bean id="mockupMethod" class="com.userweave.module.methoden.mockup.MockupMethod"></bean>
+
+	<!--  App context -->
+ 	<bean id="springApplicationContext" class="com.userweave.application.SpringApplicationContext"/>
+
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+
+	<context:annotation-config/>
+	
+	<!-- Wicket Application -->
+	<bean id="wicketApplication" class="com.userweave.application.UserWeaveApplication"/>
+</beans>
+
+
+

@@ -1,0 +1,42 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<wicket:head>
+	<script type="text/javascript">
+		/**
+		 * Sets the fake input fields value 
+		 */
+		function setTermFileName()
+		{
+			var InputText = document.getElementById("term_upload").value;
+			document.getElementById("fake_term_upload").value=InputText;
+			
+			if(InputText != "")
+				$("div.submit_term_upload_container").show();
+		}
+		
+		/**
+		 * Hide the submit button if file selection changes.
+		 */
+		function hideSubmit()
+		{
+			$("div.submit_term_upload_container").hide();
+		}
+	</script>
+</wicket:head>
+<wicket:panel>
+	<input id="term_upload" 
+		   wicket:id="imageFile" 
+		   size="10" type="file" 
+		   onmouseout="setTermFileName();" 
+		   onclick="hideSubmit();"/>
+	
+	<input id="fake_term_upload" style="display:none"/>
+    
+    <span class="fakeAdd">
+    	<span class="fakeAddIcon"></span>
+    	<span class="fakeAddLabel">
+    		<wicket:message key="browse">Durchsuchen</wicket:message>
+    	</span>
+    </span>
+   
+</wicket:panel>
+</html>

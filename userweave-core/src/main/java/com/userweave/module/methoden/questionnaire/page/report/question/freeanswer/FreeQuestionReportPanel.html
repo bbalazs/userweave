@@ -1,0 +1,42 @@
+<html xmlns:wicket>
+    <wicket:extend>
+
+	<wicket:enclosure child="meanRow">
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="mean" />
+				</span>
+			</td>
+			<td>
+				<span wicket:id="meanRow">
+					<span wicket:id="mean"></span>
+				</span>
+				
+				<span wicket:id="stdDeviationRow" style="margin: 0;">
+					(<wicket:message key="std.deviation" /> = 
+					 <span wicket:id="stdDeviation"></span>)
+				</span>
+	        </td>
+	    </tr>    
+	</wicket:enclosure>
+	<tr>
+		<td>
+			<span>
+				<wicket:message key="answers" />
+			</span>
+		</td>
+		<td>
+			<table class="statisticsContainer freeAnswers">
+				<tr wicket:id="answers">
+					<td>
+						<span wicket:id="answer" 
+							  style="margin-top: 5px; margin-bottom: 5px; display: inline-block;"></span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+</wicket:extend>
+</html>

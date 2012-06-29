@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!-- compute icon test statistics daily -->
+	
+	<bean id="jobComputeIconTestStatistics" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="computeIconTestStatistics" />
+		<property name="targetMethod" value="computeStatisticsAndSave" />
+		<property name="concurrent" value="true" /> <!--wait until previous call completes -->
+	</bean>
+	<bean id="triggerComputeIconTestStatistics" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobComputeIconTestStatistics" />
+		<property name="cronExpression" value="0 0 3 * * ?" />
+	</bean>
+
+	<bean id="triggerComputeIconTestStatistics2" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<!-- see the example of method invoking job above -->
+		<property name="jobDetail" ref="jobComputeIconTestStatistics" />
+
+		<!-- 200 seconds to allow for startup-->
+		<property name="startDelay" value="20000" />
+		<!-- repeat every 24 hours -->
+		<!--<property name="repeatInterval" value="86400000" />-->
+	</bean>
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+		  		<ref bean="triggerComputeIconTestStatistics" />
+			</list>
+		</property>
+	</bean>
+	
+
+</beans>
+

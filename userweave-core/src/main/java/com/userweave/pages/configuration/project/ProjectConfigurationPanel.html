@@ -1,0 +1,30 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="set_to_public" />
+				</span>
+			</td>
+			
+			<td>
+				<span class="buttonContainer">
+					<a href="#" 
+					   wicket:id="setPublic"
+					   class="baseButton baseButtonLast"
+					   style="width: 500px; padding-left: 0px; padding-right: 0pt; text-align: center;">
+						<span wicket:id="setPublicLabel"></span>
+					</a>
+				</span>
+				
+				<div wicket:id="setToPublicModal"></div>
+			</td>
+					
+			<td>
+				<p>
+					<wicket:message key="set_to_public_legend" />
+				</p>
+			</td>
+		</tr>
+	</wicket:extend>
+</html>

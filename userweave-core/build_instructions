@@ -1,0 +1,39 @@
+// project structure
+
+configuration:
+src/main/config
+
+
+modules:
+com.userweave.module
+
+// run application
+run Application com.userweave.application.StartJetty
+http://localhost:8080/userweave
+
+
+// setup eclipse workspace
+cd workspace
+mvn -Declipse.workspace=. eclipse:add-maven-repo 
+
+cd userweave
+//(erzeugt aus diesem verzeichnis ein Eclipse-Projekt):
+mvn -Declipse.downloadSources=true eclipse:eclipse
+
+
+// aktualisiert mvn repository
+cd userweave
+
+mvn install:install-file -DgroupId=bliki -DartifactId=bliki -Dversion=3.0.7 -Dpackaging=jar -Dfile=lib/bliki-3.0.7.jar 
+
+// datenbank aufsetzen
+createdb -h localhost --username postgres -E UTF8 userweave
+
+mvn exec:java -Dexec.mainClass=com.userweave.application.setup.Setup
+
+# DAILY CRON JOB:
+mvn exec:java -Dexec.mainClass=com.userweave.batch.ComputeIconTestStatisticsBatch
+
+
+# delete all studies:
+mvn exec:java -Dexec.mainClass=com.userweave.batch.DeleteStudyBatch -Dexec.args="-a"

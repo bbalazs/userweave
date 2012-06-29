@@ -1,0 +1,204 @@
+div.configTabPanel li a {
+	color:#5e810d;
+	display:block;
+}
+
+div.configTabPanel li.selected a,
+div.configTabPanel li a:hover {
+    color:#ffffff;
+	text-decoration:none;
+}
+
+a.imgLink {
+	display: block; 
+	padding-top: 30px; 
+	padding-left: 15px;
+}
+
+#header {
+	width:100%;
+	position:relative;
+	z-index:1;
+}
+
+div.background,
+div.header_top_right,
+div.center_wrapper div.center {
+	background-color:#99cc33;
+}
+
+div.background {
+	height:21px;
+}
+
+div.header_top {
+	
+}
+
+div.header_top_left_part {
+}
+
+div.header_top_right_part {
+	background:white;
+	float:right;
+	height:21px;
+	padding-top:5px;
+	padding-left:10px;
+
+
+}
+
+div.header_top_left {
+	background-image:url(header_corner_top_left.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+div.header_top_right {
+	margin-left:5px;
+	height:5px;
+}
+
+div.welcomeMessage {
+	float:right;
+	margin-right:19px;
+}
+
+div.welcomeMessage span {
+	color:#fff;
+}
+
+div.header_center {
+}
+
+div.header_center_left_part {
+	width:305px;
+}
+
+div.center_wrapper {
+	
+	background-image:url(header_center_left_part_wrapper.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+div.center_wrapper div.center {
+    height:81px;
+	margin-right:10px;
+}
+
+div.header_center_right_part {
+	width:639px;
+	float:right;
+}
+
+div.banner {
+	width:639px;
+	height:47px;
+	margin-top:7px;
+}
+
+div.bannerLeft {
+	background-image:url(banner_left.jpg);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+div.bannerCenter {
+	margin-left:5px;
+	background-image:url(banner_back.jpg);
+    background-repeat:repeat-x;
+	width:634px;
+    height:47px;
+	
+}
+
+div.bannerTextContainer {
+	float:right;
+	margin:0px 20px 0px 30px;
+	height:47px;
+	
+}
+
+div.bannerTextContainer table {
+	height:100%
+}
+
+div.bannerTextContainer img {
+	border:0px none;
+	margin-right:18px;
+}
+
+div.bannerTextContainer span {
+	color:#5E810D;
+	font-size:11px;
+}
+
+
+div.configTabPanel {
+	position: relative; 
+	margin-top: -22px;
+	z-index:2;
+}
+
+div.configTabPanel div.tab_container {
+	margin-left: 300px;
+}
+
+
+div.configTabPanel div.tab-row {
+	height:22px;
+}
+
+div.configTabPanel ul {
+	list-style-type:none;
+}
+
+div.configTabPanel li {
+    float:left;
+	margin-left:5px;
+}
+
+div.configTabPanel div.tab_left_part,
+div.configTabPanel div.tab_right_part {
+    background-image:url(tab_background_round_parts.jpg);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+div.configTabPanel div.tab_right_part {
+	margin-left:5px;
+	background-position:right center;
+}
+
+div.configTabPanel div.tab_center_part {
+	margin-right:5px;
+	height:19px;
+	padding:3px 17px 0px;
+	
+	background-color:#c9e28f;
+}
+
+div.configTabPanel li.selected div.tab_left_part,
+div.configTabPanel li.selected div.tab_right_part,
+div.configTabPanel li a:hover div.tab_left_part,
+div.configTabPanel li a:hover div.tab_right_part {
+    background-image:url(tab_background_rollover_round_parts.jpg);
+}
+
+div.configTabPanel li.selected div.tab_center_part,
+div.configTabPanel li a:hover div.tab_center_part{
+	background-color:#99cc33;
+}
+
+div.configTabPanel div.tab-panel {
+	margin-top:20px;
+}
+
+/**
+ * Do some resetings
+ */
+div.grayTabbedPanel div.tab-row,
+div.greenTabbedPanel div.tab-row{
+	height:auto;
+}

@@ -1,0 +1,43 @@
+/**
+ * 
+ *				userweave.net Base layout.
+ *
+ *
+ * Stylesheet for the configuration frontend. 
+ *
+ * @author  opr
+ * @version 1.0
+ */
+
+
+/**
+ * Reset
+ *
+ * Reseting brwoser default styles.
+ *
+ * @section reset
+ * @see		http://meyerweb.com/eric/tools/css/reset/ 
+ */
+@IMPORT url("reset.css");
+
+
+/**
+ * Layout
+ *
+ * Defines the geometric layout of the configuration pages.
+ *
+ * @section layout
+ * @see 	layout.css
+ */
+@IMPORT url("layout.css");
+
+
+/**
+ * Colorscheme
+ *
+ * Color definition of this layout.
+ *
+ * @section colorscheme
+ * @see 	colorsheme.css
+ */
+@import url("colorscheme.css");

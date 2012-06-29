@@ -1,0 +1,53 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+	<table class="statisticsTable">
+		<tbody>
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="questionType_label" />
+					</span>
+				</td>
+	
+				<td>
+					<span>
+						<wicket:message key="questionType" />
+					</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="stimulus"/>
+					</span>
+				</td>
+				
+				<td>
+					<span>
+						<strong wicket:id="questionText"></strong>
+					</span>
+				</td>
+			</tr>
+		
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="number_of_answers" />
+					</span>
+				</td>
+	
+				<td>
+					<span wicket:id="totalCount"></span>
+				</td>
+			</tr>
+		</tbody>
+		
+		<wicket:child />
+	
+	</table>
+	
+</wicket:panel>
+</html>
+  

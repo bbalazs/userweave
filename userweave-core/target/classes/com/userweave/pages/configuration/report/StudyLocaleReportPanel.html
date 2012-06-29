@@ -1,0 +1,60 @@
+<html xmlns:wicket>
+<wicket:extend>
+
+	<table class="statisticsTable">
+	
+		<tr>
+			<td>
+				<span>
+					 <wicket:message key="participants_per_locale"/>
+				</span>
+			</td>
+			<td>
+				<table class="statisticsContainer">
+					<tr>
+						<th>
+							<span>
+								<wicket:message key="executedLocales" />
+							</span>
+						</th>
+						
+						<th style="text-align: right">
+							<span>
+								<wicket:message key="participants_per_locale" />
+							</span>
+						</th>
+						
+						<!-- <th style="text-align: right">
+							<span>%</span>
+						</th> -->
+					</tr>
+				
+					<tr wicket:id="locales">
+					</tr>
+				</table>
+			</td>
+			
+			<td>
+				<p>
+					<wicket:message key="locale_table" />
+				</p>
+			</td>
+		</tr>
+	</table>
+	
+	<wicket:fragment wicket:id="localeFragment">
+		<td style="padding-right:9px;">
+			<span wicket:id="locale"></span>	
+		</td>
+		
+		<td style="text-align: right">
+			<span wicket:id="result"></span>
+		</td>
+		
+		<!-- <td style="text-align: right">
+		
+		</td> -->
+	</wicket:fragment>
+	
+</wicket:extend>
+</html>

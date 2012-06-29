@@ -1,0 +1,41 @@
+<html xmlns:wicket>
+	<wicket:extend>
+		
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<p wicket:id="feedbackMessage"></p>
+					<p>
+						<wicket:message key="fast_answer" />
+					</p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="request" />
+					</span>
+				</td>
+				<td>
+					<select wicket:id="typeOfFeedback"
+							class="baseButton baseButtonLast">
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<span>
+						<wicket:message key="message" />
+					</span>
+				</td>
+				<td>
+					<textarea wicket:id="messageTextArea"></textarea>
+					<div wicket:id="feedback"></div>
+				</td>
+			</tr>
+		</tbody>
+		
+	</wicket:extend>
+</html>

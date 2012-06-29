@@ -1,0 +1,145 @@
+<html xmlns:wicket>
+<wicket:head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="content-language" content="en"/>
+	<wicket:link>
+		<link rel="stylesheet" type="text/css" href="iconmatching.css"/>
+	</wicket:link>
+	
+		<!--[if IE 6]>
+		<style type="text/css">
+		
+		.drop_text {display:block; position:relative; top:40% }
+		
+		.termCounterContainer { width:120px; }
+		
+		.tile { background-color:#ffffff!important }
+		
+		.tile_header, .tile_header *,
+		.tile_footer, .tile_footer *,
+		div.drop_field_container,
+		div.drop_field_container *,
+		.dropField_header,
+		.dropField_footer,
+		.drop_end_corner_top,
+		.drop_end_corner_bottom {
+		  font-size:0;
+	    }
+			  
+		div.tile_header_center,
+		div.tile_footer_center {
+		  margin:0px;
+		  position:absolute;
+		}
+	   
+	   div.tile_center_wrap_left { float:left; }
+	   
+	   
+		</style>
+		<![endif]-->
+		<!--[if IE 7]>
+			<style type="text/css">
+                
+				.drop_text { display:block; position:relative; top:40%}
+			</style>
+		<![endif]-->
+		
+		<!-- @see: http://www.brunildo.org/test/img_center.html -->
+		<style type="text/css">
+			.wraptocenter {
+			    display: table-cell;
+			    text-align: center;
+			    vertical-align: middle;
+			    width: ...;
+			    height: ...;
+			}
+			.wraptocenter * {
+			    vertical-align: middle;
+			}
+			/*\*//*/
+			.wraptocenter {
+			    display: block;
+			}
+			.wraptocenter span {
+			    display: inline-block;
+			    height: 100%;
+			    width: 1px;
+			}
+			/**/
+			</style>
+			<!--[if lt IE 8]><style>
+			.wraptocenter span {
+			    display: inline-block;
+			    height: 100%;
+			}
+			</style><![endif]-->
+		
+</wicket:head>
+	
+<wicket:extend>
+	<div>
+		
+        <table cellpadding="0" cellspacing="0" wicket:id="term_content" class="function_box function_box_background">
+        	<tr>
+        		<td>
+                    <div class="drop_field_container" wicket:id="drop_component"></div>
+        		</td>
+				<td>
+					<div class="head_wrap">
+						<div class="bottom_wrap">
+							<div wicket:id="table_content" class="table_content">
+								<div class="table_cell">
+							         <span class="drop_text" wicket:id="text">[term text]</span>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class="drop_end_corner_top"></div>
+					<div class="drop_end_center" wicket:id="drop_end_center"></div>
+					<div class="drop_end_corner_bottom"></div>
+				</td>
+        	</tr>
+        </table>
+	
+	    <wicket:child/>
+	
+	    <div wicket:id="contentLeft" id="iconContainer">
+	
+		    <div class="icon_container_wrapper" wicket:id="img_content">
+		   	   <div class="tile">
+				   <div class="tile_header">
+				      <div class="tile_header_left tileImage_horizontal"></div>
+			   	      <div class="tile_header_right tileImage_horizontal"></div>
+			   	      <div class="tile_header_center tileImage_horizontal"></div>
+			   	   </div>
+				   
+				   <div class="tile_center_wrap_left tileImage_vertical">
+				   	  <div class="tile_right">
+				          <div class="tile_center_wrap_right tileImage_vertical">
+				              <div wicket:id="tileCenterPart" class="tile_center wraptocenter">
+				              	<span></span><!-- IE Hack to center image -->
+				                 <img wicket:id="image" 
+				                 	  src="images/todolist.png" 
+				                 	  alt="todolist.png"
+				                 	  wicket:message="title:drag_me" 
+				                 	  title="Ziehe mich!"/>
+				              </div>
+				          </div>
+					  </div>
+				   </div>
+				   
+				   <div class="tile_footer">
+				      <div class="tile_footer_left tileImage_horizontal"></div>
+		              <div class="tile_footer_right tileImage_horizontal"></div>
+		              <div class="tile_footer_center tileImage_horizontal"></div>
+		           </div>
+				</div>
+	        </div>
+		    
+		</div> 
+	</div>
+	
+</wicket:extend>
+</html>

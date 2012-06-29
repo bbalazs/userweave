@@ -1,0 +1,61 @@
+<html xmlns:wicket>
+    <wicket:head>
+    	<wicket:link>
+			<link rel="stylesheet" type="text/css" href="mockup.css"/>
+			<!--[if IE 6]>
+			<link rel="stylesheet" type="text/css" href="mockup_ie6.css"/>
+		       
+			<![endif]-->
+			<!--[if IE 8]>
+		        <style type="text/css">
+				  div.surveyNextButton {
+		              left:827px!important;
+			      }
+				</style>
+		    <![endif]-->	
+		</wicket:link>
+    </wicket:head>
+	<wicket:extend>
+		<div>
+			<div id="mockupframe">
+				<div class="mockupframe_first"></div>
+				<div class="mockupframe_second">
+			         <div>
+			         	<div class="um_background" style="height:5px; margin-right: 2px;"></div>
+			         	<div class="mockup_header_info">
+				         	<div id="mockupheader">
+								<div class="mockupheader_right">
+			         				
+									<div wicket:id="timeVisible" class="time">
+		                               <b><span id="mockuptime" wicket:id="time" class="darkGray"></span></b>
+		                               <span>sec</span>
+									</div>
+								</div>
+				         		<div id="circleForNumberCon" >
+				         			<div class="um_background" id="circleForNumberBack">
+				         				<wicket:link>
+				         					<img src="circle_template.png">
+				         				</wicket:link>
+				         			</div>
+				         			<div id="circleForNumber"></div>
+				         		</div>
+	           					<div class="mockupheader_middle">
+									<div class="header_freetext" style="font-weight:bold;" id="header_config_text">
+		                            </div>
+		                            <div class="header_freetext">
+								     	<span wicket:id="freetext">freitext</span>
+		                            </div>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+			         	</div>
+			         	<div class="mockup_header_buttomBorder" ></div>
+			         </div>
+					<iframe class="mockupframe" style="" wicket:id="URL" scrolling="no" frameborder="0"></iframe>	
+				</div>
+				<div wicket:id="layer" class="mockupframe" style="top: 60px; left: 0px; width: 100%; height:5000px; position: absolute; visibility: visible; z-index:20002"></div>
+				
+			</div>
+		</div>
+	</wicket:extend>
+</html>

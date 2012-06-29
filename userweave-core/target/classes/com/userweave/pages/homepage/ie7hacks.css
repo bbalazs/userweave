@@ -1,0 +1,7 @@
+/* Intro Panel 
+ *******************/
+div.introContainer a.okButton,
+div.introContainer a.cancelButton {
+	padding: 9px 0 0 0px;
+	height:32px;
+}

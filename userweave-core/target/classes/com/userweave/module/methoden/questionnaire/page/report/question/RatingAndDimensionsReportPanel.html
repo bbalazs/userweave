@@ -1,0 +1,111 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<tbody>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="evaluation"/>
+				</span>
+			</td>
+			
+			<td>
+				<table id="ratingTable" class="statisticsContainer" style="width: 100%">
+					<thead>	
+						<tr>
+							<wicket:container wicket:id="eventScale"></wicket:container>
+							
+							<th style="text-align: right;">
+								<span>
+									<wicket:message key="mean" />
+								</span>
+							</th>
+							
+							<th style="text-align: right;">
+								<span>
+									<wicket:message key="stdDeviation"/>
+								</span>
+							</th>
+							
+							<th style="text-align: right;">
+								<span>
+									<wicket:message key="validAnswerCount" />
+								</span>
+							</th>
+							
+							<th style="text-align: right; padding-right: 13px;">
+								<span>
+									<wicket:message key="detailEvaluation" />
+								</span>
+							</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr wicket:id="objects">
+							
+							<wicket:child/>
+							
+							<td style="text-align: right;">
+								<span wicket:id="meanRating"></span>
+							</td>
+							
+							<td style="text-align: right;">
+								<span wicket:id="stdDeviation"></span>
+							</td>
+							
+							<td style="text-align: right;">
+								<span wicket:id="answerCount"></span>
+							</td>
+							
+							<td style="padding-top:2px; padding-bottom:2px;text-align: right;">
+								<span class="buttonContainer">
+									<a href="#" class="baseButton baseButtonLast"
+									   wicket:id="showDetails">
+										<span>
+											<wicket:message key="details" />
+										</span>
+									</a>
+								</span>
+								
+								<div wicket:id="showDetailsModal"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		
+		<!-- <tr>
+			
+			<td>
+				<div wicket:id="antipodeRatingReport"></div>
+			</td>
+		</tr> -->
+	</tbody>
+	
+	<wicket:fragment wicket:id="oneColumnFragment">
+		<th>
+			<span>
+				<wicket:message key="Event_Scale" />
+			</span>
+		</th>
+	</wicket:fragment>
+	
+	<wicket:fragment wicket:id="twoColumnFragment">
+		<th>
+			<span>
+				<wicket:message key="Event_Scale_left" />
+			</span>
+		</th>
+		
+		<th>
+			<span>
+				<wicket:message key="Event_Scale_right" />
+			</span>
+		</th>
+	</wicket:fragment>
+	
+</wicket:extend>
+
+</html>
+  

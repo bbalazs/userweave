@@ -1,0 +1,71 @@
+<html xmlns:wicket>
+<wicket:panel>
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="started">Element angefangen</wicket:message> 
+				</span>
+			</td>
+		
+			<td>
+				<span>
+					<span wicket:id="started">50</span> 
+					<wicket:message key="participants">Teilnehmer</wicket:message>
+				</span>
+			</td>
+			
+			<td rowspan="4">
+				<p>
+					<wicket:message key="statistics_legend" />
+				</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="finished">Element abgeschlossen</wicket:message>
+				</span>
+			</td>
+			<td>
+				<span>
+					<span wicket:id="finished">40</span> 
+					<wicket:message key="participants">Teilnehmer</wicket:message>
+				</span>
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="drop">Drop-Out</wicket:message>
+				</span>
+			</td>
+			<td>
+				<span>
+					<span wicket:id="dropout">20</span>%
+				</span>
+			</td>
+			
+		</tr>
+	
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="editing_time">Bearbeitungszeit</wicket:message>
+				</span>
+			</td>
+			<td>
+				<span>
+					<span wicket:id="averageToMinute">
+						5:30
+					</span> min (SD=<span wicket:id="deviationToMinute">1,37</span> min)
+					
+				</span>
+			</td>
+			
+		</tr>
+</wicket:panel>
+</html>
+

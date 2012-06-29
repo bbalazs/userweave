@@ -1,0 +1,100 @@
+/**
+ * 
+ *				userweave.net base popup layout.
+ *
+ * 
+ * Special design for popup dialogs. Overrides 
+ * the wicket popup modal layout.
+ *
+ * @author  opr
+ * @version 1.0
+ */
+
+/**
+ * Geometrical layout
+ *
+ * @section geometrics
+ */
+div.wicket-modal div.w_topLeft,
+div.wicket-modal div.w_topRight,
+div.wicket-modal div.w_bottomLeft,
+div.wicket-modal div.w_bottomRight { width:5px; }
+
+div.wicket-modal div.w_topLeft,
+div.wicket-modal div.w_topRight,
+div.wicket-modal div.w_top { height:3px; }
+
+div.wicket-modal div.w_bottomLeft,
+div.wicket-modal div.w_bottomRight,
+div.wicket-modal div.w_bottom { height: 6px; }
+
+div.wicket-modal div.w_right_1 { margin-left:5px; }
+div.wicket-modal div.w_content_1 { margin-right:5px; }
+
+div.wicket-modal div.w_content_2 { padding-top:0px; }
+
+div.wicket-modal div.w_content { 
+	padding: 6px;
+	width:auto;
+}
+
+div.wicket-modal h3.w_captionText { 
+	font-weight: normal;
+	font-size:12px;
+	margin-left:18px;
+}
+
+/** hide close button */
+div.wicket-modal a.w_close { display:none; }
+
+/**
+ * Shades and borders
+ *
+ * @section shades and borders
+ */
+div.wicket-modal div.w_topLeft,
+div.wicket-modal div.w_topRight,
+div.wicket-modal div.w_bottomLeft,
+div.wicket-modal div.w_bottomRight,
+div.wicket-modal div.w_top,
+div.wicket-modal div.w_bottom { 
+	background-image: url("popup_cor_hor_shade.png");
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+div.wicket-modal div.w_topRight { background-position: -5px 0px; }
+div.wicket-modal div.w_bottomLeft { background-position: 0px -13px; }
+div.wicket-modal div.w_bottomRight { background-position: -5px -13px; }
+
+div.wicket-modal div.w_top,
+div.wicket-modal div.w_bottom { 
+	background-position: 0px -3px;
+	background-repeat: repeat-x;
+} 
+ 
+div.wicket-modal div.w_bottom { background-position: 0px -6px; }
+
+div.wicket-modal div.w_left,
+div.wicket-modal div.w_right {
+	background-image: url("popup_vert_shade.png");
+	background-position: left top;
+	background-repeat: repeat-y;
+}
+
+div.wicket-modal div.w_right { background-position: right top; }
+
+div.wicket-modal div.w_content_3 { border:0px none; /** reset borders of content */ }
+
+
+/**
+ * Colors
+ *
+ * @section colors
+ */
+div.wicket-modal div.w_caption,
+div.wicket-modal div.w_content_2,
+div.wicket-modal div.w_content {
+    background-color: #f9f9f9;
+    color: inherit;
+}

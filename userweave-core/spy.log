@@ -1,0 +1,77 @@
+1339661246639|-1||debug||com.p6spy.engine.common.P6SpyOptions reloading properties
+1339661246642|-1||info||Using properties file: /home/thies/Arbeitsfläche/pre_git/userweave-core/target/classes/spy.properties
+1339661246642|-1||info||No value in environment for: getStackTrace, using: false
+1339661246642|-1||info||No value in environment for: getAppender, using: null
+1339661246642|-1||info||No value in environment for: getFilter, using: false
+1339661246642|-1||info||No value in environment for: getDeregisterDrivers, using: true
+1339661246642|-1||info||No value in environment for: getUsePrefix, using: false
+1339661246642|-1||info||No value in environment for: getExecutionThreshold, using: 0
+1339661246642|-1||info||No value in environment for: getAutoflush, using: false
+1339661246642|-1||info||No value in environment for: getExclude, using: null
+1339661246642|-1||info||No value in environment for: getExcludecategories, using: null
+1339661246642|-1||info||No value in environment for: getInclude, using: null
+1339661246642|-1||info||No value in environment for: getIncludecategories, using: null
+1339661246642|-1||info||No value in environment for: getLogfile, using: spy.log
+1339661246643|-1||info||No value in environment for: getRealdriver, using: org.postgresql.Driver
+1339661246643|-1||info||No value in environment for: getRealdriver2, using: 
+1339661246643|-1||info||No value in environment for: getRealdriver3, using: 
+1339661246643|-1||info||No value in environment for: getAppend, using: true
+1339661246643|-1||info||No value in environment for: getSpydriver, using: com.p6spy.engine.spy.P6SpyDriver
+1339661246643|-1||info||No value in environment for: getDateformat, using: null
+1339661246643|-1||info||No value in environment for: getDateformatter, using: null
+1339661246643|-1||info||No value in environment for: getStringmatcher, using: com.p6spy.engine.common.SubstringMatcher
+1339661246643|-1||info||No value in environment for: getStringMatcherEngine, using: com.p6spy.engine.common.SubstringMatcher@6070c38c
+1339661246643|-1||info||No value in environment for: getStackTraceClass, using: null
+1339661246643|-1||info||No value in environment for: getSQLExpression, using: null
+1339661246643|-1||info||No value in environment for: getReloadProperties, using: false
+1339661246643|-1||info||No value in environment for: getReloadPropertiesInterval, using: -1
+1339661246643|-1||info||No value in environment for: getJNDIContextFactory, using: null
+1339661246643|-1||info||No value in environment for: getJNDIContextProviderURL, using: null
+1339661246643|-1||info||No value in environment for: getJNDIContextCustom, using: null
+1339661246643|-1||info||No value in environment for: getRealDataSource, using: null
+1339661246643|-1||info||No value in environment for: getRealDataSourceClass, using: null
+1339661246643|-1||info||No value in environment for: getRealDataSourceProperties, using: null
+1339661246643|-1||info||reloadProperties() successful
+1339661246656|-1||info||deregistering driver org.postgresql.Driver
+1339661246656|-1||debug||Registered driver: org.postgresql.Driver, realdriver: org.postgresql.Driver@11b9d4d8
+1339661246657|-1||debug||Registered factory: com.p6spy.engine.logging.P6LogFactory with options: null
+1339661246657|-1||debug||Driver manager reporting driver registered: com.p6spy.engine.spy.P6SpyDriver@5f9299f5
+1339661246657|-1||debug||Driver manager reporting driver registered: org.postgresql.Driver@11b9d4d8
+1339661246657|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661246657|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661247678|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661247678|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661248682|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661248682|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661249686|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661249686|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661250690|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661250690|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661251693|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661251694|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661252697|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661252697|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661253701|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661253701|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661254704|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661254705|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661255708|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661255708|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661256712|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661256712|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661257716|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661257716|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661258719|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661258719|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661259723|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661259723|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661260727|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661260727|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661261730|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661261730|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661262735|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661262735|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661263738|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661263739|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8
+1339661264742|-1||debug||found new driver org.postgresql.Driver@11b9d4d8
+1339661264742|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@5f9299f5 and passthru is org.postgresql.Driver@11b9d4d8

@@ -1,0 +1,20 @@
+div.border_content_gray div.navRight {
+	width:844px;
+}
+
+table div.border_content_gray div.navRight {
+    width:199px;
+}
+
+div.set_module_margin div.navRight {
+	width:511px;
+}
+
+.navigationBorder_header_left,
+.navigationBorder_header_center,
+.navigationBorder_header_right,
+.navigationBorder_footer_left,
+.navigationBorder_footer_center,
+.navigationBorder_footer_right {
+    height:5px!important;
+}

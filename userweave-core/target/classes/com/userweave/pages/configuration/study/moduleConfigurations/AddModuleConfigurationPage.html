@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<wicket:head>
+		<wicket:link>
+			<link href="AddModuleConfigurationPage.css" type="text/css" rel="stylesheet"/>
+		</wicket:link>
+	</wicket:head>
+<body>
+	<div class="simple_underlined_headline" style="margin-right:10px;">
+	  <span class="darkGrey bold">
+	  	<wicket:message key="add_module"/>
+	  </span>
+	</div>
+
+  	 
+    <form class="addModuleDialog" wicket:id="form">
+	    <table>
+    		<tr style="height:40px">
+    			<td style="width:150px">
+    				<span class="lightGrey"><wicket:message key="name"/> </span>
+    			</td>
+				<td>
+					<input type="text" wicket:id="name"/>
+			    </td>
+			</tr>
+			<tr style="height:40px">
+                <td>
+                	<span class="lightGrey"><wicket:message key="module"/> </span>
+                </td>
+                <td>
+                	<select wicket:id="modules"/>
+                </td>
+            </tr>
+		</table>
+		<div class="hr_space_block"/>
+  	    <input wicket:id="ok" class="ok_button" type="submit" value="ok"/>
+   </form>
+   
+   <div wicket:id="servicePanel" style="margin:40px 10px 0px 0px;"/>
+   
+   <div wicket:id="feedback"/>
+</body>
+</html>
+

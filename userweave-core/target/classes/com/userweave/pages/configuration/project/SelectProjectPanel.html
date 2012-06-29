@@ -1,0 +1,37 @@
+<html xmlns:wicket>
+<wicket:panel>
+	<div style="height:52px;">
+		<div style="float:right;width:170px;height:40px;">
+			<img wicket:id="projectLogo" alt="Logo">
+		</div>
+	
+		<wicket:enclosure child="actions:edit">
+			<div wicket:id="actions" class="actions"></div>
+		</wicket:enclosure>
+	</div>
+	
+	<table class="contentTable">
+		<tr>
+			<td>
+				<span>
+					<wicket:message key="project_description" />
+				</span>
+			</td>
+			
+			<td>
+				<textarea wicket:id="projectDescr"></textarea>
+			</td>
+			
+			<td>
+				<p>
+					<wicket:message key="project_description_legend" />
+				</p>
+			</td>
+		</tr>
+	</table>
+	
+	<div wicket:id="tabs" 
+		 class="mainTabPanel selectedProjectTabbedPanel">[tabbed panel will be here]</div>
+	
+</wicket:panel>
+</html>

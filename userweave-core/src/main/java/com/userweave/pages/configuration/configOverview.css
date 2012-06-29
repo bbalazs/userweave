@@ -1,0 +1,114 @@
+div.selectionContainer {
+	width:100%
+}
+
+div.servicePanelContainer {
+	float:right;
+	width:244px;
+	padding-top:22px;
+}
+
+div.studiesListContainer {
+	margin-right:261px;
+}
+/**
+ * used in 
+ *  - linkComponent.html
+ *  - UserOverview
+ */
+a.select, span.select {
+	display:block;
+	width:157px;
+	height:24px;
+	float:left;
+	padding-top:4px;
+	background-image:url(simple_button.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	font-size:11px;
+}
+
+a.select * {
+	font-size:11px;
+}
+
+a.select:hover {
+	background-image:url(simple_button_hover.png);
+}
+
+a.select_details, span.select_details {
+	margin:6px 0px 0px 10px;
+}
+
+
+
+/**
+ * used in
+ *  - DetailsPanel
+ */
+.lang_details_center {
+	/*
+padding:14px 0px 14px 5px;
+*/
+    padding:14px 0px 0px 5px;
+	margin-left:19px;
+}
+
+div.content_with_border_left > div.lang_details_center  {
+    margin-top:0px;
+    padding-bottom:0px;
+    padding-top:0px
+}
+
+div.details_descr {
+    width:605px;
+    float:left;
+}
+
+.change_link {
+	text-decoration:none;
+	font-size:10px;
+	font-weight:bold;
+}
+
+.links {
+	text-align:center;
+}
+
+a.linkComponent {
+	color:#0197ca;
+	text-decoration:none;
+}
+
+/**
+ * used in
+ *  - SimpleAccordionHeader
+ */
+.details_text {
+	width:641px;
+	height:22px;
+	padding:6px 0px 0px 19px;
+	display:block;
+	float:left;
+	background-image:url(accordionpanel_center.png);
+	background-position:left center;
+	background-repeat:repeat-x;
+}
+
+/**
+ * Used in
+ *  - ValueListPanel
+ *  - RrtTermConfigurationPanel
+ */
+.add-button {
+    border: 0px solid white;
+    background-image: url(hinzufuegenIcon.gif);
+    left: 20px;
+    width: 16px;
+    text-align: right;
+    background-repeat: no-repeat;
+	background-color:#ffffff;
+}

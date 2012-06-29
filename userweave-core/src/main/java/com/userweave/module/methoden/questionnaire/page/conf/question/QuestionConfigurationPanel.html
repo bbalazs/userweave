@@ -1,0 +1,69 @@
+<html xmlns:wicket>
+    <wicket:panel>
+    	<form wicket:id="form">
+	    	<table class="contentTable" cellspacing="0" cellpadding="0">
+	    		
+	    		<tr>
+	    			<td>
+	    				<span>
+	    					<wicket:message key="questionType"/>
+	    				</span>
+	    			</td>
+	    			
+	    			<td>
+	    				<span wicket:id="questionType"></span>
+	    			</td>
+	    			
+	    			<td>
+	    				<p>
+	                    	<wicket:message key="questionType_legend"/>
+	                	</p>
+	    			</td>
+	    		</tr>
+	    		
+	    		<tr>
+	    			<td>
+	    				<p>
+	    					<wicket:message key="quest"/>
+	    				</p>
+	    			</td>
+	    			
+	    			<td>
+	    				<p wicket:id="text"></p>
+	    			</td>
+	    			
+	    			<td>
+	    				<p>
+	                    	<wicket:message key="quest_legend"/>
+	                	</p>
+	    			</td>
+	    		</tr>
+	    		
+	    		<wicket:child/>
+	    		
+	    		<wicket:enclosure>
+		    		<tr>
+		    			<td>
+		    				<p>
+		    					<wicket:message key="sequence_answers"/>
+		    				</p>
+		    			</td>
+		    			
+		    			<td>
+							<select wicket:id="orderType"
+									class="baseButton baseButtonLast selectionChoice"></select>
+		    			</td>
+		    			
+		    			<td>
+		    				<p>
+				                <wicket:message key="sequence_legend"/>
+				            </p>
+		    			</td>
+		    		</tr>
+	    		</wicket:enclosure>
+	    	</table>
+    	</form>
+
+        <div wicket:id="feedbackPanel"></div>
+    </wicket:panel>
+</html>

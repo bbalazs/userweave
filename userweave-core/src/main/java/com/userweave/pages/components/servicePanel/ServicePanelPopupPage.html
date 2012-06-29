@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<style>
+			.notRequired{display:none;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="simple_underlined_headline" style="margin-right:10px;">
+	      <span class="darkGrey bold">
+	      	<wicket:message key="need"/>
+		  </span>	
+	    </div>
+		
+		<div wicket:id="feedback"/>
+		
+		<span wicket:id="serviceText"/>
+		<br/>
+		<br/>
+		<span wicket:id="linkText"/>
+		<br/>
+		<br/>
+		<span>
+			<b>
+				<wicket:message key="telephone_reach"/>
+		    </b>
+		    <br/>
+			<span>
+				<b>
+					+49 (0) 30  &middot; 99277999 &middot; 0
+				</b>
+			</span>
+			<br/>
+		    <wicket:message key="common_working_hours"/>
+			<br/>
+			<br/>
+			<br/>
+            <b>
+			    <wicket:message key="contact"/>
+			</b>
+			<div style="margin-right:10px;">
+				<form wicket:id="form">
+					<div class="form_container_header_left">
+						<div class="form_container_header_right">
+							<div class="form_container_header_center"/>
+						</div>
+					</div>
+						
+					<div class="form_container_center">
+						<div class="form_container_contact_way"><wicket:message key="contact_way">Wie sollen wir Sie kontaktieren?</wicket:message></div>
+						<br/>
+						<span wicket:id="group">
+					        <input type="radio" checked="checked" wicket:id="radio_email"> E-Mail
+						   <br/>
+						   <div class="inputIndent">
+						      <b>
+						      	<span wicket:id="email"/>
+							  </b>
+						   </div>
+						   <input type="radio" wicket:id="radio_phone"> Telefon
+						</span>
+						<br/>
+						<div wicket:id="callnumberPanel"/>
+						<div class="inputIndent">							
+							<br/>
+							<textarea wicket:id="comment" cols="30" rows="5" 
+							onclick="if(this.value=='Beschreiben Sie Ihr Anliegen kurz'){this.value='';this.style.color='#000000'}
+							else if(this.value=='Shortly describe your request'){this.value='';this.style.color='#000000'}">
+								Beschreiben Sie Ihr Anliegen kurz</textarea>
+						</div> 
+					</div>
+						
+					<div class="form_container_footer_left">
+		                <div class="form_container_footer_right">
+		                    <div class="form_container_footer_center"/>
+		                </div>
+		            </div>
+				
+				    <div wicket:id="submit"/>
+				</form>
+			</div>
+		</span>
+		
+    </body>
+</html>

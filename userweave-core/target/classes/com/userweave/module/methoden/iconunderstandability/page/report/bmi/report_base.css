@@ -1,0 +1,155 @@
+/*
+ * The base stylesheet for the report page
+ */
+* { 
+    margin:0; 
+    padding:0;
+    font-family:verdana;
+}
+/*
+ * define a background color for elements
+ */
+.um_background { background-color:#99cc33 }
+
+/*******************************************************
+ * main container styles
+ *******************************************************/
+#header_report {
+    width:762px;
+    margin: 67px 1px 6px;
+}
+
+#mainbody {
+}
+
+#footer {
+    height:46px;
+}
+
+/*******************************************************
+ * header styles
+ *******************************************************/
+#header_report img {
+    width: 162px;
+    height:105px;
+    float:right;
+}
+
+#header_content {
+    width:595px;
+    height:77px;
+    padding-top:28px;
+}
+
+#header_content_left {
+    background-image: url(header_content_left.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+#header_content_right {
+    margin-left:4px;
+    background-image: url(header_content_right.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+#header_content_center {
+    height:77px;
+    width:587px;
+    margin:0px 4px 0px 0px;
+    background-image: url(header_content_center.png);
+    background-repeat:repeat-x;
+}
+#header_content_center h2 {
+    padding:35px 0px 15px 20px;
+    color:white;
+    font-size:20px;
+}
+/*******************************************************
+ * mainbody header styles
+ *******************************************************/
+#mainbody_header_left {
+	width:770px;
+    background-image: url(mainbody_header_corner_top_left.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+#mainbody_header_right {
+    margin-left:4px;
+    background-image: url(mainbody_header_corner_top_right.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+#mainbody_header_center {
+    width:762px;
+    height:4px;
+    margin:0px 4px 0px 0px;
+    background-image:url(mainbody_header_background.png);
+    background-repeat:repeat-x;
+}
+
+/*******************************************************
+ * mainbody styles
+ *******************************************************/
+#mainbody_content {
+    width: 740px;
+    min-height:618px;
+    padding:24px 17px 21px 13px;
+    background-image:url(mainbody_content_background.png);
+    background-position:top center;
+    background-repeat:repeat-x; 
+}
+
+.reportPanelContainerHeader {
+	width:740px;
+	height:8px;
+	background-image:url(reportpanelheader_shade.jpg);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.reportPanelContainerFooter {
+	width:740px;
+	height:14px;
+	margin-top:-8px;
+	background-image:url(reportpanelfooter.jpg);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.reportShade {
+	background-image:url(shade.png);
+    background-position:left top;
+    background-repeat:no-repeat;
+}
+
+.reportPanelContainer {
+	background-image:url(faux_column.jpg);
+    background-position:right center;
+    background-repeat:repeat-y;
+}
+/*******************************************************
+ * mainbody footer styles
+ *******************************************************/
+#mainbody_footer_left {
+	width:770px;
+    background-image: url(corner_bottom_left.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+}
+
+#mainbody_footer_right {
+    margin-left:4px;
+    background-image: url(corner_bottom_right.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+#mainbody_footer_center {
+    width:762px;
+    height:4px;
+    margin:0px 4px 0px 0px;
+}

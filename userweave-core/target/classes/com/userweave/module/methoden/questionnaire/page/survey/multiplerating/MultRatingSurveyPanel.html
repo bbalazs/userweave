@@ -1,0 +1,85 @@
+<html xmlns:wicket>
+<wicket:extend>
+	<div class="multipleRating">
+		<table style="position:relative; margin:0px auto;" cellspacing="0" cellpadding="0">
+			<tr>
+				<th>
+					<div class="antipode1_wrap">
+						<div class="wrap">
+							<table style="height:24px; max-width:200px;" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<span wicket:id="antipode1" class="antipode1"/>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="antipode1_end"></div>
+					</div>
+				</th>
+				<th style="text-align:left;">
+					<div class="multipleRating_headerBoxLeft"></div>
+				</th>
+				<th style="text-align:right;">
+					<div class="multipleRating_headerBoxRight"></div>
+				</th>
+				<th colspan="2">
+					<div class="antipode2_wrap">
+						<div class="wrap">
+							<table style="height:24px; max-width:200px;" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<span wicket:id="antipode2" class="antipode2"/>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="antipode2_end"></div>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2">
+					<div class="multipleRating_panel_header_left">
+						<div class="multipleRating_panel_header_right">
+							<div class="multipleRating_panel_header_center"></div>
+						</div>
+					</div>
+				</td>
+				<td style="width:2px;" />
+				<td>
+					<div class="notStated_header_left" wicket:id="notStatedHeaderLeft">
+						<div class="notStated_header_right">
+							<div class="notStated_header_center"></div>
+						</div>
+					</div>
+				</td>					
+			</tr>
+			<tr wicket:id="ratingTerms">					
+				<wicket:container wicket:id="singleRatingPanel" 
+								  class="singleRatingPanel"></wicket:container>					
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2">
+					<div class="multipleRating_panel_footer_left">
+						<div class="multipleRating_panel_footer_right">
+							<div class="multipleRating_panel_footer_center"></div>
+						</div>
+					</div>
+				</td>
+				<td />
+				<td>
+					<div class="notStated_footer_left" wicket:id="notStatedFooterLeft">
+						<div class="notStated_footer_right">
+							<div class="notStated_footer_center"></div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</wicket:extend>
+</html>
+  

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_0ZBJIDJBEd2qKtk4n2nq7g" type="UMLClass" name="usability-methoden.umlclass_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_0ZBJITJBEd2qKtk4n2nq7g"/>
+  <styles xmi:type="notation:FilteringStyle" xmi:id="_0ZBJIjJBEd2qKtk4n2nq7g"/>
+  <element xmi:type="uml:Package" href="usability-methoden.uml#_vOwqwDJBEd2qKtk4n2nq7g"/>
+</notation:Diagram>

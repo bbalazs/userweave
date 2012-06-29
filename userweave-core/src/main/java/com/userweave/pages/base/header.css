@@ -1,0 +1,149 @@
+#header {
+	height:132px;
+	width:100%;
+}
+
+.green {
+	background-color:#99cc33;
+}
+
+.lightGreen {
+	color:#557716;
+}
+
+.headerWhite {
+	color:#d1fa76;
+}
+
+.white {
+	color:#feffff;
+}
+
+/**
+ * Left Header Container
+ */
+#headerLeft {
+	width:219px;
+	float:left;
+}
+
+#headerLeft a {
+	text-decoration:none;	
+}
+
+#headerLeft a span {
+	font-weight:bold;
+	font-size:16px;
+	font-family:arial;
+}
+
+.headerTopLeft {
+	background-image:url(header_corner_top_left.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+.headerTopCenter {
+	font-size: 0px;
+	height:5px;
+	margin-left:5px;
+	width:auto;
+}
+
+.headerSpacer {
+	width:219px;
+	height:21px;
+}
+
+.headerCenter {
+	width:219px;
+}
+
+.headerCenterTopRight {
+	background-image:url(header_corner_top_right.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+}
+
+.headerCenterTopCenter {
+	margin-right:17px;
+	width:auto;
+	height:12px;
+}
+
+.headerCenterContentRight {
+	background-image:url(header_left.png);
+	background-position:right top;
+	background-repeat:repeat-y;
+}
+
+.headerCenterContent {
+	margin-right:17px;
+	padding:15px 0px 0px 18px;
+	width:184px;
+	height:55px;
+}
+
+.headerCenterFooterLeft {
+	background-image:url(header_corner_bottom_left.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+.headerCenterFooterRight {
+	margin-left:5px;
+	background-image:url(header_corner_bottom_right.png);
+	background-position:right top;
+	background-repeat:no-repeat;
+}
+
+.headerCenterFooterCenter {
+	margin-right:17px;
+	width:197px;
+	height:24px;
+	background-image:url(header_bottom.png);
+	background-position:left top;
+	background-repeat:repeat-x;
+}
+
+/**
+ * Right Header Container
+ */
+#headerRight {
+	float:left;
+	width:725px;
+	height:32px;
+	border-bottom:2px solid #99cc33;
+}
+
+.headerRightLeft {
+	height:26px;
+	width:69px;
+	float:left;
+}
+
+div.claim {
+	float:right;
+	margin-top:10px;
+}
+
+/**
+ * tabs
+ */
+div.tab_container div.tab-row {
+	height:30px;
+	padding-top:12px;
+}
+
+div.tab_container div.tab-row li {
+	float:left;
+	list-style-type:none;
+	margin-right:12px;
+	color:#0197ca;
+}
+
+div.tab_container div.tab-row li a, div.tab_container div.tab-row li a span {
+	color:#0197ca;
+	text-decoration:none;
+	font-size:12px;
+}

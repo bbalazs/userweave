@@ -1,0 +1,36 @@
+<wicket:panel>
+<div id="body_header">
+    <h2>
+		<wicket:message key="userAdministration">Benutzerverwaltung</wicket:message>
+	</h2>
+</div>
+<table cellspacing="0" cellpadding="0" summary="Contacts template" style="width:100%">
+    <tr wicket:id="listview">
+    	<td>
+	       <div class="listItem">
+	       	   <div style="float:right; width:12%">
+	           		<input type="checkbox" wicket:id="subscription" /> <span wicket:id="subscription_label"/>
+	           </div>
+		       <a href="#" wicket:id="edit" style="display:block;width:88%">
+			     <span wicket:id="email" class="darkGrey"/>
+	           </a>
+		   </div>
+		   <div style="clear:both;" />
+		</td>
+	</tr>
+</table>
+<div style="height:35px; margin-top:5px;">
+
+    <div class="defaultButton_left addModuleWidth">
+        <div class="defaultButton_right">
+            <div class="defaultButton_center">
+	           <a href="#" wicket:id="create" class="nohover">
+                    <span>
+                    	<wicket:message key="create">neuen Benutzer anlegen</wicket:message>
+                    </span>
+                </a>
+			</div>
+		</div>
+	</div>
+</div>
+</wicket:panel>
