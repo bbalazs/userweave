@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.03" errors="0" skipped="0" tests="2" name="de.userprompt.QueryTest">
+<testsuite failures="0" time="0.029" errors="0" skipped="0" tests="2" name="de.userprompt.QueryTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="/home/thies/Arbeitsfläche/pre_git/utils_userweave"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="/tmp/surefirebooter2363401995167494498.jar"/>
+    <property name="surefire.real.class.path" value="/tmp/surefirebooter6296774293774987996.jar"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
@@ -42,7 +42,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre"/>
-    <property name="sun.java.command" value="/tmp/surefirebooter2363401995167494498.jar /tmp/surefire7544429421424515889tmp /tmp/surefire2762173535841229856tmp"/>
+    <property name="sun.java.command" value="/tmp/surefirebooter6296774293774987996.jar /tmp/surefire5573517195932906518tmp /tmp/surefire3669663823810041589tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="de"/>
     <property name="java.vm.info" value="mixed mode"/>
@@ -58,6 +58,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.018" classname="de.userprompt.QueryTest" name="testQuery"/>
-  <testcase time="0.011" classname="de.userprompt.QueryTest" name="testQuery2"/>
+  <testcase time="0.017" classname="de.userprompt.QueryTest" name="testQuery"/>
+  <testcase time="0.01" classname="de.userprompt.QueryTest" name="testQuery2"/>
 </testsuite>
