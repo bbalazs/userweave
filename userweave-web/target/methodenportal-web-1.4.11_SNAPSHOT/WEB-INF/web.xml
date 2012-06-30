@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+      PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+      "http://java.sun.com/dtd/web-app_2_4.dtd">
+
+<web-app>
+	<display-name>Apliki Methoden-Portal</display-name>
+
+	<!-- Deployment Modus --> 
+	<context-param>
+		 <param-name>configuration</param-name>
+         <param-value>deployment</param-value>
+	</context-param>
+	
+	<!-- The SpringWebApplicationFactory will need access to a Spring Application context, configured like this... -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext-web.xml</param-value>
+	</context-param>
+	
+	<!-- Enable the filters for Hibernate -->
+	<filter>
+		<filter-name>opensessioninview</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>opensessioninview</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- END hibernate filters -->
+	
+	<filter>
+		<filter-name>wicket</filter-name>
+		<filter-class>
+			org.apache.wicket.protocol.http.WicketFilter
+		</filter-class>
+		<init-param>
+			<param-name>applicationFactoryClassName</param-name>
+			<param-value>
+				org.apache.wicket.spring.SpringWebApplicationFactory
+			</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>wicket</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+  		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+
+	<error-page>
+  		<error-code>404</error-code>
+  		<location>/404.html</location>
+	</error-page>
+
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	
+	<!-- auto logout after 24 hours -->
+	<session-config>
+		<session-timeout>1440</session-timeout> 
+	</session-config>
+</web-app>
+
+

@@ -1,60 +1,60 @@
-1340965173646|-1||debug||com.p6spy.engine.common.P6SpyOptions reloading properties
-1340965173649|-1||info||Using properties file: /home/thies/Arbeitsfläche/pre_git/userweave-core/target/classes/spy.properties
-1340965173649|-1||info||No value in environment for: getStackTrace, using: false
-1340965173649|-1||info||No value in environment for: getAppender, using: null
-1340965173649|-1||info||No value in environment for: getFilter, using: false
-1340965173649|-1||info||No value in environment for: getDeregisterDrivers, using: true
-1340965173649|-1||info||No value in environment for: getUsePrefix, using: false
-1340965173649|-1||info||No value in environment for: getExecutionThreshold, using: 0
-1340965173649|-1||info||No value in environment for: getAutoflush, using: false
-1340965173649|-1||info||No value in environment for: getExclude, using: null
-1340965173649|-1||info||No value in environment for: getExcludecategories, using: null
-1340965173649|-1||info||No value in environment for: getInclude, using: null
-1340965173649|-1||info||No value in environment for: getIncludecategories, using: null
-1340965173649|-1||info||No value in environment for: getLogfile, using: spy.log
-1340965173649|-1||info||No value in environment for: getRealdriver, using: org.postgresql.Driver
-1340965173649|-1||info||No value in environment for: getRealdriver2, using: 
-1340965173649|-1||info||No value in environment for: getRealdriver3, using: 
-1340965173649|-1||info||No value in environment for: getAppend, using: true
-1340965173649|-1||info||No value in environment for: getSpydriver, using: com.p6spy.engine.spy.P6SpyDriver
-1340965173649|-1||info||No value in environment for: getDateformat, using: null
-1340965173649|-1||info||No value in environment for: getDateformatter, using: null
-1340965173649|-1||info||No value in environment for: getStringmatcher, using: com.p6spy.engine.common.SubstringMatcher
-1340965173650|-1||info||No value in environment for: getStringMatcherEngine, using: com.p6spy.engine.common.SubstringMatcher@4d3af084
-1340965173650|-1||info||No value in environment for: getStackTraceClass, using: null
-1340965173650|-1||info||No value in environment for: getSQLExpression, using: null
-1340965173650|-1||info||No value in environment for: getReloadProperties, using: false
-1340965173650|-1||info||No value in environment for: getReloadPropertiesInterval, using: -1
-1340965173650|-1||info||No value in environment for: getJNDIContextFactory, using: null
-1340965173650|-1||info||No value in environment for: getJNDIContextProviderURL, using: null
-1340965173650|-1||info||No value in environment for: getJNDIContextCustom, using: null
-1340965173650|-1||info||No value in environment for: getRealDataSource, using: null
-1340965173650|-1||info||No value in environment for: getRealDataSourceClass, using: null
-1340965173650|-1||info||No value in environment for: getRealDataSourceProperties, using: null
-1340965173650|-1||info||reloadProperties() successful
-1340965173659|-1||info||deregistering driver org.postgresql.Driver
-1340965173659|-1||debug||Registered driver: org.postgresql.Driver, realdriver: org.postgresql.Driver@4adf9095
-1340965173660|-1||debug||Registered factory: com.p6spy.engine.logging.P6LogFactory with options: null
-1340965173660|-1||debug||Driver manager reporting driver registered: com.p6spy.engine.spy.P6SpyDriver@13ca5df9
-1340965173660|-1||debug||Driver manager reporting driver registered: org.postgresql.Driver@4adf9095
-1340965173660|-1||debug||found new driver org.postgresql.Driver@4adf9095
-1340965173660|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@13ca5df9 and passthru is org.postgresql.Driver@4adf9095
-1340965174450|6|0|statement||select relname from pg_class where relkind='S'
-1340965174457|0|0|result||select relname from pg_class where relkind='S'
-1340965174458|-1||resultset|select relname from pg_class where relkind='S'|relname = hibernate_sequence
-1340965174458|0|0|result||select relname from pg_class where relkind='S'
-1340965177111|1|0|statement|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
-1340965177111|0|0|result|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
-1340965177126|0|0|batch|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_ADMIN', 266)
-1340965177127|1|0|statement|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_ADMIN', 266)
-1340965177144|17|0|commit||
-1340965177147|0|0|statement|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
-1340965177147|0|0|result|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
-1340965177148|0|0|batch|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_PARTICIPANT', 267)
-1340965177148|0|0|statement|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_PARTICIPANT', 267)
-1340965177153|5|0|commit||
-1340965177153|0|0|statement|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
-1340965177154|0|0|result|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
-1340965177154|0|0|batch|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_GUEST', 268)
-1340965177154|0|0|statement|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_GUEST', 268)
-1340965177161|7|0|commit||
+1341092193064|-1||debug||com.p6spy.engine.common.P6SpyOptions reloading properties
+1341092193067|-1||info||Using properties file: /home/thies/Arbeitsfläche/pre_git/userweave-core/target/classes/spy.properties
+1341092193067|-1||info||No value in environment for: getStackTrace, using: false
+1341092193067|-1||info||No value in environment for: getAppender, using: null
+1341092193067|-1||info||No value in environment for: getFilter, using: false
+1341092193067|-1||info||No value in environment for: getDeregisterDrivers, using: true
+1341092193067|-1||info||No value in environment for: getUsePrefix, using: false
+1341092193067|-1||info||No value in environment for: getExecutionThreshold, using: 0
+1341092193067|-1||info||No value in environment for: getAutoflush, using: false
+1341092193067|-1||info||No value in environment for: getExclude, using: null
+1341092193067|-1||info||No value in environment for: getExcludecategories, using: null
+1341092193067|-1||info||No value in environment for: getInclude, using: null
+1341092193067|-1||info||No value in environment for: getIncludecategories, using: null
+1341092193067|-1||info||No value in environment for: getLogfile, using: spy.log
+1341092193067|-1||info||No value in environment for: getRealdriver, using: org.postgresql.Driver
+1341092193067|-1||info||No value in environment for: getRealdriver2, using: 
+1341092193067|-1||info||No value in environment for: getRealdriver3, using: 
+1341092193067|-1||info||No value in environment for: getAppend, using: true
+1341092193067|-1||info||No value in environment for: getSpydriver, using: com.p6spy.engine.spy.P6SpyDriver
+1341092193067|-1||info||No value in environment for: getDateformat, using: null
+1341092193067|-1||info||No value in environment for: getDateformatter, using: null
+1341092193067|-1||info||No value in environment for: getStringmatcher, using: com.p6spy.engine.common.SubstringMatcher
+1341092193067|-1||info||No value in environment for: getStringMatcherEngine, using: com.p6spy.engine.common.SubstringMatcher@5c76458f
+1341092193067|-1||info||No value in environment for: getStackTraceClass, using: null
+1341092193067|-1||info||No value in environment for: getSQLExpression, using: null
+1341092193067|-1||info||No value in environment for: getReloadProperties, using: false
+1341092193067|-1||info||No value in environment for: getReloadPropertiesInterval, using: -1
+1341092193067|-1||info||No value in environment for: getJNDIContextFactory, using: null
+1341092193068|-1||info||No value in environment for: getJNDIContextProviderURL, using: null
+1341092193068|-1||info||No value in environment for: getJNDIContextCustom, using: null
+1341092193068|-1||info||No value in environment for: getRealDataSource, using: null
+1341092193068|-1||info||No value in environment for: getRealDataSourceClass, using: null
+1341092193068|-1||info||No value in environment for: getRealDataSourceProperties, using: null
+1341092193068|-1||info||reloadProperties() successful
+1341092193077|-1||info||deregistering driver org.postgresql.Driver
+1341092193077|-1||debug||Registered driver: org.postgresql.Driver, realdriver: org.postgresql.Driver@201d592a
+1341092193078|-1||debug||Registered factory: com.p6spy.engine.logging.P6LogFactory with options: null
+1341092193078|-1||debug||Driver manager reporting driver registered: com.p6spy.engine.spy.P6SpyDriver@41e8e144
+1341092193078|-1||debug||Driver manager reporting driver registered: org.postgresql.Driver@201d592a
+1341092193078|-1||debug||found new driver org.postgresql.Driver@201d592a
+1341092193078|-1||debug||this is com.p6spy.engine.spy.P6SpyDriver@41e8e144 and passthru is org.postgresql.Driver@201d592a
+1341092193788|3|0|statement||select relname from pg_class where relkind='S'
+1341092193792|0|0|result||select relname from pg_class where relkind='S'
+1341092193793|-1||resultset|select relname from pg_class where relkind='S'|relname = hibernate_sequence
+1341092193793|0|0|result||select relname from pg_class where relkind='S'
+1341092196591|1|0|statement|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
+1341092196591|0|0|result|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
+1341092196611|0|0|batch|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_ADMIN', 281)
+1341092196613|2|0|statement|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_ADMIN', 281)
+1341092196629|16|0|commit||
+1341092196633|1|0|statement|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
+1341092196633|0|0|result|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
+1341092196633|0|0|batch|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_PARTICIPANT', 282)
+1341092196634|1|0|statement|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_PARTICIPANT', 282)
+1341092196637|3|0|commit||
+1341092196638|0|0|statement|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
+1341092196638|0|0|result|select nextval ('hibernate_sequence')|select nextval ('hibernate_sequence')
+1341092196639|0|0|batch|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_GUEST', 283)
+1341092196639|0|0|statement|insert into Role (roleName, id) values (?, ?)|insert into Role (roleName, id) values ('PROJECT_GUEST', 283)
+1341092196646|7|0|commit||

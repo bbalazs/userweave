@@ -81,7 +81,8 @@ div#header {
 }
 
 div.um_webseite_claim_admin{
-   float: left;
+ float: left;
+    margin-top: -12px;
 }
 
 div#header div.breadcrumb div.homeLinkContainer,
@@ -1071,10 +1072,10 @@ background-color: #19235D;
     border: medium none;
     color: #FFFFFF;
     font-size: 17px;
-    height: 23px;
-    margin-left: 0px!important;
+    height: auto;
+    margin-left: 0 !important;
     margin-top: 4px;
-    width: 75px;
+    width: auto;
 }
 
 .register .feedbackPanelERROR{
